@@ -297,7 +297,7 @@
   padding-top: 0;
   float: right;
   border: 1px solid rgba(212, 220, 227, 0);
-  margin-top: 10px;
+  margin-top: 7px;
   margin-right: 3px;
   z-index: 2;
   position: absolute;
@@ -341,8 +341,8 @@
   height: 18px;
   background-color: rgba(255, 255, 255, 0);
   position: absolute;
-  right: 19px;
-  top: 17px;
+  right: 21px;
+  top: 14px;
   z-index: 0; }
 
 .block_search.active .topMenu_left_bottom_btn {
@@ -392,11 +392,12 @@
           border-radius: 0;
   background: none;
   background-image: url(../img/backgrounds/menu.png);
-  border: 0; }
+  border: 0;
+  min-height: 45px; }
   #navbar a {
     padding: 10px 15px;
     color: #fdfeff;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 40px;
     margin-right: 40px;
     padding-top: 5px;
@@ -448,13 +449,13 @@
 
 #navbar .extra_menu {
   float: right;
-  width: 110px;
+  width: 86px;
   background-image: url(../img/backgrounds/menu_line.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-position: left;
-  padding-left: 35px;
-  padding-top: 19px;
+  padding-left: 29px;
+  padding-top: 14px;
   padding-bottom: 11px; }
 
 #navbar .extra_menu_menu {
@@ -1072,8 +1073,8 @@ body.contrast .inv_ubctract {
 h2 {
   position: relative;
   color: #093a63;
-  font-size: 62px;
-  line-height: 26px;
+  font-size: 48px;
+  line-height: 48px;
   text-align: center; }
 
 h2:after {
@@ -1116,6 +1117,51 @@ button {
   overflow: hidden; }
 
 /*=================Home_Page=================*/
+.slider_banners .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity; }
+
+.slider_banners .carousel-inner .item,
+.slider_banners .carousel-inner .active.left,
+.slider_banners .carousel-inner .active.right {
+  opacity: 0; }
+
+.slider_banners .carousel-inner .active,
+.slider_banners .carousel-inner .next.left,
+.slider_banners .carousel-inner .prev.right {
+  opacity: 1; }
+
+.slider_banners .carousel-inner .next,
+.slider_banners .carousel-inner .prev,
+.slider_banners .carousel-inner .active.left,
+.slider_banners .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+
+.slider_banners .carousel-control {
+  z-index: 2; }
+
+.slider_banners .carousel,
+.slider_banners .carousel-inner,
+.slider_banners .carousel-inner .item {
+  height: 100%; }
+
+.slider_banners .carousel-indicators {
+  bottom: 32px; }
+
+.slider_banners .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0; }
+
+.slider_banners .carousel-indicators .active,
+.slider_banners .carousel-indicators li:hover {
+  background-color: #ffffff; }
+
 .banner {
   position: relative; }
 
@@ -1198,48 +1244,50 @@ button {
 .img1 {
   width: 100%; }
 
-.how_low_block {
-  padding-top: 15px; }
-
 .how_low {
-  background-image: url(../img/backgrounds/bg1.png);
-  background-position: right top;
-  background-repeat: no-repeat;
-  padding: 30px;
-  padding-bottom: 80px; }
+  /*background-image: url(../img/backgrounds/bg1.png);*/
+  padding: 15px;
+  background-color: #f6f6f6;
+  margin-top: 6px; }
+  .how_low .how_low_bgColor {
+    background-color: #dde9f1;
+    padding-top: 30px;
+    padding-bottom: 55px; }
   .how_low p {
     color: #282828;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 16px;
-    margin-top: 32px;
-    margin-right: 20px; }
+    margin-top: 27px;
+    margin-right: 64px; }
   .how_low h3 {
     color: #5293b9;
-    font-size: 37px;
-    line-height: 46px;
-    margin-top: 46px;
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 38px;
     position: relative;
-    padding-right: 79px;
+    padding-right: 143px;
     font-family: 'EXO2.0-SEMIBOLD_0';
-    text-align: right; }
+    text-align: right;
+    max-width: 510px;
+    float: right; }
   .how_low h3:after {
     content: "";
     position: absolute;
     width: 66px;
     height: 1px;
     background-color: #5293b9;
-    top: 23px;
-    right: 0px; }
+    top: 17px;
+    right: 64px; }
   .how_low button {
     color: #093a63;
     font-size: 21px;
-    line-height: 24px;
+    line-height: 25px;
     border: 1px solid #05365f;
     width: 128px;
     height: 41px;
     -webkit-border-radius: 30px;
             border-radius: 30px;
-    padding-left: 30px;
+    padding-left: 25px;
     background-color: rgba(5, 54, 95, 0);
     background-image: url(../img/icons/banner_transparent.png);
     background-repeat: no-repeat;
@@ -1249,8 +1297,8 @@ button {
     -webkit-transition: background-position 0.5s;
     -o-transition: background-position 0.5s;
     transition: background-position 0.5s;
-    margin-top: 57px;
-    margin-right: 110px; }
+    margin-top: 49px;
+    margin-right: 149px; }
   .how_low button:hover {
     background-position: top 14px left 15px; }
 
@@ -1262,21 +1310,19 @@ button {
   padding-top: 42px; }
   .device h2 {
     font-family: 'FBADRENALIN-REGULAR';
-    font-size: 62px;
-    line-height: 20px;
     text-align: center;
     margin-bottom: 78px;
     margin-top: 16px; }
   .device h3 {
     color: #fff;
-    font-size: 36px;
-    line-height: 66px;
+    font-size: 24px;
+    line-height: 53px;
     background-image: url(../img/backgrounds/device_h2.png);
     background-repeat: no-repeat;
     display: inline-block;
-    min-width: 362px;
-    padding-right: 10px;
-    padding-bottom: 17px;
+    min-width: 288px;
+    text-align: center;
+    padding-left: 15px;
     font-family: 'EXO2.0-SEMIBOLD_0'; }
   .device img {
     margin-top: 73px;
@@ -1285,12 +1331,12 @@ button {
 
 .description {
   color: #05365f;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 19px;
   float: right;
-  max-width: 210px;
-  margin-top: 10px;
-  margin-right: 33px; }
+  max-width: 170px;
+  margin-top: 20px;
+  margin-right: 16px; }
 
 .sub_product {
   padding-right: 40px;
@@ -1330,11 +1376,11 @@ button {
 
 .btn1 {
   color: #093a63;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 33px;
   border: 1px solid #05365f;
-  width: 128px;
-  height: 41px;
+  width: 104px;
+  height: 33px;
   -webkit-border-radius: 30px;
           border-radius: 30px;
   background-color: rgba(5, 54, 95, 0);
@@ -1349,11 +1395,11 @@ button {
 
 .btn2 {
   color: #fff;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 33px;
   border: 1px solid #05365f;
-  width: 128px;
-  height: 41px;
+  width: 104px;
+  height: 33px;
   -webkit-border-radius: 30px;
           border-radius: 30px;
   background-color: #093a63;
@@ -1404,8 +1450,6 @@ button {
   .videos h2 {
     position: relative;
     color: #093a63;
-    font-size: 62px;
-    line-height: 16px;
     text-align: center;
     margin-bottom: 80px; }
   .videos .video__wrap {

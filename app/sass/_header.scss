@@ -261,7 +261,7 @@
 	padding-top: 0;	
 	float: right;
     border: 1px solid rgba(212, 220, 227, 0);
-    margin-top: 10px;
+    margin-top: 7px;
     margin-right: 3px;
     z-index: 2;
     position: absolute;
@@ -303,8 +303,8 @@
     height: 18px;
         background-color: rgba(255, 255, 255, 0);
     position: absolute;
-    right:19px;
-    top: 17px;
+    right:21px;
+    top: 14px;
     z-index: 0;
 }
 .block_search.active .topMenu_left_bottom_btn{
@@ -357,10 +357,11 @@
 	    background: none;
 	    background-image: url(../img/backgrounds/menu.png);
         border: 0;
+        min-height: 45px;
         a{
 		    padding: 10px 15px;
         	color:#fdfeff;
-        	font-size: 20px;
+        	font-size: 18px;
     	    margin-left: 40px;
     		margin-right: 40px;
 		    padding-top: 5px;
@@ -415,13 +416,13 @@
 }
 #navbar .extra_menu{
 	float:right;
-	width: 110px;
+	width: 86px;
 	background-image: url(../img/backgrounds/menu_line.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-position: left;
-    padding-left: 35px;
-    padding-top: 19px;
+    padding-left: 29px;
+    padding-top: 14px;
     padding-bottom: 11px;
 }
 #navbar .extra_menu_menu{

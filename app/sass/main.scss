@@ -46,8 +46,8 @@ body.contrast .inv_ubctract {
 h2 {
     position: relative;
     color: #093a63;
-    font-size: 62px;
-    line-height: 26px;
+    font-size: 48px;
+    line-height: 48px;
     text-align: center;
 }
 h2:after{
@@ -91,6 +91,55 @@ button{
     overflow: hidden;
 }
 /*=================Home_Page=================*/
+.slider_banners{
+	.carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .carousel-control {
+        z-index: 2;
+    }
+    .carousel, 
+	.carousel-inner, 
+	.carousel-inner .item {
+	    height: 100%;
+	}
+	.carousel-indicators{
+	    bottom: 32px;
+	}
+	.carousel-indicators li{
+	    width: 20px;
+    	height: 20px;
+    	border: 0;
+	    background-color: rgba(255, 255, 255, 0.4);
+	    margin:0;
+	}
+	.carousel-indicators .active,
+	.carousel-indicators li:hover{
+	    background-color: #ffffff;
+	}
+}
 .banner{
 	position: relative;
 }
@@ -120,7 +169,7 @@ button{
     margin: 0 auto;
 }
 .banner_blue{
-    color: #ffffff;
+    	color: #ffffff;
     font-size: 21px;
     line-height: 9px;
     background-color: #05365f;
@@ -167,31 +216,34 @@ button{
 .img1{
 	width: 100%;
 }
-.how_low_block{
-	padding-top: 15px;
-}
 .how_low{
-	background-image: url(../img/backgrounds/bg1.png);
-    background-position: right top;
- 	background-repeat: no-repeat;
- 	padding: 30px;
-    padding-bottom: 80px;
+	/*background-image: url(../img/backgrounds/bg1.png);*/
+    padding: 15px;
+    background-color: #f6f6f6;
+    margin-top: 6px;
+    .how_low_bgColor{
+    	background-color: #dde9f1;
+    	padding-top: 30px;
+    	padding-bottom: 55px;	
+    }
  	p{
  		color:#282828;
- 		font-size: 24px;
+ 		font-size: 21px;
  		line-height: 16px;
-	    margin-top: 32px;
-    	margin-right: 20px;
+        margin-top: 27px;
+    	margin-right: 64px;
  	}
  	h3{
-	    color: #5293b9;
-	    font-size: 37px;
-	    line-height: 46px;
-	    margin-top: 46px;
+        color: #5293b9;
+	    font-size: 26px;
+	    line-height: 36px;
+	    margin-top: 38px;
 	    position: relative;
-	    padding-right: 79px;
+	    padding-right: 143px;
 	    font-family: 'EXO2.0-SEMIBOLD_0';
 	    text-align: right;
+	    max-width: 510px;
+	    float: right;
  	}
  	h3:after{
  		content: "";
@@ -199,26 +251,26 @@ button{
  		width: 66px;
  		height: 1px;
  		background-color: #5293b9;
-	    top: 23px;
-    	right: 0px;
+	    top: 17px;
+    	right: 64px;
  	}
  	button{
  		color:#093a63;
  		font-size: 21px;
- 		line-height: 24px;
+ 		line-height: 25px;
  		border: 1px solid #05365f;
 	    width: 128px;
     	height: 41px;
 	    border-radius: 30px;
-	    padding-left: 30px;
+	    padding-left: 25px;
 	    background-color: rgba(5, 54, 95, 0);
 	    background-image: url(../img/icons/banner_transparent.png);
 	 	background-repeat: no-repeat;
         background-size: 19px;
     	background-position: top 14px left 20px;
 	    transition:background-position 0.5s;
-        margin-top: 57px;
-    	margin-right: 110px;	
+	    margin-top: 49px;
+	    margin-right: 149px;	
  	}
  	button:hover{
 		background-position: top 14px left 15px;
@@ -232,8 +284,6 @@ button{
     padding-top: 42px;
 	h2{
 		font-family: 'FBADRENALIN-REGULAR';
-			font-size: 62px;
-			line-height: 20px;
 	    text-align: center;
     	margin-bottom: 78px;
     	margin-top: 16px;
@@ -242,14 +292,14 @@ button{
 	
 	h3{
 	    color: #fff;
-	    font-size: 36px;
-	    line-height: 66px;
+	    font-size: 24px;
+	    line-height: 53px;
 	    background-image: url(../img/backgrounds/device_h2.png);
 	    background-repeat: no-repeat;
 	    display: inline-block;
-	    min-width: 362px;
-	    padding-right: 10px;
-	    padding-bottom: 17px;
+	    min-width: 288px;
+	    text-align: center;
+	    padding-left: 15px;
 	    font-family: 'EXO2.0-SEMIBOLD_0';
 	}
 	img{
@@ -259,13 +309,13 @@ button{
 	}
 }
 .description{
-	color: #05365f;
-    font-size: 21px;
-    line-height: 24px;
+    color: #05365f;
+    font-size: 17px;
+    line-height: 19px;
     float: right;
-    max-width: 210px;
-    margin-top: 10px;
-    margin-right: 33px;
+    max-width: 170px;
+    margin-top: 20px;
+    margin-right: 16px;
 }
 .sub_product{
 	padding-right: 40px;
@@ -305,11 +355,11 @@ button{
 }
 .btn1{
     color: #093a63;
-    font-size: 21px;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 33px;
     border: 1px solid #05365f;
-    width: 128px;
-    height: 41px;
+    width: 104px;
+    height: 33px;
     border-radius: 30px;
     background-color: rgba(5, 54, 95, 0);
     transition: background-color 0.5s, color 1s;
@@ -322,11 +372,11 @@ button{
 
 .btn2{
     color:#fff;
-    font-size: 21px;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 33px;
     border: 1px solid #05365f;
-    width: 128px;
-    height: 41px;
+    width: 104px;
+    height: 33px;
     border-radius: 30px;
     background-color: #093a63;
     transition: background-color 0.5s, color 1s;
@@ -380,8 +430,6 @@ button{
     h2{
     	position: relative;
     	color: #093a63;
-    	font-size: 62px;
-    	line-height: 16px;
     	text-align: center;
 	    margin-bottom: 80px;
     }
