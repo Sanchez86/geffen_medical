@@ -303,7 +303,10 @@ button{
 	.for_img{
 		text-align: left;
 	    padding-left: 50px;
-	    margin-top: 73px;	
+	    margin-top: 73px;
+	    background-image: url(../img/backgrounds/circle.png);
+	    background-repeat: no-repeat;	
+        background-position: center top;
 	}
 	.product_img{
         max-width: 300px;
@@ -680,7 +683,7 @@ button{
 	    }
 	    .owl-nav{
 		    position: absolute;
-	    	top: 45%;
+	    	top: 40%;
     	    width: 100%;
 	    	.owl-prev{
 	    		display: block;
@@ -771,7 +774,7 @@ button{
 }
 
 .oblique_btn_mod2{
-   margin-top: 22px;
+   margin-top: 32px;
 }
 .category{
 	    padding-top: 39px;
@@ -884,9 +887,9 @@ button{
 .cat_icon_6{
 	background-image: url(../img/icons/cat_icon_6.png);
 }
-.oblique_btn_mod3{
-    margin-top: 39px;
-    margin-bottom: 59px;
+.oblique_btn_mod3 {
+    margin-top: 27px;
+    margin-bottom: 56px;
 }
 .partners{
 	
@@ -967,20 +970,19 @@ button{
 }
 #carousel2 .item{
 	text-align: center;
-	line-height: 185px;
+	line-height: 163px;
 }
 .next_block{
 	background-color: #fff;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 	h2{
 		color:#05365f;
-		font-size: 63px;
+		font-size: 48px;
 		line-height: 76px;
 		position: relative;
-        margin-top: 34px;
-    	margin-bottom: 95px;
+        margin-top: 50px;
+    	margin-bottom: 33px;
     	text-align: right;
-        margin-right: 400px;
         direction: rtl;
 	}
 	h2:before{
@@ -997,11 +999,11 @@ button{
 		display: none;
 	}
 	p{
-		color: #05365f;
-		font-size: 24px;
-		line-height: 33px;
-	    margin-bottom: 34px;
-        margin-right: 400px;
+	    color: #05365f;
+	    font-size: 18px;
+	    line-height: 30px;
+	    margin-bottom: 29px;
+	    padding-left: 170px;
         span{
         	font-family: 'EXO2.0-MEDIUM_0';
         }

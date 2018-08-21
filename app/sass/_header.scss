@@ -735,11 +735,19 @@ content: '';
 	display: block;
 }
 .all_product{
-	background-color: #05365f;
+	/*background-color: #05365f;*/
+	background-color: transparent;
+    box-shadow: none;
     width: 100%;
     border: 0;
     border-radius: 0;
     margin: 0;
+    padding-top: 0;
+}
+.accordion{
+	background-color: #05365f;
+    padding-top: 36px;
+    padding-bottom: 9px;
 }
 .navbar-nav__right .dropdown_product{
 	position: inherit;
@@ -769,9 +777,9 @@ content: '';
 }
 #navbar .card-body li a{
 	color: #e2ecf5;
-	font-size: 18px;
-	line-height: 24px;
-	font-family: 'FBADRENALIN-REGULAR';
+	font-size: 16px;
+	line-height: 16px;
+	font-family: 'FBADRENALIN-LIGHT';
     width: 100%;
     display: inline-block;
     margin:0;
@@ -786,16 +794,12 @@ content: '';
     display: block;
     text-align: right;
     width: 100%;
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'FBADRENALIN-REGULAR';
     background-color: #0a3f6c;
     border-bottom: 1px solid #2e75b1;
     line-height: 29px;
     padding-right: 28px;
-}
-#accordion{
-	padding-top: 41px;
-    padding-bottom: 42px;
 }
 .hidden_heder1,
 .hidden_heder2{

@@ -2,10 +2,10 @@
 .footer{
 	background-image: url(../img/backgrounds/footer_bg.jpg);
 	background-repeat: repeat;
-	padding-top: 56px;
-    padding-bottom: 46px;
+	padding-top: 38px;
+    padding-bottom: 14px;
     a{
-    	font-size: 17.6px;
+    	font-size: 16px;
     	color: #4386ac;
 	    padding-right: 15px;
     	padding-left: 15px;
@@ -36,11 +36,11 @@
 		background-repeat: no-repeat;
 		background-position: left center;
 		color: #ffffff;
-		font-size: 24px;
+		font-size: 21px;
 		font-family: 'FBADRENALIN-REGULAR';
 	    padding-top: 15px;
 	    padding-bottom: 15px;
-	    padding-left: 79px;
+	    padding-left: 90px;
 	    margin-top: 13px;
         display: table-cell;
         vertical-align: top;
@@ -50,7 +50,7 @@
 		background-image: url(../img/icons/footer_icon1_active.png);
 	}
 	.for_footer_logo{
-		text-align: left;
+		text-align: center;
 	}
 	.youtube{
 		background-image: url(../img/icons/footer_icon0.png);
@@ -68,7 +68,8 @@
 	.footer_soc{
 		display: table;
     	float: right;
-    	margin-top: 12px;
+    	margin-top: 18px;
+    	margin-right: 51px;
 	}
 }
 @media only screen and (max-width: 1199px){
@@ -103,6 +104,9 @@
 	}
 	.footer a{
 	    line-height: 21px;	
+	}
+	.footer .footer_soc{
+	    margin-right: 0;
 	}
 }
 

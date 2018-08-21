@@ -770,12 +770,21 @@
   display: block; }
 
 .all_product {
-  background-color: #05365f;
+  /*background-color: #05365f;*/
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   width: 100%;
   border: 0;
   -webkit-border-radius: 0;
           border-radius: 0;
-  margin: 0; }
+  margin: 0;
+  padding-top: 0; }
+
+.accordion {
+  background-color: #05365f;
+  padding-top: 36px;
+  padding-bottom: 9px; }
 
 .navbar-nav__right .dropdown_product {
   position: inherit; }
@@ -804,9 +813,9 @@
 
 #navbar .card-body li a {
   color: #e2ecf5;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: 'FBADRENALIN-REGULAR';
+  font-size: 16px;
+  line-height: 16px;
+  font-family: 'FBADRENALIN-LIGHT';
   width: 100%;
   display: inline-block;
   margin: 0;
@@ -821,16 +830,12 @@
   display: block;
   text-align: right;
   width: 100%;
-  font-size: 21px;
+  font-size: 18px;
   font-family: 'FBADRENALIN-REGULAR';
   background-color: #0a3f6c;
   border-bottom: 1px solid #2e75b1;
   line-height: 29px;
   padding-right: 28px; }
-
-#accordion {
-  padding-top: 41px;
-  padding-bottom: 42px; }
 
 .hidden_heder1,
 .hidden_heder2 {
@@ -1334,7 +1339,10 @@ button {
   .device .for_img {
     text-align: left;
     padding-left: 50px;
-    margin-top: 73px; }
+    margin-top: 73px;
+    background-image: url(../img/backgrounds/circle.png);
+    background-repeat: no-repeat;
+    background-position: center top; }
   .device .product_img {
     max-width: 300px;
     margin-left: 20px; }
@@ -1684,7 +1692,7 @@ button {
     max-height: 393px; }
   #wrap .slider .owl-nav {
     position: absolute;
-    top: 45%;
+    top: 40%;
     width: 100%; }
     #wrap .slider .owl-nav .owl-prev {
       display: block;
@@ -1770,7 +1778,7 @@ button {
     background-position: left 16px center; }
 
 .oblique_btn_mod2 {
-  margin-top: 22px; }
+  margin-top: 32px; }
 
 .category {
   padding-top: 39px; }
@@ -1875,8 +1883,8 @@ button {
   background-image: url(../img/icons/cat_icon_6.png); }
 
 .oblique_btn_mod3 {
-  margin-top: 39px;
-  margin-bottom: 59px; }
+  margin-top: 27px;
+  margin-bottom: 56px; }
 
 .partners h2 {
   background-color: #05365f;
@@ -1949,20 +1957,19 @@ button {
 
 #carousel2 .item {
   text-align: center;
-  line-height: 185px; }
+  line-height: 163px; }
 
 .next_block {
   background-color: #fff;
-  padding-bottom: 50px; }
+  padding-bottom: 45px; }
   .next_block h2 {
     color: #05365f;
-    font-size: 63px;
+    font-size: 48px;
     line-height: 76px;
     position: relative;
-    margin-top: 34px;
-    margin-bottom: 95px;
+    margin-top: 50px;
+    margin-bottom: 33px;
     text-align: right;
-    margin-right: 400px;
     direction: rtl; }
   .next_block h2:before {
     text-align: right;
@@ -1977,10 +1984,10 @@ button {
     display: none; }
   .next_block p {
     color: #05365f;
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 34px;
-    margin-right: 400px; }
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 29px;
+    padding-left: 170px; }
     .next_block p span {
       font-family: 'EXO2.0-MEDIUM_0'; }
 
@@ -2470,10 +2477,10 @@ button {
 .footer {
   background-image: url(../img/backgrounds/footer_bg.jpg);
   background-repeat: repeat;
-  padding-top: 56px;
-  padding-bottom: 46px; }
+  padding-top: 38px;
+  padding-bottom: 14px; }
   .footer a {
-    font-size: 17.6px;
+    font-size: 16px;
     color: #4386ac;
     padding-right: 15px;
     padding-left: 15px;
@@ -2497,11 +2504,11 @@ button {
     background-repeat: no-repeat;
     background-position: left center;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 21px;
     font-family: 'FBADRENALIN-REGULAR';
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 79px;
+    padding-left: 90px;
     margin-top: 13px;
     display: table-cell;
     vertical-align: top;
@@ -2511,7 +2518,7 @@ button {
   .footer .iso:hover {
     background-image: url(../img/icons/footer_icon1_active.png); }
   .footer .for_footer_logo {
-    text-align: left; }
+    text-align: center; }
   .footer .youtube {
     background-image: url(../img/icons/footer_icon0.png);
     width: 68px;
@@ -2527,7 +2534,8 @@ button {
   .footer .footer_soc {
     display: table;
     float: right;
-    margin-top: 12px; }
+    margin-top: 18px;
+    margin-right: 51px; }
 
 @media only screen and (max-width: 1199px) {
   .footer a {
@@ -2553,7 +2561,9 @@ button {
   .footer li:after {
     display: none; }
   .footer a {
-    line-height: 21px; } }
+    line-height: 21px; }
+  .footer .footer_soc {
+    margin-right: 0; } }
 
 /*end footer*/
 /*end min-width: 1400px*/
@@ -2617,11 +2627,15 @@ button {
 
 /*end max-width: 1700px*/
 @media only screen and (max-width: 1600px) {
+  .video_posts p {
+    -webkit-background-size: 30px 30px;
+            background-size: 30px;
+    background-position: top 44px right 0px;
+    padding-right: 50px; }
+  .device .container {
+    width: 100%; }
   .how_low h3 {
-    font-size: 28px;
-    padding-right: 40px; }
-  .how_low h3:after {
-    width: 30px; }
+    font-size: 28px; }
   .banner_omnipod {
     top: 52px; }
   .banner__h1 {
@@ -2651,9 +2665,8 @@ button {
     margin-top: 5px;
     line-height: 30px; }
   .video_posts p {
-    padding-left: 20px; }
-  .video_posts {
-    margin-right: 40px; }
+    padding-left: 20px;
+    padding-top: 30px; }
   .videos .video__name:after {
     display: none; }
   .videos .video__name {
@@ -2665,7 +2678,9 @@ button {
   .category_desc {
     font-size: 22px;
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+  .category_desc {
+    height: 84px; } }
 
 /*end max-width: 1500px*/
 @media only screen and (max-width: 1400px) {
@@ -2682,13 +2697,8 @@ button {
   .banner_transparent {
     top: 381px; }
   .category_menu li a {
-    font-size: 22px;
-    -webkit-background-size: 35px 35px;
-            background-size: 35px;
-    padding-right: 74px; }
-  .category_menu {
-    max-width: 100%;
-    padding-right: 73px; }
+    font-size: 20px;
+    padding-right: 100px; }
   .category_menu li {
     -webkit-background-size: contain;
             background-size: contain; }
@@ -2712,6 +2722,13 @@ button {
 
 /*end max-width: 1400px*/
 @media only screen and (max-width: 1300px) {
+  .sub_product {
+    padding-right: 0;
+    min-width: 100%; }
+  .device .product_img {
+    margin-left: 0; }
+  .device .for_img {
+    padding-left: 0; }
   .videos .video__wrap {
     padding: 20px; }
   .videos .video__name {
@@ -2755,6 +2772,27 @@ button {
 
 /*end max-width: 1300px*/
 @media only screen and (max-width: 1199px) {
+  .category_menu li a {
+    font-size: 18px;
+    padding-right: 90px;
+    background-position: top 17px right 28px; }
+  .video_list {
+    background-image: url(../img/backgrounds/video_cover.png);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .video_posts {
+    margin-left: 0; }
+  .how_low h3 {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .banner__h1 {
+    top: 140px;
+    font-size: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 40px; }
   .next_block h2 {
     background-image: none; }
   .next_block p {
@@ -2783,13 +2821,6 @@ button {
     margin-right: 0; }
   .device h2 {
     display: none; }
-  .device img {
-    margin-top: 0;
-    position: absolute;
-    left: 0;
-    width: 55vw;
-    max-width: 240px;
-    top: 146px; }
   .device h3 {
     font-size: 28px;
     padding-right: 21px;
@@ -2822,6 +2853,10 @@ button {
 
 /*end max-width: 1199px*/
 @media only screen and (max-width: 991px) {
+  .next_block p {
+    padding-left: 0; }
+  .video_posts p {
+    padding-right: 89px; }
   .sub_video_list {
     padding-right: 15px; }
   .category_block {
@@ -2874,7 +2909,8 @@ button {
     -webkit-background-size: cover;
             background-size: cover;
     background-repeat: no-repeat;
-    padding-right: 73px;
+    max-width: 100%;
+    padding-right: 0;
     position: relative;
     z-index: 1; }
   .pagination_btn {
@@ -2960,8 +2996,6 @@ button {
 
 /*end max-width: 650px*/
 @media only screen and (max-width: 550px) {
-  .how_low h3 {
-    font-size: 22px; }
   .receips_1_prev {
     background-image: url(../img/icons/receips_1_prev.png); }
   .receips_1_next {
@@ -2982,15 +3016,20 @@ button {
     margin-bottom: 20px; }
   .how_low p {
     font-size: 19px;
-    margin-top: 26px; }
+    margin-top: 26px;
+    margin-right: 34px; }
+  .how_low_bgColor {
+    padding-left: 10px;
+    padding-right: 10px; }
   .how_low h3 {
     font-size: 25px;
     text-align: right;
-    padding-right: 54px;
+    padding-right: 64px;
     margin-top: 17px; }
   .how_low h3:after {
     display: block;
-    width: 43px; }
+    width: 43px;
+    right: 5px; }
   .how_low button {
     margin-right: 55px;
     margin-top: 24px; }
@@ -3087,19 +3126,27 @@ button {
     right: auto; }
   .banner__h1 {
     font-size: 27px;
-    top: 288px; }
+    top: 268px; }
   .banner_blue {
-    top: 382px;
+    top: 362px;
     width: 196px;
     height: 54px; }
   .banner_transparent {
-    top: 446px;
+    top: 426px;
     width: 196px;
     height: 54px; }
   .device {
     padding-bottom: 0; }
   .videos {
-    padding-top: 0; } }
+    padding-top: 0; }
+  .device .product_img {
+    max-width: 100%; }
+  .sub_product {
+    padding-right: 10px; }
+  .sub_product .price {
+    font-size: 38px; }
+  .device .for_img {
+    padding-left: 10px; } }
 
 /*end max-width: 414px*/
 @media only screen and (max-width: 375px) {
