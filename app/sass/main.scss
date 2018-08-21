@@ -299,6 +299,7 @@ button{
 	    text-align: center;
 	    padding-left: 15px;
 	    font-family: 'EXO2.0-SEMIBOLD_0';
+	    padding-bottom: 10px;
 	}
 	.for_img{
 		text-align: left;
@@ -322,7 +323,7 @@ button{
     line-height: 19px;
     float: right;
     max-width: 170px;
-    margin-top: 20px;
+    margin-top: 11px;
     margin-right: 16px;
 }
 .product {
@@ -441,11 +442,9 @@ button{
     	position: relative;
     	color: #093a63;
     	text-align: center;
-	    margin-bottom: 4px;
+	    margin-bottom: 42px;
     }
     .video__wrap{
-    	background-image: url(../img/backgrounds/video_bg.png);
-    	padding: 40px;
 	    margin-bottom: 35px;	
     }
     .video__poster{
@@ -456,7 +455,6 @@ button{
     	display: none;
     }
     .video__poster {
-	    height: 300px;
     	position: relative;
     }
     .video__poster img{
@@ -603,10 +601,11 @@ button{
 	padding-right: 0;
 }
 .video_list{
-	background-image: url(../img/backgrounds/video_list.png);
-	background-repeat: no-repeat;
-	max-width: 538px;
+    background-image: url(../img/backgrounds/video_list.png);
+    background-repeat: no-repeat;
+    max-width: 538px;
     float: right;
+    background-position: left top -38px;
 }
 .video_posts{
     margin-right: 17px;

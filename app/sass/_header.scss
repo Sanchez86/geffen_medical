@@ -53,6 +53,8 @@
     height: 53px;
     background-position: center !important;
     transition:opacity 1s !important;
+    border: 1px solid #05365f;
+    border-left: 0;
 }
 .topMenu_left.active .tml_nav_open{
 	opacity: 0;
