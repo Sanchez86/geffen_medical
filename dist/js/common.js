@@ -368,6 +368,7 @@ new WOW().init();
 
 
 /*video player*/
+if($(document).innerWidth()>1024){}
     $('.video__poster').on('mouseenter', function(){
         $(this).addClass('active');
     });
