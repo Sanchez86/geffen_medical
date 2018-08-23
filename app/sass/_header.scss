@@ -310,7 +310,7 @@
     z-index: 0;
 }
 .block_search.active .topMenu_left_bottom_btn{
-	z-index: 30000;
+	z-index: 100;
 }
 .inv_icon{
 	background-repeat: no-repeat;
@@ -570,6 +570,7 @@
 }
 .block_search.active{
 	width: 210px;
+	background: none;
 }
 .signIn{
 	display: inline-block;
@@ -602,7 +603,7 @@
 	background-image: url(../img/icons/arrow_down_ic.png);
     margin-right: 6px;
     vertical-align: top;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 .drop{
 	border: 1px solid #bfcbd6;
@@ -947,6 +948,10 @@ content: '';
 	    position: absolute;
 	    top: 0;
 	    right: 40px;
+        margin-top: 38px;
+	}
+	.signIn_block{
+	    margin-top: 7px;
 	}
 
 	.topMenu_right_text a{

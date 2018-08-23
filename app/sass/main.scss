@@ -91,6 +91,7 @@ button{
     overflow: hidden;
 }
 /*=================Home_Page=================*/
+
 .slider_banners{
 	.carousel-inner {
         .item {
@@ -215,8 +216,14 @@ button{
 }
 .img1{
 	width: 100%;
+
+}
+.row_flex{
+	display: flex;
+    align-items: center;
 }
 .how_low{
+	
 	/*background-image: url(../img/backgrounds/bg1.png);*/
     padding: 15px;
     background-color: #f6f6f6;
@@ -308,6 +315,7 @@ button{
 	    background-image: url(../img/backgrounds/circle.png);
 	    background-repeat: no-repeat;	
         background-position: center top;
+        background-size: contain;
 	}
 	.product_img{
         max-width: 300px;
@@ -368,7 +376,7 @@ button{
 .btn1{
     color: #093a63;
     font-size: 17px;
-    line-height: 33px;
+    line-height: 31px;
     border: 1px solid #05365f;
     width: 104px;
     height: 33px;
@@ -385,7 +393,7 @@ button{
 .btn2{
     color:#fff;
     font-size: 17px;
-    line-height: 33px;
+    line-height: 31px;
     border: 1px solid #05365f;
     width: 104px;
     height: 33px;
@@ -610,7 +618,7 @@ button{
 .video_posts{
     margin-right: 17px;
     margin-left: 33px;
-    margin-top: 38px;
+    margin-bottom: 20px;
 	li{
 	    min-height: 180px;
     	position: relative;
@@ -682,7 +690,7 @@ button{
 	    }
 	    .owl-nav{
 		    position: absolute;
-	    	top: 40%;
+	    	top: 41%;
     	    width: 100%;
 	    	.owl-prev{
 	    		display: block;
@@ -729,7 +737,7 @@ button{
 }
 .slide_content{
 	background-color:#05365f;
-	height: 204px;
+	height: 212px;
 	text-align: left;
 	position: relative;
 	top:-4px;
@@ -765,10 +773,10 @@ button{
 	    border-radius: 50px;
 	    height: 36px;
     	width: 127px;
-    	transition:background 0.5s;
+    	transition:background 0.3s;
 	}
 	button:hover{
-		background-position: left 16px center;
+		background-position: left 10px center;
 	}
 }
 
@@ -810,8 +818,8 @@ button{
 	font-size: 27px;
 	line-height: 33px;
     text-align: center;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 24px;
     background-position: center;
     background-repeat: no-repeat;
@@ -826,7 +834,7 @@ button{
     background-image: url(../img/backgrounds/cat_bg.png);
     padding-left: 20px;
     padding-top: 33px;
-    position: absolute;
+    position: relative;
     top: -20px;
     right: 0;
     background-position: top -10px left;
@@ -969,7 +977,8 @@ button{
 }
 #carousel2 .item{
 	text-align: center;
-	line-height: 163px;
+	line-height: 144px;
+    padding-top: 18px;
 }
 .next_block{
 	background-color: #fff;

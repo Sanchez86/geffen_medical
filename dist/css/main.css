@@ -1359,7 +1359,9 @@ button {
     margin-top: 73px;
     background-image: url(../img/backgrounds/circle.png);
     background-repeat: no-repeat;
-    background-position: center top; }
+    background-position: center top;
+    -webkit-background-size: contain;
+            background-size: contain; }
   .device .product_img {
     max-width: 300px;
     margin-left: 20px; }
@@ -3126,6 +3128,8 @@ button {
 
 /*end max-width: 550px*/
 @media only screen and (max-width: 414px) {
+  .category_menu {
+    float: none; }
   .slider > .container {
     margin-left: 0px;
     margin-right: 0px; }
