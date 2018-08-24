@@ -2491,6 +2491,31 @@ button {
   bottom: -19px; }
 
 /*=================End articles=================*/
+/*=================omnipod=================*/
+.breadCrumbs {
+  background-image: url(../img/backgrounds/breadCrumbsBg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+  .breadCrumbs li {
+    display: inline-block;
+    float: right; }
+    .breadCrumbs li a {
+      color: #737373;
+      font-size: 14px;
+      line-height: 77px;
+      background-image: url(../img/icons/breadCrumbsIcon.png);
+      background-repeat: no-repeat;
+      background-position: right top 1px;
+      padding-right: 17px;
+      padding-left: 9px; }
+      .breadCrumbs li a:hover {
+        color: #4386ad; }
+  .breadCrumbs li:first-child a {
+    background: none; }
+  .breadCrumbs li:last-child a {
+    color: #4386ad; }
+
+/*=================End omnipod=================*/
 /*footer*/
 .footer {
   background-image: url(../img/backgrounds/footer_bg.jpg);
