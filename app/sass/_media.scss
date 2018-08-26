@@ -12,6 +12,9 @@
     .device .container{
 		width: 1570px;
     }
+    .omnipod_block .container{
+		width: 1238px;
+    }
 }/*end min-width: 1500px*/	
 
 @media only screen and (max-width: 1850px){
@@ -376,13 +379,6 @@
 
 	.device h2{
 		display: none;	
-	}
-	.device h3 {
-	    font-size: 28px;
-	    padding-right: 21px;
-	    padding-bottom: 0;
-	    min-width: 286px;
-	    line-height: 52px;
 	}
 	.product{
 		padding: 0;

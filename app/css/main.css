@@ -1341,18 +1341,6 @@ button {
     text-align: center;
     margin-bottom: 29px;
     margin-top: 10px; }
-  .device h3 {
-    color: #fff;
-    font-size: 24px;
-    line-height: 53px;
-    background-image: url(../img/backgrounds/device_h2.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    min-width: 288px;
-    text-align: center;
-    padding-left: 15px;
-    font-family: 'EXO2.0-SEMIBOLD_0';
-    padding-bottom: 10px; }
   .device .for_img {
     text-align: left;
     padding-left: 50px;
@@ -1367,6 +1355,19 @@ button {
     margin-left: 20px; }
   .device .product_logo {
     margin-top: 20px; }
+
+.device_h3 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 53px;
+  background-image: url(../img/backgrounds/device_h2.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  min-width: 288px;
+  text-align: center;
+  padding-left: 15px;
+  font-family: 'EXO2.0-SEMIBOLD_0';
+  padding-bottom: 10px; }
 
 .description {
   color: #05365f;
@@ -2515,6 +2516,144 @@ button {
   .breadCrumbs li:last-child a {
     color: #4386ad; }
 
+.omnipod_block {
+  padding-top: 30px; }
+  .omnipod_block .device_h3 {
+    font-family: 'FBADRENALIN-REGULAR';
+    min-width: 334px;
+    line-height: 66px;
+    -webkit-background-size: contain;
+            background-size: contain;
+    font-size: 30px; }
+  .omnipod_block hr {
+    border-color: #cfcfcf; }
+
+.omnipod_description {
+  max-width: 480px;
+  float: right; }
+
+.omnipod_logo {
+  margin-top: 11px; }
+
+.omnipod_p {
+  color: #093a63;
+  font-family: 'FBADRENALIN-REGULAR';
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 83px;
+  margin-bottom: 41px; }
+  .omnipod_p span {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'EXO2.0-REGULAR_0'; }
+
+.omnipod_p_blue {
+  color: #4386ad;
+  font-family: 'FBADRENALIN-REGULAR';
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 31px;
+  margin-bottom: 31px;
+  padding-left: 86px; }
+
+.omnipod_like,
+.omnipod_repost {
+  float: right;
+  display: block;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #4386ad;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  margin-left: 10px;
+  -webkit-transition: border-color 0.5s;
+  -o-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.omnipod_repost {
+  background-image: url(../img/icons/omnipod_repost.png); }
+
+.omnipod_like {
+  background-image: url(../img/icons/omnipod_like.png); }
+
+.omnipod_like:hover,
+.omnipod_repost:hover {
+  border-color: transparent; }
+
+.omnipod_slider {
+  padding-bottom: 150px; }
+  .omnipod_slider .carousel-indicators {
+    width: 100%;
+    bottom: -150px;
+    left: auto;
+    margin: 0;
+    right: 0;
+    text-align: right; }
+    .omnipod_slider .carousel-indicators li {
+      display: inline-block;
+      width: 140px;
+      height: 134px;
+      -webkit-border-radius: 2px;
+              border-radius: 2px;
+      border: 1px solid #ebebeb;
+      margin: 0; }
+      .omnipod_slider .carousel-indicators li img {
+        width: 100%;
+        height: 100%; }
+    .omnipod_slider .carousel-indicators .omnipod_video {
+      position: relative;
+      background-color: #000; }
+    .omnipod_slider .carousel-indicators .omnipod_video:after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background-image: url(../img/icons/omnipod_video_play.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+              background-size: contain;
+      margin: 0 auto;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+    .omnipod_slider .carousel-indicators .omnipod_video:hover:after {
+      -webkit-transform: rotateZ(122deg);
+          -ms-transform: rotate(122deg);
+              transform: rotateZ(122deg); }
+    .omnipod_slider .carousel-indicators .omnipod_video img {
+      opacity: .5; }
+  .omnipod_slider .carousel-inner {
+    height: 634px;
+    border: 1px solid #ebebeb; }
+    .omnipod_slider .carousel-inner img {
+      margin: 0 auto; }
+  .omnipod_slider .carousel-control {
+    background-image: url(../img/backgrounds/carousel-control.png);
+    background-color: transparent;
+    height: 134px;
+    width: 48px;
+    opacity: 1;
+    top: auto;
+    bottom: -147px;
+    z-index: 10; }
+    .omnipod_slider .carousel-control span {
+      display: block;
+      background-image: url(../img/icons/omnipod_slider_left.png);
+      width: 9px;
+      height: 17px;
+      position: absolute;
+      top: -webkit-calc(50% - 8.5px);
+      top: calc(50% - 8.5px);
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+
 /*=================End omnipod=================*/
 /*footer*/
 .footer {
@@ -2617,7 +2756,9 @@ button {
   .footer .container {
     width: 1330px; }
   .device .container {
-    width: 1570px; } }
+    width: 1570px; }
+  .omnipod_block .container {
+    width: 1238px; } }
 
 /*end min-width: 1500px*/
 @media only screen and (max-width: 1850px) {
@@ -2887,12 +3028,6 @@ button {
     margin-right: 0; }
   .device h2 {
     display: none; }
-  .device h3 {
-    font-size: 28px;
-    padding-right: 21px;
-    padding-bottom: 0;
-    min-width: 286px;
-    line-height: 52px; }
   .product {
     padding: 0;
     border: 0;
