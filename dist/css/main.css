@@ -2654,6 +2654,92 @@ button {
       right: 0;
       margin: 0 auto; }
 
+.tabs_block {
+  background-color: #f6f6f6;
+  background-image: url(../img/backgrounds/tabs_block.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  padding-bottom: 56px; }
+
+.for_nav_tabs {
+  height: 83px;
+  background-image: url(../img/backgrounds/for_nav_tabs.png); }
+  .for_nav_tabs .nav-tabs {
+    border: 1px; }
+  .for_nav_tabs .nav a {
+    color: #ffffff;
+    font-size: 21px;
+    font-family: 'FBADRENALIN-REGULAR';
+    padding: 0;
+    border: 0 !important;
+    margin: 0;
+    line-height: 78px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 74px;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  .for_nav_tabs .nav li.active > a,
+  .for_nav_tabs .nav li.active > a:focus,
+  .for_nav_tabs .nav li.active > a:hover,
+  .for_nav_tabs .nav li > a:hover {
+    background-color: #093a63;
+    color: #ffffff; }
+
+#accordion {
+  position: relative;
+  margin-top: 25px; }
+
+#accordion h3 {
+  cursor: pointer;
+  color: #4386ad;
+  font-size: 21px;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-family: 'FBADRENALIN-REGULAR';
+  background-image: url(../img/icons/accordion_plus.png);
+  background-repeat: no-repeat;
+  background-position: left 21px center;
+  padding-left: 40px;
+  padding-top: 18px;
+  padding-bottom: 13px;
+  border: 1px solid #4386ad;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding-right: 30px;
+  margin-top: 7px;
+  margin-bottom: 22px; }
+
+#accordion h3.active {
+  background-image: url(../img/icons/accordion_minus.png); }
+
+#accordion div div {
+  height: 0;
+  overflow: hidden; }
+
+#accordion div div.active {
+  height: auto; }
+
+#accordion p {
+  margin-left: 56px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  line-height: 24px;
+  font-family: 'FBADRENALIN-REGULAR';
+  font-size: 16px;
+  color: #05365f; }
+
+#accordion p span {
+  font-family: 'EXO2.0-REGULAR_0';
+  text-transform: uppercase; }
+
+.for_tabs {
+  margin-top: 5px; }
+
 /*=================End omnipod=================*/
 /*footer*/
 .footer {

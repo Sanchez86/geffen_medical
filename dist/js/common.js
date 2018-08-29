@@ -1,7 +1,54 @@
 $(document).ready(function () {
-if($('.omnipod_slider .video1').hasClass('active')){
-    console.log(1);
-}
+
+
+        $('#accordion h3').on('click', function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).siblings('div').removeClass('active');
+            } else {
+                $(this).addClass('active');
+                $(this).siblings('div').addClass('active');
+            }
+        });
+
+        $('.faq_my_account h3').on('click', function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).siblings('div').removeClass('active');
+            } else {
+                $(this).addClass('active');
+                $(this).siblings('div').addClass('active');
+            }
+        });
+    
+
+
+function middle(){
+
+    var omnipodSlide = $('.omnipod_slider .slide').height();
+
+    $('.omnipod_slider .item').each(function(i,element){
+        var omnipodItemHeight = $(element).height(); //height all elements
+
+        var omnipodResult = omnipodSlide-omnipodItemHeight; //result all alements
+        var omnipodResult = omnipodResult/2; //result all alements
+        $(element).css('top',omnipodResult + 'px');
+    });
+};
+setTimeout(middle, 50);
+$('.carouselOmni').carousel({
+    interval:3000
+});
+
+
+$('video').on("play", function(){
+    console.log("Playing");
+    $(".carouselOmni").carousel('pause');
+});
+$('video').on("pause", function(){
+    console.log("Stopped");
+    $(".carouselOmni").carousel('cycle');
+});
 
 
     /*video player*/
@@ -313,24 +360,6 @@ if($(document).innerWidth()<769){
 
        $('.navbar-nav__right>li').css('visibility', 'visible');
 }
-
-
-
-
-        var omnipodSlide = $('.omnipod_slider .slide').height();
-
-        $('.omnipod_slider .item').each(function(i,element){
-            var omnipodItemHeight = $(element).height(); //height all elements
-
-            var omnipodResult = omnipodSlide-omnipodItemHeight; //result all alements
-            omnipodResult = omnipodResult/2;
-
-            $('.omnipod_slider .item').css('top',omnipodResult + 'px');
-
-            console.log(omnipodResult);
-        })
-
-
 
 
 $( window ).resize(function() {
