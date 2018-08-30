@@ -295,6 +295,7 @@ button{
     	margin-bottom: 29px;
     	margin-top: 10px;
 	}
+}
 	.for_img{
 		text-align: left;
 	    padding-left: 50px;
@@ -311,7 +312,6 @@ button{
 	.product_logo{
 	    margin-top: 20px;
 	}
-}
 .device_h3{
     color: #fff;
     font-size: 24px;
@@ -1671,6 +1671,7 @@ button{
     background-position: bottom;
     background-repeat: repeat-x;
     padding-bottom: 56px;
+    margin-top: 65px;
 }
 .for_nav_tabs{
 	height: 83px;
@@ -1941,6 +1942,87 @@ input:-ms-input-placeholder      {color:$omni_form;}
 .omni_form_cont_inner{
     padding-right: 61px;
     padding-left: 61px;
+}
+.product_slider{
+    padding-bottom: 25px;
+	h2{
+	    margin-bottom: 38px;
+	    margin-top: 44px;
+	}
+	h2:before{
+		background-position: right;
+	    right: -23px;
+	}
+	h2:after{
+		background-position: left;
+	    left: -23px;
+	}
+	
+	h3{
+		text-transform: uppercase;
+		position: relative;
+	}
+	.sub_product .price {
+	    margin-top: 21px;
+	}
+	.sub_product .old_price{
+		margin-top: 0;
+	}
+	.sub_product .for_product_btn {
+	    margin-top: 0;
+	}
+	.for_img{
+		margin-top: 28px;
+	    padding-left: 0px;
+	}
+	.product_img{
+		margin-left: 13px;
+	}
+	.device_h3:after{
+		content: "";
+		position: absolute;
+	    top: 9px;
+	    right: -14px;
+	    width: 1px;
+	    height: 363px;
+		background-color: #dddddd;
+	}
+	.col-lg-4:last-child .device_h3:after{
+		display: none;
+	}
+	.description{
+		min-height: 57px;
+	}
+	.carousel-control{
+		width: auto;
+		opacity: 1;
+		top: 169px;
+	}
+	.carousel-control.right{
+		right: -12px;
+	}
+	.carousel-control.left{
+		left: -12px;
+	}
+	.right span,
+	.left span{
+		display: inline-block;
+		width: 13px;
+		height: 25px;
+		position: absolute;
+	}
+	.right span{
+		background-image: url(../img/icons/product_slider_right.png);
+	}
+	.left span{
+		background-image: url(../img/icons/product_slider_left.png);
+	}
+	.right span:hover{
+		background-image: url(../img/icons/product_slider_right_active.png);
+	}
+	.left span:hover{
+		background-image: url(../img/icons/product_slider_left_active.png);
+	}
 }
 /*=================End omnipod=================*/
 

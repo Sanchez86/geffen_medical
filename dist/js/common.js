@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+/*omnipod*/
 
         $('#accordion h3').on('click', function () {
             if ($(this).hasClass('active')) {
@@ -50,6 +50,12 @@ $('video').on("pause", function(){
     $(".carouselOmni").carousel('cycle');
 });
 
+/**/
+
+$('.carousel_omni').carousel({
+    interval:4000
+});
+/*end omnipod*/
 
     /*video player*/
 if($(document).innerWidth()>1024){
