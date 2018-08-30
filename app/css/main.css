@@ -402,7 +402,9 @@
   background: none;
   background-image: url(../img/backgrounds/menu.png);
   border: 0;
-  min-height: 45px; }
+  min-height: 45px;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
   #navbar a {
     padding: 10px 15px;
     color: #fdfeff;
@@ -2976,6 +2978,44 @@ button {
     background-image: url(../img/icons/product_slider_right_active.png); }
   .product_slider .left span:hover {
     background-image: url(../img/icons/product_slider_left_active.png); }
+
+.tab_5 .tab_5_next__p {
+  margin-bottom: 23px; }
+
+.tab_5 h4 {
+  color: #05365f;
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom: 27px;
+  margin-top: 42px; }
+
+.tab_5 p {
+  color: #05365f;
+  line-height: 24px;
+  font-size: 16px;
+  padding-left: 160px; }
+  .tab_5 p span {
+    font-family: 'EXO2.0-REGULAR_0'; }
+
+.tab_5_img1,
+.tab_5_img2 {
+  min-width: 171px;
+  text-align: center; }
+
+.tab_5_img1 {
+  float: right;
+  margin-left: 30px;
+  position: relative;
+  top: -25px; }
+
+.tab_5_img2 {
+  float: right;
+  margin-left: 30px;
+  position: relative;
+  top: -48px; }
+
+.tab_5_next {
+  margin-top: 120px; }
 
 /*=================End omnipod=================*/
 /*footer*/

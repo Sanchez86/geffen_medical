@@ -2024,6 +2024,47 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		background-image: url(../img/icons/product_slider_left_active.png);
 	}
 }
+.tab_5{
+	.tab_5_next__p{
+		margin-bottom: 23px;
+	}
+	h4{
+		color:$omni_form;
+		font-size: 21px;
+		line-height: 28px;
+	    margin-bottom: 27px;
+	    margin-top: 42px;
+	}
+	p{
+		color:$omni_form;
+		line-height: 24px;
+	    font-size: 16px;
+	    padding-left: 160px;
+		span{
+			font-family: 'EXO2.0-REGULAR_0';
+		}
+	}
+}
+.tab_5_img1,
+.tab_5_img2{
+	min-width: 171px;
+	text-align: center;
+}
+.tab_5_img1{
+	float: right;
+    margin-left: 30px;
+    position: relative;
+    top: -25px;
+}
+.tab_5_img2{
+	float: right;
+    margin-left: 30px;
+    position: relative;
+    top: -48px;
+}
+.tab_5_next{
+	margin-top: 120px;
+}
 /*=================End omnipod=================*/
 
 
