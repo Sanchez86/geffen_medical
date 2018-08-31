@@ -1,25 +1,37 @@
 $(document).ready(function () {
 /*omnipod*/
+/*
+$('.video-player').on('mouseenter', function(){
+    $(this).addClass('active');
+});
 
-        $('#accordion h3').on('click', function () {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).siblings('div').removeClass('active');
-            } else {
-                $(this).addClass('active');
-                $(this).siblings('div').addClass('active');
-            }
-        });
+console.log(1)
+*/
 
-        $('.faq_my_account h3').on('click', function () {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).siblings('div').removeClass('active');
-            } else {
-                $(this).addClass('active');
-                $(this).siblings('div').addClass('active');
-            }
-        });
+$('.articles_share').on('click', function(){
+    $(this).toggleClass('active');
+});
+
+
+$('#accordion h3').on('click', function () {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).siblings('div').removeClass('active');
+    } else {
+        $(this).addClass('active');
+        $(this).siblings('div').addClass('active');
+    }
+});
+
+$('.faq_my_account h3').on('click', function () {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).siblings('div').removeClass('active');
+    } else {
+        $(this).addClass('active');
+        $(this).siblings('div').addClass('active');
+    }
+});
     
 
 
