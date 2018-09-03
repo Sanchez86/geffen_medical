@@ -1213,6 +1213,62 @@ button{
     margin-right: 5px;
     letter-spacing: 3px;
 }
+/*receips_1_inner*/
+.receips_1_inner{
+	.receips_1_block{
+		max-width: 100%;
+	    margin-bottom: 0px;
+	}
+	strong{
+		font-size: 30px;
+		line-height: 24px;
+		color:#05365f;
+	    margin-top: 21px;
+    	display: inline-block;
+	}
+}
+.receips_1_block_relative{
+	position: relative;
+}
+.receips_1_inner_desc{
+	background-color: #f5f5f5;
+	padding-top: 43px;
+	padding-right: 65px;
+	padding-bottom: 50px;
+	padding-left: 230px;
+}
+.receips_1_inner_h3{
+	font-size: 36px;
+	line-height: 16px;
+	color:#05365f;
+    margin-bottom: 36px;
+}
+.receips_1_inner_p{
+	font-size: 18px;
+	line-height: 24px;
+	color:#05365f;
+	span{
+		font-weight: bold;
+	}
+}
+.receips_lists_left,
+.receips_lists_right{
+	float: left;
+	width: 50%;
+	background-color: #e6eef7;
+}
+.receips_lists_right{
+
+}
+
+.receips_1_inner_product{
+	background-color: #dde9f1;
+		.category_desc{
+			font-size: 21px;
+			line-height: 24px;
+			color:#05365f;
+		}
+}
 /*=================End receips_1=================*/
 /*=================articles=================*/
 
