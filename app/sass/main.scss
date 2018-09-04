@@ -1215,6 +1215,7 @@ button{
 }
 /*receips_1_inner*/
 .receips_1_inner{
+	padding-bottom: 0;
 	.receips_1_block{
 		max-width: 100%;
 	    margin-bottom: 0px;
@@ -1251,23 +1252,187 @@ button{
 		font-weight: bold;
 	}
 }
+.receips_lists{
+	background-color: #e6eef7;
+	padding-top: 35px;
+    padding-bottom: 13px;
+}
 .receips_lists_left,
 .receips_lists_right{
 	float: left;
 	width: 50%;
-	background-color: #e6eef7;
+	h4{
+		background-position: right center;
+		padding-right: 61px;
+		color: #05365f;
+		font-size: 30px;
+		line-height: 36px;
+	    margin-bottom: 20px;
+	}
+}
+.receips_lists_left {
+      ol {
+        counter-reset:myCounter;
+      }
+
+      li {
+        position: relative;
+        color: #05365f;
+		font-size: 14px;
+		line-height: 20px;
+	    margin-bottom: 21px;
+	    padding-right: 61px;
+	    padding-left: 90px;
+	    font-family: 'FBADRENALIN-REGULAR';
+      }
+
+      li:before {
+        content:counter(myCounter);
+        counter-increment:myCounter;
+        position:absolute;
+        top:0;
+        right:0;
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        padding:0px;
+        color:#05365f;
+        background:transparent;
+        font-size: 20px;
+        text-align:center;
+        border-radius: 50%;
+        border: 1px solid #05365f;
+        z-index: 1;
+      }
+
 }
 .receips_lists_right{
+	padding-right: 100px;
+      li {
+        position: relative;
+        color: #5192b8;
+		font-size: 18px;
+		line-height: 20px;
+	    margin-bottom: 17px;
+	    padding-right: 30px;
+	    padding-left: 80px;
+	    font-family: 'FBADRENALIN-REGULAR';
+      }
 
+      li:before {
+        content:"";
+        position:absolute;
+        top:0;
+        right:2px;
+        width: 8px;
+        height: 8px;
+        line-height: 33px;
+        padding:0px;
+        color:#05365f;
+        background:#5192b8;
+        font-size: 20px;
+        text-align:center;
+        border-radius: 50%;
+        z-index: 1;
+      }
 }
-
 .receips_1_inner_product{
 	background-color: #dde9f1;
+    padding-top: 42px;
+    padding-bottom: 54px;
 		.category_desc{
 			font-size: 21px;
 			line-height: 24px;
 			color:#05365f;
+			padding-top: 17px;
+		    height: 80px;
 		}
+}
+.receips_lists_left_h4{
+	background-image: url(../img/icons/receips_lists_left.png);	
+}
+.receips_lists_right_h4{
+	background-image: url(../img/icons/receips_lists_right.png);	
+}
+.for_blue_block{
+	max-width: 74.2%;
+	height: 381px;
+	background-image: url(../img/backgrounds/for_blue_block.jpg);	
+}
+.for_blue_block>.container{
+	float: right;
+}
+.for_blue_block {
+	h2:before,
+	h2:after{
+		display: none;
+	}
+	h2{
+		color:#ffffff;
+		text-align: right;
+		font-size: 30px;
+		font-family: 'FBADRENALIN-REGULAR';
+	    margin-top: 18px;
+    	margin-bottom: 18px;
+	}
+	h3{
+		color:#ffffff;
+		text-align: right;
+		font-size: 91px;
+		line-height: 91px;
+		font-family: 'FBADRENALIN-REGULAR';
+		margin-top: 61px;
+		position: relative;
+		left: -73px;
+	}
+	table{
+		width: 100%;
+		max-width: 730px;
+		tr{
+		    background-image: url(../img/backgrounds/for_blue_block_tr.png);
+		    line-height: 50px;
+		    background-position: bottom;	
+		}
+		td{
+			color: #ffffff;
+			font-size: 21px;
+			font-family: 'FBADRENALIN-LIGHT';
+		    padding-right: 15px;
+		}
+		.w300{
+			width: 300px;
+		}
+	}
+}
+.for_blue_block_btn{
+	display: inline-block;
+	width: 310px;
+	height: 76px;
+	background-color: transparent;
+	background-image: url(../img/backgrounds/for_blue_block_btn.png);
+	color:#fff;
+	font-family: 'FBADRENALIN-REGULAR';
+	font-size: 24px;
+    margin-top: 97px;
+    margin-right: 45px;
+    background-size: contain;
+    padding-bottom: 11px;
+    padding-right: 38px;
+    text-align: right;
+    position: relative;
+    margin-bottom: 50px;
+	span{
+		background-image: url(../img/icons/for_blue_block_arrow.png);
+		width: 32px;
+		height: 21px;
+	    display: inline-block;
+        position: absolute;
+    	left: 47px;
+    	transition:0.5s;
+	}
+}
+.for_blue_block_btn:hover span{
+	left: 43px;
 }
 /*=================End receips_1=================*/
 /*=================articles=================*/
@@ -1281,8 +1446,7 @@ button{
     color: #093a63;
     font-size: 48px;
     text-align: center;
-    margin-bottom: 41px;
-
+    margin-bottom: 30px;
 }
 
 .article_block{
