@@ -13,7 +13,7 @@ $('.articles_share').on('click', function(){
 });
 
 
-$('#accordion h3').on('click', function () {
+$('#accordion_omni h3').on('click', function () {
     if ($(this).hasClass('active')) {
         $(this).removeClass('active');
         $(this).siblings('div').removeClass('active');

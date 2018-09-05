@@ -1163,12 +1163,15 @@ button{
 	background-repeat: no-repeat;
     background-position: right 25px center;
 }
+/*
 .receips_1_prev:hover{
 	background-image: url(../img/icons/receips_1_prev.png);
 }
+
 .receips_1_next:hover{
     background-image: url(../img/icons/receips_1_next.png);	
 }
+*/
 .pagination_group{
     width: 347px;
     margin: 0 auto;
@@ -1230,6 +1233,9 @@ button{
 }
 .receips_1_block_relative{
 	position: relative;
+}
+.receips_img{
+	float: left;
 }
 .receips_1_inner_desc{
 	background-color: #f5f5f5;
@@ -1745,7 +1751,7 @@ button{
 	background-color: transparent;
 	color: #ffffff;
 	font-size: 14px;
-	font-family: 'EXO2.0-REGULAR_0';
+	font-family: 'FBADRENALIN-REGULAR';
 	border:1px solid #ffffff;
 	border-radius: 20px;
 	width: 132px;
@@ -1753,12 +1759,13 @@ button{
 	text-transform: uppercase;
 	background-image: url(../img/icons/read_story_btn2.png);
 	background-repeat: no-repeat;
-	background-position: left 20px center;
+	background-position: left 13px center;
     padding-left: 20px;
     transition:background 0.5s;
+    line-height: 33px;
 }
 .read_story_btn2:hover{
-	background-position: left 15px center;
+	background-position: left 10px center;
 }
 .fon{
     padding: 27px 31px;
@@ -1806,7 +1813,7 @@ button{
 		    line-height: 77px;
 		    background-image: url(../img/icons/breadCrumbsIcon.png);
 		    background-repeat: no-repeat;
-		    background-position: right top 1px;
+		    background-position: right center;
 		    padding-right: 17px;
 		    padding-left: 9px;
 			&:hover{
@@ -2011,11 +2018,12 @@ button{
 		}
 	}
 }
-#accordion {
+
+#accordion_omni {
     position: relative;
     margin-top: 25px;
 }
-#accordion h3 {
+#accordion_omni h3 {
     cursor: pointer;
     color: #4386ad;
     font-size: 21px;
@@ -2034,17 +2042,17 @@ button{
     margin-top: 7px;
     margin-bottom: 22px;
 }
-#accordion h3.active {
+#accordion_omni h3.active {
     background-image: url(../img/icons/accordion_minus.png);
 }
-#accordion div div {
+#accordion_omni div div {
     height: 0;
     overflow: hidden;
 }
-#accordion div div.active {
+#accordion_omni div div.active {
     height: auto;
 }
-#accordion p {
+#accordion_omni p {
     margin-left: 56px;
     margin-right: 30px;
     margin-bottom: 15px;
@@ -2053,7 +2061,7 @@ button{
     font-size: 16px;
     color: #05365f;
 }
-#accordion p span{
+#accordion_omni p span{
 	font-family: 'EXO2.0-REGULAR_0';
 	text-transform: uppercase;
 }
@@ -2146,6 +2154,7 @@ input::-moz-placeholder          {color:$omni_form;}/* Firefox 19+ */
 input:-moz-placeholder           {color:$omni_form;}/* Firefox 18- */
 input:-ms-input-placeholder      {color:$omni_form;}
 }
+
 .omni_form_left,
 .omni_form_right{
 	float: left;
@@ -2162,6 +2171,9 @@ input:-ms-input-placeholder      {color:$omni_form;}
 .omni_form_right{
 	border-left: 0;
 	border-right: 0;
+	.omni_form_right_name{
+		font-family: 'EXO2.0-REGULAR_0';
+	}
 }
 .omni_form_center{
 	border-bottom: 1px solid #bababa;
@@ -2210,6 +2222,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 .omni_form_block_submit{
 
 }
+
 .omni_form_for_capha{
 	float: right;
 	width: 292px;
@@ -2232,6 +2245,12 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		border-radius: 40px;
 		padding:0;
 	    padding-left: 19px;
+	    transition:0.5s;
+	}
+	.omni_form__submit:hover{
+		color: #05365f;
+		background-color: #ffffff;
+		border: 1px solid #05365f;
 	}
 }
 .omni_form_footer{
@@ -2571,6 +2590,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 .tab_2_pdf_block:first-child:before{
 	display: none;
 }
+
 /*=================End omnipod=================*/
 
 

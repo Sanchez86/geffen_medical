@@ -868,7 +868,16 @@
 @media only screen and (max-width: 1300px) {
   #navbar a {
     margin-left: 30px;
-    margin-right: 30px; } }
+    margin-right: 30px; }
+  .topMenu_left {
+    top: 0; }
+  .tml_nav_open {
+    width: 40px;
+    height: 32px;
+    -webkit-background-size: 22px 22px;
+            background-size: 22px;
+    right: -42px;
+    top: 48px; } }
 
 @media only screen and (max-width: 1200px) {
   #navbar a {
@@ -2157,12 +2166,15 @@ button {
   background-repeat: no-repeat;
   background-position: right 25px center; }
 
-.receips_1_prev:hover {
-  background-image: url(../img/icons/receips_1_prev.png); }
+/*
+.receips_1_prev:hover{
+	background-image: url(../img/icons/receips_1_prev.png);
+}
 
-.receips_1_next:hover {
-  background-image: url(../img/icons/receips_1_next.png); }
-
+.receips_1_next:hover{
+    background-image: url(../img/icons/receips_1_next.png);	
+}
+*/
 .pagination_group {
   width: 347px;
   margin: 0 auto;
@@ -2223,6 +2235,9 @@ button {
 
 .receips_1_block_relative {
   position: relative; }
+
+.receips_img {
+  float: left; }
 
 .receips_1_inner_desc {
   background-color: #f5f5f5;
@@ -2729,7 +2744,7 @@ button {
   background-color: transparent;
   color: #ffffff;
   font-size: 14px;
-  font-family: 'EXO2.0-REGULAR_0';
+  font-family: 'FBADRENALIN-REGULAR';
   border: 1px solid #ffffff;
   -webkit-border-radius: 20px;
           border-radius: 20px;
@@ -2738,14 +2753,15 @@ button {
   text-transform: uppercase;
   background-image: url(../img/icons/read_story_btn2.png);
   background-repeat: no-repeat;
-  background-position: left 20px center;
+  background-position: left 13px center;
   padding-left: 20px;
   -webkit-transition: background 0.5s;
   -o-transition: background 0.5s;
-  transition: background 0.5s; }
+  transition: background 0.5s;
+  line-height: 33px; }
 
 .read_story_btn2:hover {
-  background-position: left 15px center; }
+  background-position: left 10px center; }
 
 .fon {
   padding: 27px 31px; }
@@ -2790,7 +2806,7 @@ button {
       line-height: 77px;
       background-image: url(../img/icons/breadCrumbsIcon.png);
       background-repeat: no-repeat;
-      background-position: right top 1px;
+      background-position: right center;
       padding-right: 17px;
       padding-left: 9px; }
       .breadCrumbs li a:hover {
@@ -2983,11 +2999,11 @@ button {
     background-color: #093a63;
     color: #ffffff; }
 
-#accordion {
+#accordion_omni {
   position: relative;
   margin-top: 25px; }
 
-#accordion h3 {
+#accordion_omni h3 {
   cursor: pointer;
   color: #4386ad;
   font-size: 21px;
@@ -3007,17 +3023,17 @@ button {
   margin-top: 7px;
   margin-bottom: 22px; }
 
-#accordion h3.active {
+#accordion_omni h3.active {
   background-image: url(../img/icons/accordion_minus.png); }
 
-#accordion div div {
+#accordion_omni div div {
   height: 0;
   overflow: hidden; }
 
-#accordion div div.active {
+#accordion_omni div div.active {
   height: auto; }
 
-#accordion p {
+#accordion_omni p {
   margin-left: 56px;
   margin-right: 30px;
   margin-bottom: 15px;
@@ -3026,7 +3042,7 @@ button {
   font-size: 16px;
   color: #05365f; }
 
-#accordion p span {
+#accordion_omni p span {
   font-family: 'EXO2.0-REGULAR_0';
   text-transform: uppercase; }
 
@@ -3131,6 +3147,8 @@ button {
 .omni_form_right {
   border-left: 0;
   border-right: 0; }
+  .omni_form_right .omni_form_right_name {
+    font-family: 'EXO2.0-REGULAR_0'; }
 
 .omni_form_center {
   border-bottom: 1px solid #bababa; }
@@ -3192,7 +3210,14 @@ button {
     -webkit-border-radius: 40px;
             border-radius: 40px;
     padding: 0;
-    padding-left: 19px; }
+    padding-left: 19px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+  .omni_form_block_submit .omni_form__submit:hover {
+    color: #05365f;
+    background-color: #ffffff;
+    border: 1px solid #05365f; }
 
 .omni_form_footer hr {
   border-color: #bababa;
@@ -3657,6 +3682,10 @@ button {
 
 /*end max-width: 1650px*/
 @media only screen and (max-width: 1600px) {
+  .for_blue_block h3 {
+    left: -13px; }
+  .for_blue_block {
+    max-width: 74.0%; }
   .receips_1_desc {
     padding-left: 30px;
     padding-right: 30px; }
@@ -3692,6 +3721,22 @@ button {
 
 /*end max-width: 1600px*/
 @media only screen and (max-width: 1500px) {
+  .for_blue_block h3 {
+    font-size: 81px; }
+  .for_blue_block {
+    max-width: 100%;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .for_blue_block > .container {
+    float: none; }
+  .for_blue_block h3 {
+    left: 0; }
+  .receips_1_inner_desc {
+    padding-left: 30px; }
+  .receips_lists_right {
+    padding-right: 40px; }
+  .receips_lists_left li {
+    padding-left: 30px; }
   .receips_1_desc {
     padding-left: 20px;
     padding-right: 20px; }
@@ -3843,6 +3888,8 @@ button {
 
 /*end max-width: 1300px*/
 @media only screen and (max-width: 1199px) {
+  .for_blue_block h3 {
+    font-size: 71px; }
   .pagination_btn {
     width: 120px;
     height: 40px; }
@@ -3973,6 +4020,20 @@ button {
 
 /*end max-width: 1199px*/
 @media only screen and (max-width: 1100px) {
+  .for_blue_block {
+    background-position: left top -170px;
+    height: auto; }
+  .receips_lists_right {
+    padding-right: 25px; }
+  .receips_lists_left li:before {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 17px; }
+  .receips_lists_left li {
+    padding-right: 40px; }
+  .receips_1_inner_desc {
+    padding-right: 30px; }
   .block_notice_wrap_blue {
     margin-left: 20px;
     margin-right: 20px; }
@@ -3995,6 +4056,16 @@ button {
 
 /*end max-width: 1100px*/
 @media only screen and (max-width: 991px) {
+  .for_blue_block_btn {
+    margin-right: 0; }
+  .for_blue_block h3 {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .for_blue_block table .w300 {
+    width: auto; }
+  .for_blue_block {
+    height: auto;
+    background-position: center -170px; }
   .product_slider .device_h3:after {
     display: none; }
   .product_slider .carousel-control.right {
@@ -4032,13 +4103,13 @@ button {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 16px; }
-  #accordion h3 {
+  #accordion_omni h3 {
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 10px;
     -webkit-background-size: 15px 15px;
             background-size: 15px; }
-  #accordion p {
+  #accordion_omni p {
     font-size: 14px; }
   .for_tabs .video-player {
     width: -webkit-calc(33% - 20px);
@@ -4217,6 +4288,26 @@ button {
 
 /*end max-width: 767px*/
 @media only screen and (max-width: 650px) {
+  .for_blue_block_btn {
+    font-size: 22px;
+    width: 280px;
+    height: 71px; }
+  .for_blue_block table td {
+    font-size: 16px;
+    padding-right: 0; }
+  .receips_lists_left li {
+    padding-left: 0; }
+  .receips_lists_right li {
+    padding-left: 0px; }
+  .receips_lists_left, .receips_lists_right {
+    float: none;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .receips_1_inner_h3 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 16px; }
   .articles_inner .block_notice {
     padding-right: 0;
     padding-left: 15px;
@@ -4308,6 +4399,9 @@ button {
 
 /*end max-width: 650px*/
 @media only screen and (max-width: 550px) {
+  .tab_3 .nav-tabs > li {
+    float: none;
+    width: 100%; }
   .product_slider .for_img {
     margin-top: 28px; }
   .omnipod_slider {
@@ -4669,7 +4763,7 @@ body.color_black {
   body.color_black .tab_2_zip_block:before,
   body.color_black .tab_2_pdf_block:before {
     background-color: #edff00; }
-  body.color_black #accordion h3 {
+  body.color_black #accordion_omni h3 {
     border-color: #edff00 !important; }
 
 body.color_blue {

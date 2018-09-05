@@ -99,6 +99,12 @@
 	}
 }/*end max-width: 1650px*/
 @media only screen and (max-width: 1600px){
+	.for_blue_block h3{
+	    left: -13px;
+	}
+	.for_blue_block{
+	    max-width: 74.0%;
+	}
 	.receips_1_desc{
 	    padding-left: 30px;
     	padding-right: 30px;
@@ -148,6 +154,28 @@
 }/*end max-width: 1600px*/
 
 @media only screen and (max-width: 1500px){
+	.for_blue_block h3{
+		font-size: 81px;
+	}
+	.for_blue_block {
+	    max-width: 100%;
+	    background-size: cover;
+	}
+	.for_blue_block > .container {
+	    float: none;
+	}
+	.for_blue_block h3 {
+	    left: 0;
+	}
+	.receips_1_inner_desc{
+		padding-left: 30px;
+	}
+	.receips_lists_right {
+	    padding-right: 40px;
+	}
+	.receips_lists_left li{
+	    padding-left: 30px;
+	}
 	.receips_1_desc{
 	    padding-left: 20px;
     	padding-right: 20px;
@@ -353,6 +381,9 @@
 }/*end max-width: 1300px*/
 
 @media only screen and (max-width: 1199px){
+	.for_blue_block h3{
+		font-size: 71px;
+	}
 	.pagination_btn{
 	    width: 120px;
     	height: 40px;
@@ -527,6 +558,25 @@
 }/*end max-width: 1199px*/
 
 @media only screen and (max-width: 1100px){
+	.for_blue_block{
+		background-position: left top -170px;
+		height: auto;
+	}
+	.receips_lists_right {
+	    padding-right: 25px;
+	}
+	.receips_lists_left li:before{
+		width: 27px;
+		height: 27px;
+		line-height: 27px;
+		font-size: 17px;
+	}
+	.receips_lists_left li{
+	    padding-right: 40px;
+	}
+	.receips_1_inner_desc {
+	    padding-right: 30px;
+	}
 	.block_notice_wrap_blue{
 	    margin-left: 20px;
     	margin-right: 20px;
@@ -554,6 +604,20 @@
 }/*end max-width: 1100px*/
 
 @media only screen and (max-width: 991px){
+	.for_blue_block_btn{
+	    margin-right: 0;
+	}
+	.for_blue_block h3{
+	    margin-bottom: 20px;
+	    margin-top: 20px;
+	}
+	.for_blue_block table .w300 {
+	    width: auto;
+	}
+	.for_blue_block{
+		height: auto;
+	    background-position: center -170px;
+	}
 	.product_slider .device_h3:after{
 		display: none;
 	}
@@ -606,13 +670,13 @@
 	    padding-right: 10px;
 	    font-size: 16px;
 	}
-	#accordion h3{
+	#accordion_omni h3{
 	    font-size: 16px;
 	    line-height: 16px;
 	    margin-bottom: 10px;
 	    background-size: 15px;
 	}
-	#accordion p{
+	#accordion_omni p{
 		font-size: 14px;
 	}
 	.for_tabs .video-player {
@@ -837,6 +901,32 @@
 	}
 }/*end max-width: 767px*/
 @media only screen and (max-width: 650px){
+	.for_blue_block_btn{
+	    font-size: 22px;
+	    width: 280px;
+	    height: 71px;
+	}
+	.for_blue_block table td {
+	    font-size: 16px;
+	    padding-right: 0;
+	}
+	.receips_lists_left li {
+	    padding-left: 0;
+	}
+	.receips_lists_right li{
+	    padding-left: 0px;
+	}
+	.receips_lists_left, .receips_lists_right{
+		float: none;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.receips_1_inner_h3 {
+	    font-size: 28px;
+	    line-height: 28px;
+	    margin-bottom: 16px;
+	}
 	.articles_inner .block_notice {
 		padding-right: 0;
     	padding-left: 15px;
@@ -957,6 +1047,10 @@
 	}
 }/*end max-width: 650px*/
 @media only screen and (max-width: 550px){
+	.tab_3 .nav-tabs > li{
+		float: none;
+    	width: 100%;
+	}
 	.product_slider .for_img {
 	    margin-top: 28px;
 	}
@@ -1431,7 +1525,7 @@ body.color_black{
 	.tab_2_pdf_block:before{
 		background-color: #edff00;
 	}
-	#accordion h3{
+	#accordion_omni h3{
 		border-color: #edff00 !important;
 	}
 }
