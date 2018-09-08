@@ -447,6 +447,7 @@ button{
 	/*background-image: url(../img/backgrounds/device2.png);*/
 	background-repeat: no-repeat;
     background-position: top left;
+}
     h2{
     	position: relative;
     	color: #093a63;
@@ -530,7 +531,7 @@ button{
 	    text-align: left;
 	    padding-left: 100px;
     }
-}
+
 .video__panel{
     display: table;
     width: 100%;
@@ -2592,6 +2593,178 @@ input:-ms-input-placeholder      {color:$omni_form;}
 }
 
 /*=================End omnipod=================*/
+/*=================testimonials=================*/
+
+.testimonials{
+    padding-bottom: 50px;
+	.receips_1_pagination{
+		margin: 0
+	}
+	.video{
+	   	max-width: 585px;
+    	margin: 0 auto;
+    	padding: 15px;
+    	background-image: url(../img/backgrounds/testimonials_video.png);
+	}
+	.video__wrap{
+		margin: 0;
+	}
+	.nav-tabs{
+		border-bottom: 3px solid #3f7da1;
+	    margin-top: 31px;
+	    margin-bottom: 64px;
+		li{
+			width: 50%;
+			a{
+			    min-height: 58px;
+			    color:#4284ab;
+			    font-size: 30px;
+			    font-family: 'FBADRENALIN-REGULAR';
+			    border:0;
+			}
+			a:hover{
+				background-color: transparent;
+				color:#093a63;
+			}
+		}
+		li.active{
+			background-image: url(../img/backgrounds/testimonials_header.png);
+			a{
+				background-color: transparent;
+				color:#093a63;
+				border:0;
+			}
+		}
+		li:first-child{
+			text-align: right;
+			a{
+				background-image: url(../img/icons/testimonials_left.png);
+			    background-position: right 36px center;
+				padding-right: 88px;
+			}
+		}
+		li:last-child{
+			text-align: left;
+			a{
+				background-image: url(../img/icons/testimonials_right.png);
+			    background-position: left 130px center;
+			}
+		}
+	}
+}
+.testi_video_desc_block{
+    margin-top: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 91px;
+	p{
+		color: #05365f;
+		font-size: 21px;
+		line-height: 33px;
+		font-family: 'EXO2.0-REGULAR_0';
+	    margin-bottom: 32px;
+	}
+}
+.testi_date_author{
+	color:#458ab2;
+	font-size: 21px;
+	line-height: 33px;
+	font-family: 'EXO2.0-REGULAR_0';
+}
+.testi_text_block{
+	background-image: url(../img/backgrounds/testimonials_video.png);
+	padding: 15px;
+    background-size: cover;
+    margin-bottom: 38px;
+	h4{
+		color: #4284aa;
+		font-size: 24px;
+		line-height: 33px;
+		font-family: 'FBADRENALIN-REGULAR';
+	    margin-bottom: 33px;
+	}
+	p{
+		color: #05365f;
+		font-size: 18px;
+		line-height: 30px;
+		font-family: 'FBADRENALIN-REGULAR';
+	    padding-left: 140px;
+        margin-bottom: 10px;
+	}
+	button{
+	    color: #ffffff;
+	    font-size: 21px;
+	    line-height: 41px;
+	    font-family: 'FBADRENALIN-REGULAR';
+	    width: 113px;
+	    height: 41px;
+	    background-color: #05365f;
+	    text-align: center;
+	    border-radius: 20px;
+	    display: inline-block;
+        margin-top: 11px;
+    	margin-right: 34px;
+    	border: 1px solid transparent;
+    	transition: 0.5s;
+	}
+	button:hover{
+		color: #05365f;
+		background-color: #ffffff;
+		border-color: #05365f;
+	}
+}
+.testi_text_block_white{
+	background-color: #fff;
+    padding-right: 33px;
+    padding-left: 33px;
+    padding-bottom: 19px;
+    padding-top: 10px;
+}
+.testi_icon{
+	background-image: url(../img/icons/testi_icon.png);
+	width: 64px;
+	height: 59px;
+	float: right;
+    margin-bottom: 12px;
+}
+.testimonials_inner .video {
+    max-width: 1136px;
+    background-image: url(../img/backgrounds/testimonials_video2.png);
+    background-size: cover;
+    padding: 58px;
+}
+.testi_video_desc_block{
+	max-width: 1010px;
+	margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 92px;
+	p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+.hr{
+	background-image: url(../img/backgrounds/receips_1_bg.png);
+	height: 50px;
+    background-repeat: repeat;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+.testi_text_btn{
+	background-color: #002d59;
+	color: #fff;
+	font-size: 18px;
+	line-height: 42px;
+	width: 189px;
+	border-radius:20px;
+	background-image: url(../img/icons/receips_1_arrow.png);
+    background-position: left 25px center;
+    text-align: right;
+    padding-right: 28px;
+    margin-right: 110px;
+}
+/*=================End testimonials=================*/
+
 
 
 @import "_footer";

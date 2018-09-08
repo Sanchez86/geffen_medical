@@ -1,12 +1,5 @@
 $(document).ready(function () {
 /*omnipod*/
-/*
-$('.video-player').on('mouseenter', function(){
-    $(this).addClass('active');
-});
-
-console.log(1)
-*/
 
 $('.articles_share').on('click', function(){
     $(this).toggleClass('active');

@@ -872,12 +872,7 @@
   .topMenu_left {
     top: 0; }
   .tml_nav_open {
-    width: 40px;
-    height: 32px;
-    -webkit-background-size: 22px 22px;
-            background-size: 22px;
-    right: -42px;
-    top: 48px; } }
+    top: 169px; } }
 
 @media only screen and (max-width: 1200px) {
   #navbar a {
@@ -1497,80 +1492,93 @@ button {
   /*background-image: url(../img/backgrounds/device2.png);*/
   background-repeat: no-repeat;
   background-position: top left; }
-  .videos h2 {
-    position: relative;
-    color: #093a63;
-    text-align: center;
-    margin-bottom: 42px; }
-  .videos .video__wrap {
-    margin-bottom: 35px; }
-  .videos .video__poster {
-    position: relative; }
-  .videos .video__poster.active .video__cover {
-    display: none; }
-  .videos .video__poster {
-    position: relative; }
-  .videos .video__poster img {
-    position: absolute;
-    left: 0; }
-  .videos .video__cover {
-    position: absolute;
-    background-image: url(../img/backgrounds/video_cover.png);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-            background-size: cover;
-    opacity: 0.9;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-  .videos .video__cover:hover,
-  .videos .video__cover.active {
-    background-position-y: -400px; }
-  .videos .video__like {
-    background-image: url(../img/icons/video_like.png);
-    width: 16px;
-    height: 13px;
-    position: absolute;
-    top: 40px;
-    right: 60px;
-    display: none; }
-  .videos .video__shoffe {
-    background-image: url(../img/icons/video_shoffe.png);
-    -webkit-background-size: contain;
-            background-size: contain;
-    width: 19px;
-    height: 18px;
-    position: absolute;
-    top: 38px;
-    right: 27px;
-    display: block; }
-  .videos .video__name {
-    color: #fff;
-    font-size: 30px;
-    line-height: 6.4px;
-    position: relative;
-    top: 45%;
-    text-align: left;
-    padding-left: 100px; }
-  .videos .video__name:after {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 2px;
-    background-color: #fff; }
-  .videos .video__user_name {
-    color: #fff;
-    font-size: 20px;
-    line-height: 9px;
-    position: relative;
-    top: 55%;
-    text-align: left;
-    padding-left: 100px; }
+
+h2 {
+  position: relative;
+  color: #093a63;
+  text-align: center;
+  margin-bottom: 42px; }
+
+.video__wrap {
+  margin-bottom: 35px; }
+
+.video__poster {
+  position: relative; }
+
+.video__poster.active .video__cover {
+  display: none; }
+
+.video__poster {
+  position: relative; }
+
+.video__poster img {
+  position: absolute;
+  left: 0; }
+
+.video__cover {
+  position: absolute;
+  background-image: url(../img/backgrounds/video_cover.png);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0.9;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+.video__cover:hover,
+.video__cover.active {
+  background-position-y: -400px; }
+
+.video__like {
+  background-image: url(../img/icons/video_like.png);
+  width: 16px;
+  height: 13px;
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  display: none; }
+
+.video__shoffe {
+  background-image: url(../img/icons/video_shoffe.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  width: 19px;
+  height: 18px;
+  position: absolute;
+  top: 38px;
+  right: 27px;
+  display: block; }
+
+.video__name {
+  color: #fff;
+  font-size: 30px;
+  line-height: 6.4px;
+  position: relative;
+  top: 45%;
+  text-align: left;
+  padding-left: 100px; }
+
+.video__name:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #fff; }
+
+.video__user_name {
+  color: #fff;
+  font-size: 20px;
+  line-height: 9px;
+  position: relative;
+  top: 55%;
+  text-align: left;
+  padding-left: 100px; }
 
 .video__panel {
   display: table;
@@ -3514,6 +3522,163 @@ button {
   display: none; }
 
 /*=================End omnipod=================*/
+/*=================testimonials=================*/
+.testimonials {
+  padding-bottom: 50px; }
+  .testimonials .receips_1_pagination {
+    margin: 0; }
+  .testimonials .video {
+    max-width: 585px;
+    margin: 0 auto;
+    padding: 15px;
+    background-image: url(../img/backgrounds/testimonials_video.png); }
+  .testimonials .video__wrap {
+    margin: 0; }
+  .testimonials .nav-tabs {
+    border-bottom: 3px solid #3f7da1;
+    margin-top: 31px;
+    margin-bottom: 64px; }
+    .testimonials .nav-tabs li {
+      width: 50%; }
+      .testimonials .nav-tabs li a {
+        min-height: 58px;
+        color: #4284ab;
+        font-size: 30px;
+        font-family: 'FBADRENALIN-REGULAR';
+        border: 0; }
+      .testimonials .nav-tabs li a:hover {
+        background-color: transparent;
+        color: #093a63; }
+    .testimonials .nav-tabs li.active {
+      background-image: url(../img/backgrounds/testimonials_header.png); }
+      .testimonials .nav-tabs li.active a {
+        background-color: transparent;
+        color: #093a63;
+        border: 0; }
+    .testimonials .nav-tabs li:first-child {
+      text-align: right; }
+      .testimonials .nav-tabs li:first-child a {
+        background-image: url(../img/icons/testimonials_left.png);
+        background-position: right 36px center;
+        padding-right: 88px; }
+    .testimonials .nav-tabs li:last-child {
+      text-align: left; }
+      .testimonials .nav-tabs li:last-child a {
+        background-image: url(../img/icons/testimonials_right.png);
+        background-position: left 130px center; }
+
+.testi_video_desc_block {
+  margin-top: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 91px; }
+  .testi_video_desc_block p {
+    color: #05365f;
+    font-size: 21px;
+    line-height: 33px;
+    font-family: 'EXO2.0-REGULAR_0';
+    margin-bottom: 32px; }
+
+.testi_date_author {
+  color: #458ab2;
+  font-size: 21px;
+  line-height: 33px;
+  font-family: 'EXO2.0-REGULAR_0'; }
+
+.testi_text_block {
+  background-image: url(../img/backgrounds/testimonials_video.png);
+  padding: 15px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin-bottom: 38px; }
+  .testi_text_block h4 {
+    color: #4284aa;
+    font-size: 24px;
+    line-height: 33px;
+    font-family: 'FBADRENALIN-REGULAR';
+    margin-bottom: 33px; }
+  .testi_text_block p {
+    color: #05365f;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'FBADRENALIN-REGULAR';
+    padding-left: 140px;
+    margin-bottom: 10px; }
+  .testi_text_block button {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 41px;
+    font-family: 'FBADRENALIN-REGULAR';
+    width: 113px;
+    height: 41px;
+    background-color: #05365f;
+    text-align: center;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    display: inline-block;
+    margin-top: 11px;
+    margin-right: 34px;
+    border: 1px solid transparent;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+  .testi_text_block button:hover {
+    color: #05365f;
+    background-color: #ffffff;
+    border-color: #05365f; }
+
+.testi_text_block_white {
+  background-color: #fff;
+  padding-right: 33px;
+  padding-left: 33px;
+  padding-bottom: 19px;
+  padding-top: 10px; }
+
+.testi_icon {
+  background-image: url(../img/icons/testi_icon.png);
+  width: 64px;
+  height: 59px;
+  float: right;
+  margin-bottom: 12px; }
+
+.testimonials_inner .video {
+  max-width: 1136px;
+  background-image: url(../img/backgrounds/testimonials_video2.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 58px; }
+
+.testi_video_desc_block {
+  max-width: 1010px;
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 92px; }
+  .testi_video_desc_block p {
+    font-size: 18px;
+    line-height: 30px; }
+
+.hr {
+  background-image: url(../img/backgrounds/receips_1_bg.png);
+  height: 50px;
+  background-repeat: repeat;
+  margin-top: 32px;
+  margin-bottom: 50px; }
+
+.testi_text_btn {
+  background-color: #002d59;
+  color: #fff;
+  font-size: 18px;
+  line-height: 42px;
+  width: 189px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background-image: url(../img/icons/receips_1_arrow.png);
+  background-position: left 25px center;
+  text-align: right;
+  padding-right: 28px;
+  margin-right: 110px; }
+
+/*=================End testimonials=================*/
 /*footer*/
 .footer {
   background-image: url(../img/backgrounds/footer_bg.jpg);
@@ -3619,7 +3784,9 @@ button {
   .omnipod_block .container {
     width: 1238px; }
   .product_slider .container {
-    width: 1190px; } }
+    width: 1190px; }
+  .testimonials .container {
+    width: 1230px; } }
 
 /*end min-width: 1500px*/
 @media only screen and (max-width: 1850px) {
@@ -4193,10 +4360,14 @@ button {
   .product_slider .for_img {
     margin-top: 58px;
     padding-left: 0px;
-    text-align: center; } }
+    text-align: center; }
+  .testimonials_inner .video {
+    padding: 15px; } }
 
 /*end max-width: 991px*/
 @media only screen and (max-width: 767px) {
+  .testi_text_block p {
+    padding-left: 15px; }
   .category_menu {
     background-position: left top;
     padding-bottom: 10px;
@@ -4288,6 +4459,16 @@ button {
 
 /*end max-width: 767px*/
 @media only screen and (max-width: 650px) {
+  .testimonials .video {
+    padding: 0; }
+  .testimonials .video__name {
+    padding-left: 10px;
+    font-size: 22px; }
+  .testimonials .video__user_name {
+    padding-left: 10px;
+    font-size: 16px; }
+  .testimonials .video__name:after {
+    display: none; }
   .for_blue_block_btn {
     font-size: 22px;
     width: 280px;
@@ -4399,6 +4580,17 @@ button {
 
 /*end max-width: 650px*/
 @media only screen and (max-width: 550px) {
+  .testi_text_block_white {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .testimonials .nav-tabs li a {
+    font-size: 26px;
+    -webkit-background-size: 28px 28px;
+            background-size: 28px; }
+  .testimonials .nav-tabs li:first-child a {
+    background-position: right 13px center; }
+  .testimonials .nav-tabs li:last-child a {
+    background-position: left 115px center; }
   .tab_3 .nav-tabs > li {
     float: none;
     width: 100%; }

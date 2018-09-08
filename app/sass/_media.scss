@@ -18,6 +18,9 @@
     .product_slider .container{
 		width: 1190px;
     }
+    .testimonials .container{
+		width: 1230px;
+    }
 }/*end min-width: 1500px*/	
 
 @media only screen and (max-width: 1850px){
@@ -786,9 +789,15 @@
 	    padding-left: 0px;
 	    text-align: center;
 	}
+	.testimonials_inner .video{
+	    padding: 15px;
+	}
 }/*end max-width: 991px*/
 
 @media only screen and (max-width: 767px){
+	.testi_text_block p{
+	    padding-left: 15px;
+	}
 	.category_menu{
 		background-position: left top;
 	    padding-bottom: 10px;
@@ -901,6 +910,22 @@
 	}
 }/*end max-width: 767px*/
 @media only screen and (max-width: 650px){
+	.testimonials{
+		.video{
+			padding: 0;
+		}
+		.video__name{
+			padding-left: 10px;
+		    font-size: 22px;
+		}
+		.video__user_name{
+			padding-left: 10px;
+		    font-size: 16px;
+		}
+		.video__name:after{
+			display: none;
+		}
+	}
 	.for_blue_block_btn{
 	    font-size: 22px;
 	    width: 280px;
@@ -1047,6 +1072,20 @@
 	}
 }/*end max-width: 650px*/
 @media only screen and (max-width: 550px){
+	.testi_text_block_white{
+	    padding-right: 15px;
+    	padding-left: 15px;
+	}
+	.testimonials .nav-tabs li a{
+		font-size: 26px;
+	    background-size: 28px;
+	}
+	.testimonials .nav-tabs li:first-child a{
+	    background-position: right 13px center;
+	}
+	.testimonials .nav-tabs li:last-child a {
+	    background-position: left 115px center;
+	}
 	.tab_3 .nav-tabs > li{
 		float: none;
     	width: 100%;
