@@ -1832,6 +1832,28 @@ button{
 .breadCrumbs_no_line{
 	background: none;
 }
+.breadCrumbs_pa{
+	background-image: url(../img/backgrounds/breadCrumbs_pa.png);
+	li a{
+		color:#05365f;
+	}
+	li a:hover{
+		color:#ffffff;
+	}
+	li:last-child a{
+		color:#ffffff;
+	}
+	h3{
+	    color: #f7f7f7;
+	    font-size: 36px;
+	    line-height: 36px;
+	    text-align: center;
+	    margin-top: 0;
+	    margin-bottom: 12px;
+	    position: relative;
+	    top: -10px;
+	}
+}
 
 .omnipod_block{
     padding-top: 30px;
@@ -2764,6 +2786,41 @@ input:-ms-input-placeholder      {color:$omni_form;}
     margin-right: 110px;
 }
 /*=================End testimonials=================*/
+
+/*=================PA=================*/
+
+.pa_icon_1{
+	background-image: url(../img/icons/pa_icon_1.png);
+}
+.pa_icon_1.active,
+.pa_icon_1:hover{
+	background-image: url(../img/icons/pa_icon_1_active.png);
+}
+.pa{
+	position: relative;
+    padding-top: 54px;
+	.category_menu{
+		right: 0;
+		top: 140px;
+		position: absolute;
+	}
+}
+#pa_1{
+	table{
+		width: 100%;
+		td:first-child{
+			width: 50%;
+		}
+		td:last-child{
+			width: 50%;
+		}
+	}
+	.w100{
+		width: 100%;
+	}
+}
+
+/*=================End PA=================*/
 
 
 
