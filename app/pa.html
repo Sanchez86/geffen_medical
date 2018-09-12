@@ -410,10 +410,10 @@
 	<!-- Nav tabs -->
 <div class="category_menu category_menu_receips_1">
 	<ul class="">
-	  <li class="active"><a href="#pa_1" data-toggle="tab" class="pa_icon_1 active">
+	  <li class="active"><a href="#pa_1" data-toggle="tab" class="pa_icon_1">
 	  	םיישיא םיטרפ
 	  </a></li>
-	  <li><a href="#pa_2" data-toggle="tab" class="pa_icon_2">
+	  <li><a href="#pa_2" data-toggle="tab" class="pa_icon_2 active">
 	  	ילש תונמזהה
 	  </a></li>
 	  <li><a href="#pa_3" data-toggle="tab" class="pa_icon_3">
@@ -426,7 +426,7 @@
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="pa_1">
+  <div class="tab-pane" id="pa_1">
   	<div class="container-fluid">
   		<div class="row">
   			<div class="col-md-12">
@@ -439,57 +439,345 @@
   	<div class="container">
   		<div class="row">
   			<div class="col-md-12">
+  				<div class="pa_wrap">
   				<form action="">
   				<table>
   					<tr>
   						<td>
+                            <div class="input-form">
+                            	<div class="pa_edit pa_done">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="text" id="pa_last_name" class="field-login" required value="doich">
+		                            <label for="pa_last_name">
+		החפשמ םש
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
+  						</td>
+  						<td>
   							<div class="input-form">
-                            <input type="email" id="email" class="field-login" required="" style="border-color: red;">
-                            <label for="email">ליימ תבותכ<i> *</i></label>
-                            <span class="error-msg">required</span>
-                        </div>
-  						</td>
-  						<td>
-  							<input type="text">
-  						</td>
-  					</tr>
-  					<tr>
-  						<td>
-  							<input type="text">
-  						</td>
-  						<td>
-  							<input type="text">
+                            	<div class="pa_edit pa_done">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="text" id="pa_first_name" class="field-login" required value="jhon">
+		                            <label for="pa_first_name">
+יטרפ םש
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
   						</td>
   					</tr>
   					<tr>
   						<td>
-  							<input type="text">
+  							<div class="input-form">
+                            	<div class="pa_edit">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="text" id="pa_city_name" class="field-login" required>
+		                            <label for="pa_city_name">
+ריע
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
   						</td>
   						<td>
-  							<input type="text">
+  							<div class="input-form">
+                            	<div class="pa_edit">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="email" id="pa_email_name" class="field-login" required>
+		                            <label for="pa_email_name">
+ליימ תבותכ
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
   						</td>
   					</tr>
   					<tr>
-  						<td class="w100">
-  							<input type="text">
+  						<td>
+  							<div class="input-form">
+                            	<div class="pa_edit">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="text" id="pa_index_name" class="field-login" required>
+		                            <label for="pa_index_name">
+דוקימ
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
+  						</td>
+  						<td>
+  							<div class="input-form">
+                            	<div class="pa_edit">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="text" id="pa_phone_name" class="field-login" required>
+		                            <label for="pa_phone_name">
+דיינ ןופלט
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td class="w100" colspan="2">
+  							<div class="input-form">
+                            	<div class="pa_edit">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="text" id="pa_street_name" class="field-login" required>
+		                            <label for="pa_street_name">
+בוחר
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
   						</td>
   					</tr>
   					<tr>
   						<td>
-  							<input type="text">
+  							<div class="input-form">
+                            	<div class="pa_edit">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="text" id="pa_apartment_name" class="field-login" required>
+		                            <label for="pa_apartment_name">
+הריד רפסמ
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
   						</td>
   						<td>
-  							<input type="text">
+  							<div class="input-form">
+                            	<div class="pa_edit">
+                            		<div class="pa_edit_line"></div>
+                            	</div>
+	                            <input type="text" id="pa_home_name" class="field-login" required>
+		                            <label for="pa_home_name">
+תיב רפסמ
+		                            	<i> *</i></label>
+	                            <span class="error-msg"></span>
+	                        </div>
   						</td>
   					</tr>
   				</table>
-
+  				<input class="pa_submit" type="submit" value="
+חולשמל תבותכ ףסוה
+  				" />
   				</form>
+  				<div class="pa_form2">
+  					<form action="">
+  					<h4 class="pa_h4">
+  						השדח תבותכ
+  					</h4>
+  					<p class="pa_p">
+  						 ב םינמוסמ הבוחה תודש*
+  					</p>
+  					<table>
+  						<tr>
+  							<td class="w100" colspan="2">
+  								<div class="input-form">
+	                            	<div class="pa_edit">
+	                            		<div class="pa_edit_line"></div>
+	                            	</div>
+		                            <input type="text" id="pa_adres_name" class="field-login" required value="">
+			                            <label for="pa_adres_name">
+תבותכה םש
+			                            	<i> *</i></label>
+		                            <span class="error-msg"></span>
+		                        </div>
+	  						</td>
+	  					</tr>
+	  					<tr>
+  							<td class="w100" colspan="2">
+  								<div class="input-form">
+	                            	<div class="pa_edit">
+	                            		<div class="pa_edit_line"></div>
+	                            	</div>
+		                            <input type="text" id="pa_city_name2" class="field-login" required value="">
+			                            <label for="pa_city_name2">
+בושיי
+			                            	<i> *</i></label>
+		                            <span class="error-msg"></span>
+		                        </div>
+	  						</td>
+	  					</tr>
+	  					<tr>
+  							<td>
+  								<div class="input-form">
+	                            	<div class="pa_edit">
+	                            		<div class="pa_edit_line"></div>
+	                            	</div>
+		                            <input type="text" id="pa_number_home" class="field-login" required value="">
+			                            <label for="pa_number_home">
+תיב 'סמ
+			                            	<i> *</i></label>
+		                            <span class="error-msg"></span>
+		                        </div>
+	  						</td>
+	  						<td>
+  								<div class="input-form">
+	                            	<div class="pa_edit">
+	                            		<div class="pa_edit_line"></div>
+	                            	</div>
+		                            <input type="text" id="pa_street_name2" class="field-login" required value="">
+			                            <label for="pa_street_name2">
+בוחר
+			                            	<i> *</i></label>
+		                            <span class="error-msg"></span>
+		                        </div>
+	  						</td>
+	  					</tr>
+	  					<tr>
+  							<td>
+  								<div class="input-form">
+	                            	<div class="pa_edit">
+	                            		<div class="pa_edit_line"></div>
+	                            	</div>
+		                            <input type="text" id="pa_index_name2" class="field-login" required value="">
+			                            <label for="pa_index_name2">
+דוקימ
+			                            	<i> *</i></label>
+		                            <span class="error-msg"></span>
+		                        </div>
+	  						</td>
+	  						<td>
+  								<div class="input-form">
+	                            	<div class="pa_edit">
+	                            		<div class="pa_edit_line"></div>
+	                            	</div>
+		                            <input type="text" id="pa_apartment_name2" class="field-login" required value="">
+			                            <label for="pa_apartment_name2">
+הריד
+			                            	<i> *</i></label>
+		                            <span class="error-msg"></span>
+		                        </div>
+	  						</td>
+	  					</tr>
+  					</table>
+  					<div class="omni_form_cont omni_form_cont_mod">
+  						<div class="omni_form_checkbox">
+							<input type="checkbox" id="c1">
+							<label for="c1">לדחמ תרירבכ עבק<span></span></label>
+						</div>
+  					</div>
+  					<hr class="pa_hr">
+					<div class="omni_form_for_capha omni_form_for_capha_mod">
+						<img src="img/elements/omni_form_for_capha.jpg" alt="">
+					</div>
+					<div class="clear"></div>
+					<input class="pa_submit2" type="submit" value=" רושיא " />
+					</form>
+  				</div>
+  				</div>
   			</div>
   		</div>
   	</div>
   </div>
-  <div class="tab-pane" id="pa_2">.2..</div>
+  <div class="tab-pane active" id="pa_2">
+	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<h2>
+  					תונמזה לש הירוטסיה
+  				</h2>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<table class="pa_2_table">
+  					<tr>
+  						<th>
+  							הדרוהל תינובשח
+  						</th>
+  						<th>
+  							הנמזהה סוטטס
+  						</th>
+  						<th>
+  							כ”הס
+  						</th>
+  						<th>
+  							ךיראת
+  						</th>
+  						<th>
+  							הנמזהה רפסמ
+  						</th>
+  					</tr>
+  					<tr>
+  						<td>
+  							<a href="" class="pa_2_download"></div>
+  						</td>
+  						<td>
+  							<div class="pa_2_status pa_2_status_done">
+  								<span>
+  									עצוב
+  								</span>
+  							</div>
+  						</td>
+  						<td>
+  							<div class="pa_2_sum">
+  								 ₪ 975
+  							</div>
+  						</td>
+  						<td>
+  							<div class="pa2_date_time">
+  								<span class="pa2_time">17:54</span>
+  								<span class="pa2_date">13 Mar 2018</span>
+  							</div>
+  						</td>
+  						<td>
+  							<div class="pa2_number_block active">
+  								<div class="pa2_number">№ 3653125</div>
+  								<div class="pa2_number_block_inner">
+  									<div class="pa2_number_block_inner_engel"></div>
+  									<h2>
+  										תנמזהש םירצומה ולא
+  									</h2>
+  									<hr>
+  								</div>
+  							</div>
+  						</td>
+  					</tr>
+  					<tr class="pa_2_status_disabled_tr">
+  						<td>
+  							<a href="" class="pa_2_download"></div>
+  						</td>
+  						<td>
+  							<div class="pa_2_status pa_2_status_disabled">
+								<span>
+  									עצוב
+  								</span>
+  							</div>
+  						</td>
+  						<td>
+  							<div class="pa_2_sum">
+  								 ₪ 975
+  							</div>
+  						</td>
+  						<td>
+  							<div class="pa2_date_time">
+  								<span class="pa2_time">17:54</span>
+  								<span class="pa2_date">13 Mar 2018</span>
+  							</div>
+  						</td>
+  						<td>
+  							<div class="pa2_number_block">
+  								<div class="pa2_number">№ 3653125</div>
+  							</div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td colspan="5">
+  							<input class="pa_submit2 pa_submit2_pa2_mod full" type="submit" value=" רתוי גצה ">
+  						</td>
+  					</tr>
+  				</table>
+  			</div>
+  		</div>
+  	</div>
+  </div>
   <div class="tab-pane" id="pa_3">.3..</div>
 </div>
 </div>
@@ -543,6 +831,7 @@
 
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/index.js"></script>
 <script type="text/javascript">
 	$(function(){
 		initMiracle();

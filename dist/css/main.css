@@ -3278,7 +3278,7 @@ h2 {
   .omni_form input {
     border: 0;
     color: #05365f;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 21px;
     font-family: 'FBADRENALIN-REGULAR';
     text-transform: uppercase;
@@ -3756,7 +3756,11 @@ h2 {
     line-height: 30px;
     font-family: 'FBADRENALIN-REGULAR';
     padding-left: 140px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    height: 150px;
+    overflow: hidden; }
+  .testi_text_block p.active {
+    height: auto; }
   .testi_text_block button {
     color: #ffffff;
     font-size: 21px;
@@ -3775,10 +3779,13 @@ h2 {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
+  .testi_text_block button.active,
   .testi_text_block button:hover {
     color: #05365f;
     background-color: #ffffff;
     border-color: #05365f; }
+  .testi_text_block button.active {
+    direction: rtl; }
 
 .testi_text_block_white {
   background-color: #fff;
@@ -3831,6 +3838,29 @@ h2 {
   padding-right: 28px;
   margin-right: 110px; }
 
+.testi_video_desc_block button {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 41px;
+  font-family: 'FBADRENALIN-REGULAR';
+  width: 113px;
+  height: 41px;
+  background-color: #05365f;
+  text-align: center;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.testi_video_desc_block button:hover {
+  border-color: #05365f;
+  background-color: transparent;
+  color: #05365f; }
+
 /*=================End testimonials=================*/
 /*=================PA=================*/
 .pa_icon_1 {
@@ -3840,6 +3870,20 @@ h2 {
 .pa_icon_1:hover {
   background-image: url(../img/icons/pa_icon_1_active.png); }
 
+.pa_icon_2 {
+  background-image: url(../img/icons/pa_icon_2.png); }
+
+.pa_icon_2.active,
+.pa_icon_2:hover {
+  background-image: url(../img/icons/pa_icon_2_active.png); }
+
+.pa_icon_3 {
+  background-image: url(../img/icons/pa_icon_3.png); }
+
+.pa_icon_3.active,
+.pa_icon_3:hover {
+  background-image: url(../img/icons/pa_icon_3_active.png); }
+
 .pa {
   position: relative;
   padding-top: 54px; }
@@ -3847,16 +3891,213 @@ h2 {
     right: 0;
     top: 140px;
     position: absolute; }
+  .pa .input-form {
+    position: relative; }
+    .pa .input-form .error-msg {
+      position: absolute;
+      top: 7px;
+      left: 30px;
+      font-size: 12px;
+      color: red; }
+    .pa .input-form input:focus + label, .pa .input-form input.full + label {
+      top: 13px;
+      font-size: 16px;
+      line-height: 1;
+      color: #a4a4a4; }
+    .pa .input-form label {
+      position: absolute;
+      top: 10px;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      padding-right: 30px;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 48px;
+      color: #a4a4a4;
+      -webkit-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+           -o-transition-duration: 0.2s;
+              transition-duration: 0.2s;
+      -webkit-transition-timing-function: linear;
+           -o-transition-timing-function: linear;
+              transition-timing-function: linear; }
+      .pa .input-form label i {
+        color: #bd0b0b; }
+    .pa .input-form.half {
+      display: inline-block;
+      width: 50%; }
+  .pa .field-login {
+    width: 100%;
+    height: 63px;
+    color: #05365f;
+    font-size: 21px;
+    line-height: 21px;
+    font-family: 'EXO2.0-REGULAR_0';
+    text-align: right;
+    text-transform: uppercase;
+    padding: 0 30px;
+    border: 0;
+    padding-top: 21px; }
+  .pa .pa_edit {
+    background-image: url(../img/icons/pa_edit.png);
+    width: 32px;
+    height: 23px;
+    position: absolute;
+    top: 22px;
+    left: 23px;
+    background-position: top left; }
+  .pa .pa_edit_line {
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    background-color: #e0e0e0;
+    bottom: 0; }
+  .pa .input-form.active .pa_edit {
+    -webkit-animation: pa_edit  2s infinite ease-in-out;
+            animation: pa_edit  2s infinite ease-in-out; }
+  .pa .input-form.active .pa_edit_line {
+    -webkit-animation: pa_edit_line  2s infinite ease-in-out;
+            animation: pa_edit_line  2s infinite ease-in-out; }
+  .pa .pa_edit.pa_done .pa_edit_line {
+    display: none; }
+  .pa .pa_edit.pa_done {
+    background-image: url(../img/icons/pa_done.png); }
+
+@-webkit-keyframes pa_edit {
+  0% {
+    background-position: top left 0; }
+  50% {
+    background-position: top left 13px; }
+  100% {
+    background-position: top left 0; } }
+
+@keyframes pa_edit {
+  0% {
+    background-position: top left 0; }
+  50% {
+    background-position: top left 13px; }
+  100% {
+    background-position: top left 0; } }
+
+@-webkit-keyframes pa_edit_line {
+  0% {
+    width: 0px;
+    background-color: #e0e0e0; }
+  50% {
+    width: 14px;
+    background-color: #777; }
+  100% {
+    width: 0px;
+    background-color: #e0e0e0; } }
+
+@keyframes pa_edit_line {
+  0% {
+    width: 0px;
+    background-color: #e0e0e0; }
+  50% {
+    width: 14px;
+    background-color: #777; }
+  100% {
+    width: 0px;
+    background-color: #e0e0e0; } }
+
+.pa_wrap {
+  max-width: 1038px;
+  margin: 0 auto;
+  border: 1px solid #e1e1e1;
+  border-top: 0;
+  padding-bottom: 50px;
+  margin-bottom: 150px; }
 
 #pa_1 table {
   width: 100%; }
   #pa_1 table td:first-child {
-    width: 50%; }
+    width: 50%;
+    border-left: 0; }
   #pa_1 table td:last-child {
-    width: 50%; }
+    width: 50%;
+    border-right: 0; }
+  #pa_1 table td {
+    border: 1px solid #e1e1e1; }
 
-#pa_1 .w100 {
-  width: 100%; }
+#pa_1 .omni_form_cont_mod {
+  margin-top: 40px;
+  margin-bottom: 29px; }
+  #pa_1 .omni_form_cont_mod .omni_form_checkbox {
+    top: 0; }
+    #pa_1 .omni_form_cont_mod .omni_form_checkbox label {
+      color: #05365f;
+      font-size: 18px; }
+      #pa_1 .omni_form_cont_mod .omni_form_checkbox label span {
+        margin-left: 30px; }
+
+#pa_1 .pa_form2 .w100 {
+  width: 100% !important;
+  border-top: 0; }
+
+.pa_submit {
+  color: #4489b1;
+  font-size: 18px;
+  width: 224px;
+  height: 62px;
+  background-image: url(../img/backgrounds/pa_submit.png);
+  border: 0;
+  padding-bottom: 12px;
+  padding-left: 38px;
+  cursor: pointer;
+  margin-right: 32px;
+  margin-top: 31px;
+  background-color: transparent; }
+
+.pa_h4 {
+  background-image: url(../img/backgrounds/pa_h4.png);
+  background-position: left center;
+  color: #4489b1;
+  font-size: 30px;
+  margin-right: 32px;
+  margin-top: 29px; }
+
+.pa_p {
+  color: #a90202;
+  font-size: 18px;
+  margin-right: 32px;
+  margin-top: 12px;
+  margin-bottom: 60px; }
+
+.pa_hr {
+  background-image: url(../img/backgrounds/pa_h4.png);
+  background-repeat-x: repeat;
+  height: 13px;
+  border: 0; }
+
+.omni_form_for_capha_mod {
+  margin-top: 30px;
+  margin-right: 32px;
+  margin-bottom: 35px; }
+
+.pa_submit2 {
+  width: 134px;
+  height: 51px;
+  color: #ffffff;
+  font-size: 24px;
+  border: 0;
+  background-color: #05365f;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  margin-right: 32px;
+  text-align: center;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.pa_submit2:hover {
+  border-color: #05365f;
+  color: #05365f;
+  background-color: transparent; }
 
 /*=================End PA=================*/
 /*footer*/

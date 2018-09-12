@@ -1,4 +1,44 @@
 $(document).ready(function () {
+/*testimonials*/
+
+var testi_text_block_btn = true;
+$('.testi_text_block button').on('click', function(){
+    $(this).siblings('.testi_text_block_white').children('p').toggleClass('active');
+    $(this).toggleClass('active');
+    if(testi_text_block_btn){
+        testi_text_block_btn = false;
+        $(this).html(' פחות ');
+    }else{
+        $(this).html('  רתוי  ');
+        testi_text_block_btn = true;
+    }
+
+    //console.log(1);
+})
+/*testimonials*/
+
+/*pa*/
+
+function checkInput() {
+    var fieldLogin = $('.field-login');
+    fieldLogin.each(function(index, el) {
+        var el = $(el);
+        (el.val() == "") ? el.removeClass("full") : el.addClass("full");
+    });
+};
+checkInput();
+
+
+$('.input-form').on('click', function(){
+    $(this).addClass('active')
+    $(this).children().removeClass('pa_done')
+    
+});
+$('.input-form input').blur('click', function(){
+    $(this).parent('.input-form').removeClass('active');
+});
+
+/*pa*/
 /*omnipod*/
 
 $('.articles_share').on('click', function(){
