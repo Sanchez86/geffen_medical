@@ -1,23 +1,14 @@
 $(document).ready(function () {
-/*testimonials*/
-
-var testi_text_block_btn = true;
-$('.testi_text_block button').on('click', function(){
-    $(this).siblings('.testi_text_block_white').children('p').toggleClass('active');
-    $(this).toggleClass('active');
-    if(testi_text_block_btn){
-        testi_text_block_btn = false;
-        $(this).html(' פחות ');
-    }else{
-        $(this).html('  רתוי  ');
-        testi_text_block_btn = true;
-    }
-
-    //console.log(1);
-})
-/*testimonials*/
 
 /*pa*/
+
+$('.pa2_number').on('click', function(){
+    $(this).parents('.pa2_number_block').toggleClass('active');
+})
+
+$('.pa_submit').on('click', function(){
+    $('.pa_form2').addClass('active');
+})
 
 function checkInput() {
     var fieldLogin = $('.field-login');
@@ -39,6 +30,21 @@ $('.input-form input').blur('click', function(){
 });
 
 /*pa*/
+/*testimonials*/
+
+var testi_text_block_btn = true;
+$('.testi_text_block button').on('click', function(){
+    $(this).siblings('.testi_text_block_white').children('p').toggleClass('active');
+    $(this).toggleClass('active');
+    if(testi_text_block_btn){
+        testi_text_block_btn = false;
+        $(this).html(' פחות ');
+    }else{
+        $(this).html('  רתוי  ');
+        testi_text_block_btn = true;
+    }
+});
+/*testimonials*/
 /*omnipod*/
 
 $('.articles_share').on('click', function(){

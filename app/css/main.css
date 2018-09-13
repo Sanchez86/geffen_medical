@@ -4206,6 +4206,7 @@ h2 {
   position: relative; }
 
 .pa2_number_block_inner {
+  display: none;
   position: absolute;
   right: 0;
   top: 60px;
@@ -4213,7 +4214,8 @@ h2 {
   border: 1px solid #093a63;
   background-color: #ffffff;
   z-index: 1;
-  padding: 0 25px; }
+  padding: 5px 25px;
+  padding-bottom: 25px; }
   .pa2_number_block_inner h2 {
     color: #458ab2;
     font-size: 18px;
@@ -4233,6 +4235,117 @@ h2 {
     width: 14px;
     height: 8px;
     background-image: url(../img/icons/pa2_number_block_inner_engel.png); }
+
+.pa2_number_block.active .pa2_number_block_inner {
+  display: block; }
+
+.pa2_list_product table {
+  width: 100%; }
+  .pa2_list_product table tr {
+    height: 72px; }
+  .pa2_list_product table td:first-child {
+    width: 110px; }
+  .pa2_list_product table td {
+    border: 0;
+    border-bottom: 1px solid #eeeeee;
+    height: auto;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #00305b; }
+    .pa2_list_product table td span {
+      font-family: 'EXO2.0-MEDIUM_0'; }
+
+.pa2_list_product_img {
+  width: 84px;
+  text-align: center; }
+
+.pa2_list_product_sum table {
+  width: 100%; }
+  .pa2_list_product_sum table td {
+    border: 0;
+    height: 43px;
+    vertical-align: middle;
+    color: #458ab2;
+    font-size: 15px; }
+  .pa2_list_product_sum table .pa2_list_product_sum_price {
+    font-size: 18px; }
+  .pa2_list_product_sum table td:first-child {
+    width: 110px; }
+  .pa2_list_product_sum table td:last-child {
+    text-align: left; }
+    .pa2_list_product_sum table td:last-child span {
+      display: inline-block;
+      width: 115px;
+      text-align: right; }
+  .pa2_list_product_sum table tr {
+    border-bottom: 1px solid #eeeeee; }
+
+.pa2_list_product_sum .pa2_list_product_sum_blue td {
+  color: #05365f;
+  font-size: 18px; }
+
+.pa2_list_product_desc {
+  border-bottom: 2px solid #dddddd;
+  padding-top: 16px;
+  padding-bottom: 12px; }
+  .pa2_list_product_desc p {
+    color: #05365f;
+    font-size: 15px;
+    line-height: 19px; }
+
+.pa2_list_product_total {
+  position: relative; }
+  .pa2_list_product_total h2 {
+    float: right;
+    line-height: 43px; }
+  .pa2_list_product_total .pa2_list_product_total_sum {
+    font-family: 'EXO2.0-MEDIUM_0';
+    float: left;
+    text-transform: uppercase;
+    color: #05365f;
+    margin-top: 13px;
+    margin-left: 42px; }
+
+.pa_3_block {
+  background-color: #fff;
+  height: 520px;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+  padding: 53px 71px;
+  padding-left: 13px; }
+  .pa_3_block .product_img {
+    max-width: 138px; }
+  .pa_3_block .product {
+    border: 0; }
+  .pa_3_block .device_h3 {
+    text-align: right;
+    padding-right: 25px; }
+  .pa_3_block .sub_product .price {
+    margin-top: 82px; }
+  .pa_3_block .sub_product .for_product_btn {
+    margin-top: 0; }
+  .pa_3_block .btn1 {
+    margin-top: 10px; }
+  .pa_3_block .btn2 {
+    margin-top: 7px;
+    margin-bottom: 0; }
+  .pa_3_block .product_logo {
+    margin-top: 4px; }
+  .pa_3_block .product_close {
+    background-image: url(../img/icons/extra_menu_close.png);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 35px;
+    left: 43px;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+.pa_3_block:hover {
+  background-color: #dde9f1; }
 
 /*=================End PA=================*/
 /*footer*/
