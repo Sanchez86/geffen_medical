@@ -1,6 +1,15 @@
 $(document).ready(function () {
 
 /*pa*/
+$('.product_close').on('click',function(){
+    var product_close = $(this);
+    product_close.parents('.pa_3_nth').css('opacity','0');
+    setTimeout(function(){
+        product_close.parents('.pa_3_nth').css('display','none');
+    },1000);
+});
+
+
 
 $('.pa2_number').on('click', function(){
     $(this).parents('.pa2_number_block').toggleClass('active');

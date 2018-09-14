@@ -875,6 +875,10 @@ button{
 	li:last-child{
 		background: none;
 	}
+	li.active{
+		color: #5fabd7;
+        background-color: rgba(47, 120, 168, 0.61);
+	}
 }
 
 .cat_icon_1{
@@ -2845,6 +2849,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 .pa{
 	position: relative;
     padding-top: 54px;
+    min-height: 522px;
 	.category_menu{
 		right: 0;
 		top: 140px;
@@ -3304,11 +3309,13 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 }
 .pa_3_block{
+	position: relative;
 	background-color: #fff;
 	height: 520px;
 	transition:background 0.5s;
 	padding: 53px 71px;
     padding-left: 13px;
+    margin-bottom: 12px;
 	.product_img{
 		max-width: 138px;
 	}
@@ -3335,19 +3342,60 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	.product_logo {
 	    margin-top: 4px;
 	}
+}
+.pa_3_block:hover{
+	background-color: #dde9f1;
+}
+.pa_3_block:hover:after,
+.pa_3_block:hover:before{
+	display: none;
+} 
+.pa_3_block:before{
+	content: "";
+    position: absolute;
+    right: -9px;
+    top: 6px;
+    width: 1px;
+    height: calc(100% - 20px);
+    background-color: #dddddd;
+}
+.pa_3_block:after{
+	content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 0px;
+    width: 103.2%;
+    height: 1px;
+    background-color: #dddddd;
+}
+#pa_3 .pa_3_nth:nth-child(even) .pa_3_block:before{
+	display: none;
+}
+#pa_3 {
 	.product_close {
-	    background-image: url(../img/icons/extra_menu_close.png);
+	    background-image: url(../img/icons/product_close.png);
 	    position: absolute;
-	    width: 24px;
-	    height: 24px;
+	    width: 30px;
+	    height: 30px;
 	    top: 35px;
 	    left: 43px;
 	    cursor: pointer;
 	    transition: 0.5s;
+	    z-index: 1;
+	}
+	.product_close:hover {
+	    transform: rotateZ(90deg);
 	}
 }
-.pa_3_block:hover{
-	background-color: #dde9f1;
+.pa_3_nth{
+	    transition:opacity 1s;
+	    max-width: 590px;
+}
+#pa_3 .pa_3_nth:last-child .pa_3_block::after{
+	display: none;
+}
+#pa_3 .pa_3_nth:nth-last-child(2) .pa_3_block::after{
+	display: none;
 }
 /*=================End PA=================*/
 

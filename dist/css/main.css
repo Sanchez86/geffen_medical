@@ -3886,7 +3886,8 @@ h2 {
 
 .pa {
   position: relative;
-  padding-top: 54px; }
+  padding-top: 54px;
+  min-height: 522px; }
   .pa .category_menu {
     right: 0;
     top: 140px;
@@ -4307,13 +4308,15 @@ h2 {
     margin-left: 42px; }
 
 .pa_3_block {
+  position: relative;
   background-color: #fff;
   height: 520px;
   -webkit-transition: background 0.5s;
   -o-transition: background 0.5s;
   transition: background 0.5s;
   padding: 53px 71px;
-  padding-left: 13px; }
+  padding-left: 13px;
+  margin-bottom: 12px; }
   .pa_3_block .product_img {
     max-width: 138px; }
   .pa_3_block .product {
@@ -4332,20 +4335,64 @@ h2 {
     margin-bottom: 0; }
   .pa_3_block .product_logo {
     margin-top: 4px; }
-  .pa_3_block .product_close {
-    background-image: url(../img/icons/extra_menu_close.png);
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 35px;
-    left: 43px;
-    cursor: pointer;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
 
 .pa_3_block:hover {
   background-color: #dde9f1; }
+
+.pa_3_block:hover:after,
+.pa_3_block:hover:before {
+  display: none; }
+
+.pa_3_block:before {
+  content: "";
+  position: absolute;
+  right: -9px;
+  top: 6px;
+  width: 1px;
+  height: -webkit-calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: #dddddd; }
+
+.pa_3_block:after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 0px;
+  width: 103.2%;
+  height: 1px;
+  background-color: #dddddd; }
+
+#pa_3 .pa_3_nth:nth-child(even) .pa_3_block:before {
+  display: none; }
+
+#pa_3 .product_close {
+  background-image: url(../img/icons/product_close.png);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 43px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1; }
+
+#pa_3 .product_close:hover {
+  -webkit-transform: rotateZ(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotateZ(90deg); }
+
+.pa_3_nth {
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
+
+#pa_3 .pa_3_nth:last-child .pa_3_block::after {
+  display: none; }
+
+#pa_3 .pa_3_nth:nth-last-child(2) .pa_3_block::after {
+  display: none; }
 
 /*=================End PA=================*/
 /*footer*/
