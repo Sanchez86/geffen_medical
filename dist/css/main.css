@@ -871,7 +871,7 @@
   top: 46px;
   width: 676px;
   background-color: #fff;
-  z-index: 10;
+  z-index: 100;
   display: none; }
   .cart_list_products_block .cart_list_products_block_border {
     padding: 15px 23px; }
@@ -4663,6 +4663,52 @@ h2 {
 
 .product_block .for_img {
   padding-left: 0; }
+
+.product_block_menu {
+  position: relative;
+  right: 34px;
+  margin-top: 25px;
+  width: 319px; }
+  .product_block_menu h3 {
+    cursor: pointer;
+    color: #7abbe6;
+    font-size: 21px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-family: 'FBADRENALIN-REGULAR';
+    background-image: url(../img/icons/product_block_down.png);
+    background-repeat: no-repeat;
+    background-position: left 14px center;
+    padding-top: 11px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #2e75b1;
+    padding-right: 30px;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s; }
+  .product_block_menu h3.active {
+    background-image: url(../img/icons/product_block_up.png); }
+  .product_block_menu h3:hover {
+    color: #0e4573; }
+  .product_block_menu div div {
+    height: 0;
+    overflow: hidden; }
+  .product_block_menu div div.active {
+    height: auto; }
+  .product_block_menu p {
+    margin-top: 10px; }
+    .product_block_menu p a {
+      display: block;
+      line-height: 29px;
+      font-family: 'FBADRENALIN-REGULAR';
+      font-size: 16px;
+      color: #0e4573;
+      border: 1px solid transparent;
+      padding-right: 34px;
+      background-position: right; }
+    .product_block_menu p a:hover {
+      border: 1px solid #05365f;
+      background-image: url(../img/backgrounds/product_block_menu_a.png); }
 
 /*=================End product_block=================*/
 /*footer*/

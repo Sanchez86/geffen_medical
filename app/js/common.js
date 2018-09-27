@@ -1,4 +1,20 @@
 $(document).ready(function () {
+    //console.log(1);
+
+
+ $('.product_block_menu h3').on('click', function () {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).siblings('div').removeClass('active');
+        console.log(1);
+    } else {
+        console.log(2);
+        $(this).addClass('active');
+        $(this).siblings('div').addClass('active');
+    }
+});
+
+
 
 $('.for_product_quick').on('mouseenter', function() {
     $(this).addClass('active');
@@ -11,7 +27,7 @@ $('.cart').on('click',function(){
     $('.cart_list_products_block').toggleClass('active');
 });
 $('.cart_list_products_del span').on('click',function(){
-    //console.log(1);
+    
     var cart_list_products_del = $(this);
     cart_list_products_del.parents('tr').css('opacity','0');
     setTimeout(function(){
