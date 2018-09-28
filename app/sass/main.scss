@@ -3542,10 +3542,12 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 }
 .product_block_menu{
-    position: relative;
-    right: 34px;
+	position: relative;
+    right: 0;
     margin-top: 25px;
-    width: 319px;
+    width: 100%;
+    max-width: 319px;
+    float: right;
 	h3 {
 	    cursor: pointer;
 	    color: #7abbe6;
@@ -3560,6 +3562,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
     	padding-bottom: 7px;
 	    border-bottom: 1px solid #2e75b1;
 	    padding-right: 30px;
+	    padding-left: 30px;
 	    transition:color 0.3s;
 	}
 	h3.active {
