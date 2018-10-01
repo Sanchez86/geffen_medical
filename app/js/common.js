@@ -151,9 +151,12 @@ function middle(){
         var omnipodResult = omnipodSlide-omnipodItemHeight; //result all alements
         var omnipodResult = omnipodResult/2; //result all alements
         $(element).css('top',omnipodResult + 'px');
+       /* console.log(omnipodItemHeight);
+        console.log(omnipodSlide);
+        console.log(omnipodResult);*/
     });
 };
-setTimeout(middle, 50);
+setTimeout(middle, 2500);
 $('.carouselOmni').carousel({
     interval:3000
 });

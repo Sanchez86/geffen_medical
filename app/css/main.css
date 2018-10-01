@@ -2725,7 +2725,8 @@ h2 {
     color: #ffffff;
     font-size: 21px;
     font-family: 'FBADRENALIN-LIGHT';
-    padding-right: 15px; }
+    padding-right: 15px;
+    width: 50%; }
   .for_blue_block table .w300 {
     width: 300px; }
 
@@ -4610,6 +4611,52 @@ h2 {
 
 /*=================End PA=================*/
 /*=================product_block=================*/
+.product_block .modal-dialog {
+  width: 100%;
+  max-width: 997px;
+  padding: 0; }
+  .product_block .modal-dialog .omnipod_slider {
+    max-width: 352px;
+    margin: 0 auto; }
+  .product_block .modal-dialog .omnipod_slider .carousel-inner {
+    height: 333px; }
+  .product_block .modal-dialog .omnipod_slider .carousel-indicators li {
+    width: 75px;
+    height: 73px; }
+  .product_block .modal-dialog .omnipod_slider .carousel-indicators {
+    bottom: -81px; }
+  .product_block .modal-dialog .omnipod_slider .carousel-control {
+    height: 73px;
+    width: 25px;
+    bottom: -77px; }
+  .product_block .modal-dialog .omnipod_slider .carousel-indicators .omnipod_video:after {
+    width: 30px;
+    height: 30px; }
+  .product_block .modal-dialog .modal-header .close {
+    margin-top: 21px;
+    margin-left: 29px;
+    float: left;
+    opacity: 1;
+    background-image: url(../img/icons/product_close.png);
+    width: 25px;
+    height: 25px;
+    -webkit-background-size: contain;
+            background-size: contain; }
+  .product_block .modal-dialog .modal-title {
+    color: #093a63;
+    font-size: 30px;
+    font-family: 'EXO2.0-REGULAR_0';
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-right: 36px; }
+  .product_block .modal-dialog .modal-header {
+    border: 0; }
+  .product_block .modal-dialog .modal-body {
+    padding: 0;
+    padding-top: 35px;
+    padding-right: 80px;
+    padding-left: 50px; }
+
 .product_block .pa_3_nth:nth-child(even) .pa_3_block:before {
   display: none; }
 
@@ -4783,6 +4830,8 @@ h2 {
 /*=================product_block_inner=================*/
 .product_block_inner {
   padding-bottom: 67px; }
+  .product_block_inner .product_slider .device_h3:after {
+    display: none; }
   .product_block_inner .product_inner_h3 {
     text-transform: uppercase;
     font-family: 'EXO2.0-SEMIBOLD_0';
@@ -5457,7 +5506,23 @@ h2 {
   .pa .category_menu li a {
     font-size: 16px;
     padding-right: 50px;
-    background-position: center right 14px; } }
+    background-position: center right 14px; }
+  .product_block_inner .product_inner_price_club_card {
+    font-size: 43px; }
+  .product_block_inner .product_inner_price_club_card p {
+    font-size: 18px; }
+  .product_block_inner .product_inner_price {
+    font-size: 30px; }
+  .product_block_inner .product_inner_price p {
+    font-size: 16px; }
+  .product_block_inner .product_inner_types button {
+    margin-right: 0;
+    max-width: 88px; }
+  .product_block_inner .product_inner_sum {
+    margin-left: 5px;
+    margin-right: 5px; }
+  .product_block_inner .product_inner_quantity > button {
+    max-width: 138px; } }
 
 /*end max-width: 1199px*/
 @media only screen and (max-width: 1100px) {
@@ -5497,6 +5562,8 @@ h2 {
 
 /*end max-width: 1100px*/
 @media only screen and (max-width: 991px) {
+  .product_block_inner .product_slider .product_logo {
+    width: auto; }
   .product_header {
     margin-top: 20px; }
   .receips_1_pagination_mod {
@@ -5656,6 +5723,11 @@ h2 {
 
 /*end max-width: 991px*/
 @media only screen and (max-width: 767px) {
+  .product_block_inner .for_nav_tabs {
+    height: auto; }
+  .product_block_inner .for_nav_tabs .nav a {
+    line-height: 65px;
+    height: auto; }
   .cart_list_products_block {
     width: 500px; }
     .cart_list_products_block td {
@@ -5912,6 +5984,24 @@ h2 {
 
 /*end max-width: 650px*/
 @media only screen and (max-width: 550px) {
+  .oblique_btn_mod4 {
+    width: 185px;
+    height: 60px; }
+  .product_block_inner .product_inner_quantity > button {
+    max-width: 100px;
+    font-size: 18px; }
+  .product_block_inner .product_inner_sum {
+    margin-left: 0;
+    margin-right: 0; }
+  .product_block_inner .product_inner_quantity span {
+    margin-left: 0; }
+  .product_block_inner .product_inner_types span {
+    margin-left: 0; }
+  .product_block_inner .product_inner_types button {
+    font-size: 18px;
+    max-width: 70px; }
+  .product_block_inner .product_slider .product_logo {
+    width: 100%; }
   #pa_2 .pa2_number {
     font-size: 10px !important;
     background: none;

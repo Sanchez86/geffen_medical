@@ -1454,6 +1454,7 @@ button{
 			font-size: 21px;
 			font-family: 'FBADRENALIN-LIGHT';
 		    padding-right: 15px;
+	        width: 50%;
 		}
 		.w300{
 			width: 300px;
@@ -3483,6 +3484,65 @@ input:-ms-input-placeholder      {color:$omni_form;}
 
 /*=================product_block=================*/
 .product_block{
+	
+	.modal-dialog{
+		width: 100%;
+	    max-width: 997px;
+	    padding: 0;
+	    .omnipod_slider{
+    	    max-width: 352px;
+    		margin: 0 auto;
+	    }
+	    .omnipod_slider .carousel-inner{
+    	    height: 333px;
+	    }
+	    .omnipod_slider .carousel-indicators li{
+    	    width: 75px;
+    		height: 73px;
+	    }
+	    .omnipod_slider .carousel-indicators{
+    	    bottom: -81px;
+	    }
+	    .omnipod_slider .carousel-control{
+    	    height: 73px;
+    		width: 25px;
+		    bottom: -77px;
+	    }
+	    .omnipod_slider .carousel-indicators .omnipod_video:after{
+	    	width: 30px;
+    		height: 30px;
+	    }
+	    .modal-header .close {
+	        margin-top: 21px;
+            margin-left: 29px;
+		    float: left;
+		    opacity: 1;
+		    background-image: url(../img/icons/product_close.png);
+		    width: 25px;
+		    height: 25px;
+		    background-size: contain;
+		}
+		.modal-title{
+			color: #093a63;
+			font-size: 30px;
+			font-family: 'EXO2.0-REGULAR_0';
+			text-transform: uppercase;
+		    margin-top: 10px;
+    		margin-right: 36px;
+		}
+		.modal-header{
+			border: 0;
+		}
+		.modal-body{
+	        padding: 0;
+		    padding-top: 35px;
+		    padding-right: 80px;
+		    padding-left: 50px;
+		}
+
+	}
+
+
 	.pa_3_nth:nth-child(even) .pa_3_block:before{
 		display: none;
 	}
@@ -3668,6 +3728,9 @@ input:-ms-input-placeholder      {color:$omni_form;}
 
 .product_block_inner{
 	padding-bottom: 67px;
+	.product_slider .device_h3:after{
+		display: none;
+	}
 	.product_inner_h3{
 		text-transform: uppercase;
 		font-family: 'EXO2.0-SEMIBOLD_0';
