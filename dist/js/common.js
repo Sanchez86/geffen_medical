@@ -1,6 +1,28 @@
 $(document).ready(function () {
     //console.log(1);
 
+/*products inner*/
+
+var product_inner_minus = document.getElementById('product_inner_minus');
+var product_inner_plus = document.getElementById('product_inner_plus');
+var product_inner_result = document.getElementById('product_inner_result');
+var product_inner_start = 0;
+
+$('#product_inner_plus').on('click',function(){
+    product_inner_start ++;
+    product_inner_result.innerHTML = product_inner_start;
+});
+$('#product_inner_minus').on('click',function(){
+    if(product_inner_start == 0){
+        return
+    }else{
+        product_inner_start --;
+        product_inner_result.innerHTML = product_inner_start;
+    }
+});
+
+/*end products inner*/    
+/*products*/
 
  $('.product_block_menu h3').on('click', function () {
     if ($(this).hasClass('active')) {
@@ -35,7 +57,7 @@ $('.cart_list_products_del span').on('click',function(){
     },1000);
 });
 
-
+/*end products*/
 /*pa*/
 $('.product_close').on('click',function(){
     var product_close = $(this);
@@ -74,7 +96,7 @@ $('.input-form input').blur('click', function(){
     $(this).parent('.input-form').removeClass('active');
 });
 
-/*pa*/
+/*end pa*/
 /*testimonials*/
 
 var testi_text_block_btn = true;
@@ -89,7 +111,7 @@ $('.testi_text_block button').on('click', function(){
         testi_text_block_btn = true;
     }
 });
-/*testimonials*/
+/*end testimonials*/
 /*omnipod*/
 
 $('.articles_share').on('click', function(){

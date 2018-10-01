@@ -3664,6 +3664,161 @@ input:-ms-input-placeholder      {color:$omni_form;}
 }
 /*=================End product_block=================*/
 
+/*=================product_block_inner=================*/
+
+.product_block_inner{
+	padding-bottom: 67px;
+	.product_inner_h3{
+		text-transform: uppercase;
+		font-family: 'EXO2.0-SEMIBOLD_0';
+	    line-height: 61px;
+    	padding-bottom: 30px;
+	}
+	.product_inner_h4{
+		color: #093a63;
+		font-size: 36px;
+		margin-top: 8px;
+	}
+	.product_inner_p{
+		color: #093a63;
+		font-size: 18px;
+		line-height: 24px;
+	    margin-top: 18px;
+		max-width: 360px;
+		float: right;
+	}
+	.omnipod_description {
+	    max-width: 100%;
+	    float: none;
+	}
+	.product_inner_club{
+		color: #093a63;
+		font-size: 14px;
+		margin-top: 108px;
+	}
+	.product_inner_price_club_card{
+		color: #093a63;
+		font-size: 59px;
+		margin-top: 47px;
+		p{
+			font-size: 23px;
+		}
+	}
+	.product_inner_price{
+		color: #4386ad;
+		font-size: 38px;
+		margin-top: 21px;
+	    margin-bottom: 19px;
+		p{
+			font-size: 18px;
+		}
+	}
+	.product_inner_types{
+		button{
+			width: 100%;
+			max-width: 113px;
+			height: 33px;
+			border:1px solid #093a63;
+			border-radius: 3px;
+			background-color: transparent;
+			margin-right: 1px;
+			color: #093a63;
+			font-size: 19px;
+		}
+		button:hover{
+			background-color: #093a63;
+			color:#fff;
+		}
+		span{
+			color: #093a63;
+			font-size: 21px;
+		    margin-left: 30px;
+		}
+	}
+	.product_inner_quantity > button{
+		width: 100%;
+		max-width: 168px;
+		height: 51px;
+		border-radius: 30px;
+		background-color: #093a63;
+		color:#fff;
+		font-size: 20px;
+	}
+
+	.product_inner_quantity{
+		span{
+			color: #093a63;
+			font-size: 21px;
+		    margin-left: 30px;
+		}
+	}
+	.product_inner_sum{
+		display: inline-block;
+		border:1px solid #ebebeb;
+		border-radius: 30px;
+		width: 100%;
+		max-width: 128px;
+		height: 51px;
+		line-height: 51px;
+		text-align: center;
+	    margin-left: 55px;
+        margin-right: 15px;
+
+		button{
+			background-color: transparent;
+			color:#4386ad;
+			font-size: 24px;
+			font-family: 'EXO2.0-REGULAR_0';
+		    position: relative;
+    		top: -3px;
+    		width:38px;
+		}
+		
+		button:first-child{
+			float: left;
+			margin-left: 5px;
+		}
+		button:last-child{
+			float: right;
+			margin-right: 5px;
+		}
+		span{
+			color:#093a63;
+			font-size: 24px;
+			margin:0;
+		}
+	}
+	.omnipod_social{
+		hr{
+			margin-top: 10px;
+		}
+	}
+	.tabs_block{
+		margin-top: 48px;
+	}
+	.for_nav_tabs{
+	    background-size: cover;
+        height: 98px;
+	}
+	.for_nav_tabs .nav a{
+		line-height: 86px;
+	    height: 86px;
+	}
+	.device_h3{
+		font-family: 'EXO2.0-REGULAR_0';
+		font-size: 24px;
+	    line-height: 57px;
+        background-position: right;
+    	padding-left: 65px;
+	}
+}
+.oblique_btn_mod4{
+	float: left;
+	font-size: 18px;
+}
+
+
+/*=================End product_block_inner=================*/
 
 
 
