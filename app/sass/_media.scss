@@ -702,6 +702,32 @@
 }/*end max-width: 1100px*/
 
 @media only screen and (max-width: 991px){
+	.product_block{
+		.modal-dialog{
+			.oblique_btn_mod4{
+			    margin-left: 0;
+			}
+			.product_inner_quantity > button{
+			    max-width: 109px;
+			}
+			.product_inner_quantity > span{
+			    margin-left: 20px;
+			}
+			.product_inner_sum{
+			    margin-left: 14px;
+			}
+			.product_inner_types button {
+			    max-width: 76px;
+			}
+			.product_inner_types span {
+			    margin-left: 0;
+			}
+			.omnipod_slider .carousel-indicators li {
+			    width: 65px;
+			    height: 73px;
+			}
+		}
+	}
 	.product_block_inner .product_slider .product_logo {
 	    width: auto;
 	}
@@ -1466,6 +1492,46 @@
 }/*end max-width: 550px*/
 
 @media only screen and (max-width: 500px){
+	.product_block_inner{
+		.modal-dialog{
+			    max-width: 320px;
+			    margin: 0 auto;
+			.modal-body{
+				padding-top: 10px;
+			    padding-right: 0;
+    			padding-left: 0;
+			}
+			.product_inner_h3{
+				font-size: 25px;
+				padding-top: 16px;
+    			padding-right: 21px;
+			}
+			.omnipod_description{
+			    padding-left: 10px;
+	    		padding-right: 10px;
+			}
+			.product_inner_h4{
+				font-size: 28px;
+			}
+			.product_inner_p{
+				font-size: 16px;
+    			line-height: 22px;
+			}
+			.product_inner_price_club_card{
+			    margin-top: 7px;
+		        font-size: 48px;
+			}
+			.omnipod_slider {
+		        padding-left: 5px;
+    			padding-right: 5px;
+			}
+			.omnipod_slider .carousel-inner {
+			    height: 300px;
+			}
+		}
+		
+
+	}
 	.product{
 		width: auto;
 	}

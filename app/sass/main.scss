@@ -3534,12 +3534,77 @@ input:-ms-input-placeholder      {color:$omni_form;}
 			border: 0;
 		}
 		.modal-body{
-	        padding: 0;
 		    padding-top: 35px;
 		    padding-right: 80px;
 		    padding-left: 50px;
+		    padding-bottom: 52px;
 		}
-
+		.product_inner_h3{
+		    font-size: 30px;
+		    font-family: 'EXO2.0-SEMIBOLD_0';
+		    line-height: 33px;
+		    background-size: cover;
+		    padding-top: 16px;
+		    padding-right: 40px;
+		}
+		.product_inner_price_club_card{
+			font-size: 52px;
+		}
+		.product_inner_price_club_card p {
+		    font-size: 21px;
+		}
+		.product_inner_price {
+		    font-size: 28px;
+		    margin-top: 16px;
+	        margin-bottom: 9px;
+		}
+		.product_inner_types button{
+		    max-width: 91px;
+    		height: 26px;
+    		font-size: 16px;
+		}
+		hr{
+		    margin-top: 14px;
+			margin-bottom: 14px;
+		}
+		.product_inner_quantity > button{
+			max-width: 138px;
+			height: 41px;
+			font-size: 17px;
+		}
+		.product_inner_types span {
+		    color: #093a63;
+		    font-size: 18px;
+		    margin-left: 21px;
+		}
+		.product_inner_sum span,
+		.product_inner_quantity span{
+    		font-size: 18px;
+		}
+		.product_inner_sum button{
+		    font-size: 19px;
+		}
+		.product_inner_sum{
+		    max-width: 102px;
+		    height: 41px;
+		    line-height: 41px;
+	        margin-right: 0;
+            margin-left: 45px;
+		}
+		.omnipod_like, .omnipod_repost{
+			background-size: 15px;
+			width: 34px;
+			height: 34px;
+		}
+		.oblique_btn_mod4 {
+			font-size: 15px;
+			width: 208px;
+			height: 43px;
+			line-height: 43px;
+			padding-right: 32px;
+			padding-left: 0;
+		    margin-left: 46px;
+		}
 	}
 
 
