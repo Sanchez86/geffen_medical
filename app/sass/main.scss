@@ -1908,11 +1908,14 @@ button{
 .omnipod_block{
     padding-top: 30px;
 	.device_h3{
-		font-family: 'FBADRENALIN-REGULAR';
+	    font-family: 'FBADRENALIN-REGULAR';
 	    min-width: 334px;
 	    line-height: 66px;
 	    background-size: contain;
 	    font-size: 30px;
+	    background: none;
+	    background-color: #05365f;
+	    padding: 0;
 	}
 	hr{
 		border-color: #cfcfcf;
@@ -1930,7 +1933,7 @@ button{
 	font-family: 'FBADRENALIN-REGULAR';
 	font-size: 18px;
 	line-height: 30px;
-	margin-top: 83px;
+	margin-top: 20px;
 	margin-bottom: 41px;
 	span{
 		font-size: 18px;
@@ -1972,6 +1975,7 @@ button{
 }
 .omnipod_slider{
 	padding-bottom: 150px;
+	position: relative;
 	.carousel-indicators{
 		width: 100%;
 	    bottom: -150px;
@@ -1979,9 +1983,12 @@ button{
 	    margin: 0;
 	    right: 0;
 	    text-align: right;
+        padding-right: 58px;
+    	padding-left: 58px;
 		li{
 			display: inline-block;
-			width: 140px;
+		    width: 24%;
+    		max-width: 140px;
 			height: 134px;
 		    border-radius: 2px;
 		    border:1px solid #ebebeb;
@@ -2044,6 +2051,11 @@ button{
 		    right: 0;
 		    margin: 0 auto;
         }
+	}
+	.carousel-control.right{
+		span{
+		    transform: rotateZ(180deg);
+		}
 	}
 }
 .tabs_block{

@@ -499,9 +499,6 @@
 		height: 60px;
 		font-size: 30px;
 	}
-	.omnipod_slider .carousel-indicators li{
-		width: 120px;
-	}
 	.tab_2_zip_block:first-child:before{
 		display: none;
 	}
@@ -1008,9 +1005,6 @@
 		font-size: 32px;
     	line-height: 42px;
 	}
-	.omnipod_slider .carousel-indicators li {
-	    width: 20%;
-	}
 	.omnipod_p{
 	    margin-top: 40px;
 	}
@@ -1107,7 +1101,13 @@
 	}
 }/*end max-width: 767px*/
 @media only screen and (max-width: 650px){
-	
+	.omnipod_slider .carousel-indicators{
+	    padding-right: 42px;
+    	padding-left: 42px;
+	}
+	.omnipod_slider .carousel-indicators li{
+	    width: 23%;
+	}
 	#pa_1 table td:last-child,
 	#pa_1 table td:first-child {
 	    width: 100%;

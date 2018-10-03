@@ -3176,7 +3176,10 @@ h2 {
     line-height: 66px;
     -webkit-background-size: contain;
             background-size: contain;
-    font-size: 30px; }
+    font-size: 30px;
+    background: none;
+    background-color: #05365f;
+    padding: 0; }
   .omnipod_block hr {
     border-color: #cfcfcf; }
 
@@ -3192,7 +3195,7 @@ h2 {
   font-family: 'FBADRENALIN-REGULAR';
   font-size: 18px;
   line-height: 30px;
-  margin-top: 83px;
+  margin-top: 20px;
   margin-bottom: 41px; }
   .omnipod_p span {
     font-size: 18px;
@@ -3235,17 +3238,21 @@ h2 {
   border-color: transparent; }
 
 .omnipod_slider {
-  padding-bottom: 150px; }
+  padding-bottom: 150px;
+  position: relative; }
   .omnipod_slider .carousel-indicators {
     width: 100%;
     bottom: -150px;
     left: auto;
     margin: 0;
     right: 0;
-    text-align: right; }
+    text-align: right;
+    padding-right: 58px;
+    padding-left: 58px; }
     .omnipod_slider .carousel-indicators li {
       display: inline-block;
-      width: 140px;
+      width: 24%;
+      max-width: 140px;
       height: 134px;
       -webkit-border-radius: 2px;
               border-radius: 2px;
@@ -3305,6 +3312,10 @@ h2 {
       left: 0;
       right: 0;
       margin: 0 auto; }
+  .omnipod_slider .carousel-control.right span {
+    -webkit-transform: rotateZ(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotateZ(180deg); }
 
 .tabs_block {
   background-color: #f6f6f6;
@@ -5464,8 +5475,6 @@ h2 {
     width: 176px;
     height: 60px;
     font-size: 30px; }
-  .omnipod_slider .carousel-indicators li {
-    width: 120px; }
   .tab_2_zip_block:first-child:before {
     display: none; }
   .tab_2_zip_block {
@@ -5843,8 +5852,6 @@ h2 {
   .omni_form h3 {
     font-size: 32px;
     line-height: 42px; }
-  .omnipod_slider .carousel-indicators li {
-    width: 20%; }
   .omnipod_p {
     margin-top: 40px; }
   .tab_2_zip_block h4 {
@@ -5923,6 +5930,11 @@ h2 {
 
 /*end max-width: 767px*/
 @media only screen and (max-width: 650px) {
+  .omnipod_slider .carousel-indicators {
+    padding-right: 42px;
+    padding-left: 42px; }
+  .omnipod_slider .carousel-indicators li {
+    width: 23%; }
   #pa_1 table td:last-child,
   #pa_1 table td:first-child {
     width: 100%;
