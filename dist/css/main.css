@@ -4632,10 +4632,12 @@ h2 {
   .product_block .modal-dialog .omnipod_slider .carousel-inner {
     height: 333px; }
   .product_block .modal-dialog .omnipod_slider .carousel-indicators li {
-    width: 75px;
+    width: 23.5%;
     height: 73px; }
   .product_block .modal-dialog .omnipod_slider .carousel-indicators {
-    bottom: -81px; }
+    bottom: -81px;
+    padding-right: 25px;
+    padding-left: 25px; }
   .product_block .modal-dialog .omnipod_slider .carousel-control {
     height: 73px;
     width: 25px;
@@ -5639,7 +5641,6 @@ h2 {
   .product_block .modal-dialog .product_inner_types span {
     margin-left: 0; }
   .product_block .modal-dialog .omnipod_slider .carousel-indicators li {
-    width: 65px;
     height: 73px; }
   .product_block_inner .product_slider .product_logo {
     width: auto; }

@@ -3509,11 +3509,13 @@ input:-ms-input-placeholder      {color:$omni_form;}
     	    height: 333px;
 	    }
 	    .omnipod_slider .carousel-indicators li{
-    	    width: 75px;
+    	    width: 23.5%;
     		height: 73px;
 	    }
 	    .omnipod_slider .carousel-indicators{
     	    bottom: -81px;
+    	    padding-right: 25px;
+    		padding-left: 25px;
 	    }
 	    .omnipod_slider .carousel-control{
     	    height: 73px;
