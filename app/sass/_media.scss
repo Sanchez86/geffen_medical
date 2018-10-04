@@ -21,6 +21,9 @@
     .testimonials .container{
 		width: 1230px;
     }
+    .testimonials .vacancy .container{
+		width: 1170px;
+    }
 }/*end min-width: 1500px*/	
 
 @media only screen and (max-width: 1850px){
@@ -74,7 +77,7 @@
 	    top: 417px;
 	}
 	.banner_transparent{
-	    top: 481px;
+	    top: 460px;
 	}
 
 	h2:after{
@@ -173,7 +176,7 @@
 	    top: 367px;
 	}
 	.banner_transparent{
-	    top: 431px;
+	    top: 380px;
 	}
 
 
@@ -318,7 +321,7 @@
 	    top: 317px;
 	}
 	.banner_transparent {
-	    top: 381px;
+	    top: 340px;
 	}
 
 	.category_menu li a{
@@ -424,7 +427,7 @@
     	height: 44px;
 	}
 	.banner_transparent {
-	    top: 331px;
+	    top: 280px;
 	    width: 186px;
     	height: 44px;
 	}
@@ -895,14 +898,22 @@
 	}
 	.category_menu_articles{
 		background: none;
+		background-color: #002f5b;
+		padding-left: 0;
+		padding-top: 0;
+	}
+	.category_menu_articles li{
+		background: 0;
+	}
+	.category_menu_articles h4{
+    	border-bottom: 1px solid #fff;
 	}
 	.cat_article{
 		background-repeat: repeat-x;
 		margin-left: 0;
 	}
 	.category_menu_articles h4{
-		background-size: cover;
-	    margin-left: 0;
+		background:none;
 	}
 	.category_menu {
 	    background-size: cover;
@@ -938,6 +949,9 @@
 		.for_product_quick{
 			margin-bottom: 30px;
 		}
+	}
+	#wrap .pa2_number_block_inner h2{
+		font-size: 18px;
 	}
 }/*end max-width: 991px*/
 
@@ -1100,6 +1114,9 @@
 	}
 }/*end max-width: 767px*/
 @media only screen and (max-width: 650px){
+	.pa2_number_block_inner{
+		width: 400px;
+	}
 	.omnipod_slider .carousel-indicators{
 	    padding-right: 42px;
     	padding-left: 42px;
@@ -1282,6 +1299,9 @@
 	}
 	.partners_elements .col-md-3{
 		line-height: inherit;
+	}
+	.pa_submit2{
+	    margin-top: 30px;
 	}
 }/*end max-width: 650px*/
 @media only screen and (max-width: 550px){
@@ -1576,6 +1596,19 @@
 }/*end max-width: 550px*/
 
 @media only screen and (max-width: 414px){
+	.pa2_number_block_inner {
+	    width: 300px;
+	}
+	.pa2_list_product table td:first-child {
+	    width: 40px;
+	}
+	.pa2_list_product_img {
+	    width: 50px;
+	}
+	.pa_3_block .device_h3{
+		min-width: auto;
+	    padding-left: 25px;
+	}
 	.cart_list_products_block{
 		width: 320px;
 		.cart_list_products_del span {
@@ -1594,7 +1627,8 @@
 		}
 	}
 	#pa_3 .product_close{
-		top: 85px;
+		left: 25px;
+	    top: 30px;
 	}
 	.category_menu{
 		float: none;
@@ -1677,7 +1711,7 @@
     	height: 54px;
 	}
 	.banner_transparent{
-		top: 426px;
+		top: 380px;
         width: 196px;
     	height: 54px;
 	}
@@ -1701,6 +1735,9 @@
 	}
 }/*end max-width: 414px*/
 @media only screen and (max-width: 375px){
+	.pa2_number_block_inner {
+	    width: 290px;
+	}
 	#wrap .partners h2 {
     font-size: 22px;
     line-height: 71px;
