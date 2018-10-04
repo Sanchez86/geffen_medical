@@ -369,6 +369,9 @@
 }/*end max-width: 1400px*/
 
 @media only screen and (max-width: 1300px){
+	.cart_list_products_block{
+	    top: 34px;
+	}
 	.pa_3_nth {
 	    width: 100%;
 	    margin: 0 auto;
@@ -956,6 +959,9 @@
 }/*end max-width: 991px*/
 
 @media only screen and (max-width: 767px){
+	.cart_list_products_block{
+	    top: 46px;
+	}
 	.product_block_inner .for_nav_tabs{
 		height: auto;
 	}
