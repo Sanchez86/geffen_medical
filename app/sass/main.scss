@@ -901,6 +901,7 @@ button{
 		    position: relative;
 		    background-size: 30px;
 		    z-index: 1;
+		    direction: rtl;
 		}
 		a:hover{
 		    color: #5fabd7;
@@ -1436,7 +1437,7 @@ button{
 	h3{
 		color:#ffffff;
 		text-align: right;
-		font-size: 91px;
+		font-size: 50px;
 		line-height: 91px;
 		font-family: 'FBADRENALIN-REGULAR';
 		margin-top: 61px;
@@ -1456,7 +1457,6 @@ button{
 			font-size: 21px;
 			font-family: 'FBADRENALIN-LIGHT';
 		    padding-right: 15px;
-	        width: 50%;
 		}
 		.w300{
 			width: 300px;
@@ -1659,6 +1659,7 @@ button{
 		border: 0;
 		a{
 			border: 0;
+			direction: rtl;
 		}
 	}
 }
@@ -1779,11 +1780,10 @@ button{
     margin-top: 31px;
 }
 .similar_h2{
-	color:#1a1a1a;
+	color:#002e59;
 	font-size: 36px;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: 'EXO2.0-REGULAR_0';
     margin-bottom: 56px;
 }
 .similar_h4{

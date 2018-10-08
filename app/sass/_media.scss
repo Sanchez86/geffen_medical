@@ -702,6 +702,14 @@
 	.video__cover:hover{
 		background-position-y: 0px!important;
     }
+    .category_menu li a:hover:after, .category_menu li a.active:after{
+    	display: none;
+    }
+    
+    #pa_3 .product_close:hover{
+    	transform:scale(1.2);
+    }
+
 }/*end max-width: 1100px*/
 
 @media only screen and (max-width: 991px){
@@ -955,6 +963,9 @@
 	}
 	#wrap .pa2_number_block_inner h2{
 		font-size: 18px;
+	}
+	.cart_list_products_block {
+	    top: 32px;
 	}
 }/*end max-width: 991px*/
 
