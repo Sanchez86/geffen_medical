@@ -288,7 +288,10 @@
 	.category_desc{
 	    height: 84px;
 	}
-
+	.receips_2_inner .for_blue_block {
+	    max-width: 100%;
+	    margin-left: 0;
+	}
 }/*end max-width: 1500px*/
 
 @media only screen and (max-width: 1400px){
@@ -458,6 +461,9 @@
 }/*end max-width: 1300px*/
 
 @media only screen and (max-width: 1199px){
+	.receips_2 .pagination_group button{
+	    margin: 0;
+	}
 	.for_blue_block h3{
 		font-size: 71px;
 	}
@@ -713,6 +719,9 @@
 }/*end max-width: 1100px*/
 
 @media only screen and (max-width: 991px){
+	.receips_2 .category_menu{
+		max-width: 100%;
+	}
 	.product_block{
 		.modal-dialog{
 			.oblique_btn_mod4{
@@ -967,9 +976,25 @@
 	.cart_list_products_block {
 	    top: 32px;
 	}
+	#wrap .receips_2_inner .for_blue_block h2 {
+	    font-size: 24px;
+	    margin-bottom: 0;
+	}
+	.receips_2_inner .for_blue_block h3 {
+	    font-size: 30px;
+	    margin-top: 0;
+	    margin-bottom: 0;
+        line-height: 70px;
+	}
+	.for_blue_block table{
+		margin-bottom: 20px;
+	}
 }/*end max-width: 991px*/
 
 @media only screen and (max-width: 767px){
+	.receips_2 .pagination_group {
+	    width: 230px;
+	}
 	.cart_list_products_block{
 	    top: 46px;
 	}
@@ -1131,6 +1156,9 @@
 	}
 }/*end max-width: 767px*/
 @media only screen and (max-width: 650px){
+	.receips_2_inner .for_blue_block table td {
+	    font-size: 16px;
+	}
 	.pa2_number_block_inner{
 		width: 400px;
 	}
@@ -1320,8 +1348,16 @@
 	.pa_submit2{
 	    margin-top: 30px;
 	}
+	.receips_2_inner .receips_lists_left,
+	 .receips_2_inner .receips_lists_right{
+		width: 100%;
+	}
 }/*end max-width: 650px*/
 @media only screen and (max-width: 550px){
+	.pa_submit{
+	    margin: 0 auto;
+	    margin-top: 31px;
+	}
 	.oblique_btn_mod4{
 	    width: 185px;
 		height: 60px;
@@ -1524,7 +1560,12 @@
 	#wrap .next_block h2{
 	    font-size: 34px;
 	}
-
+	.receips_2 .receips_1_next,
+	 .receips_2 .receips_1_prev{
+	    width: 34px;
+	    height: 36px;
+	    background-position: right 14px center;
+	}
 }/*end max-width: 550px*/
 
 @media only screen and (max-width: 500px){
@@ -1824,7 +1865,8 @@ body.color_black{
 	}
 	#navbar,
 	.hidden_heder1, .hidden_heder2,
-	.footer{
+	.footer,
+	.contact-us .columns-wrapper .column{
 		background-image: none !important;
 	}
 	.omnipod_yellow,
@@ -1858,6 +1900,9 @@ body.color_black{
 	}
 	.footer .iso{
 		background-image: url(../img/icons/facebook_yellow.png);
+	}
+	.footer .youtube{
+		background-image: url(../img/icons/footer_icon0_yellow.png);
 	}
 	.drop::after,
 	.lang::after{

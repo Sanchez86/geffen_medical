@@ -658,11 +658,14 @@ button{
 	padding-right: 0;
 }
 .video_list{
+	/*
     background-image: url(../img/backgrounds/video_list.png);
     background-repeat: no-repeat;
+    background-position: left top -38px;
+    */
+    background-color: #3d82aa;
     max-width: 538px;
     float: right;
-    background-position: left top -38px;
 }
 .video_posts{
     margin-right: 17px;
@@ -877,15 +880,18 @@ button{
 	padding-right: 0;
 }
 .category_menu{
+	/*
+	background-image: url(../img/backgrounds/cat_bg.png);
+    background-position: top -10px left;
+    padding-left: 20px;
+    padding-top: 33px;
+    */
 	width: 400px;
     max-width: 397px;
     float: right;
-    background-image: url(../img/backgrounds/cat_bg.png);
-    padding-left: 20px;
-    padding-top: 33px;
     position: relative;
     right: -15px;
-    background-position: top -10px left;
+    background-color: #05365f;
 	li{
 		background-image: url(../img/elements/cat_line.png);
 		background-repeat: no-repeat;
@@ -1269,6 +1275,106 @@ button{
     margin-right: 5px;
     letter-spacing: 3px;
 }
+.receips_2{
+	h2{
+	    font-size: 30px;
+	}
+	h2:after{
+		background-position: left;
+	}
+	h2:before{
+		background-position: right;
+	}
+	.category_menu{
+	    background: none;
+	    background-color: #05365f;
+	    float: none;
+	    right: 0;
+	    padding-top: 0px;
+	    padding-left: 0px;
+	    width: auto;
+	    max-width: 327px;
+	    li{
+	    	a{
+	    		font-size: 18px;
+	    		padding-right: 102px;
+	    	}
+	    }
+	}
+	.receips_1_desc_p,
+	.receips_1_desc_p2{
+		font-size: 16px;
+		font-family: 'FBADRENALIN-LIGHT';
+	}
+	.receips_1_desc{
+	    padding-left: 38px;
+    	padding-right: 38px;
+	}
+	.share{
+		font-size: 16px;
+		color: #05365f;
+		font-family: 'EXO2.0-REGULAR_0';
+		background-size: 34px;
+		padding-left: 41px;
+		margin-right: 0;
+	    margin-top: 6px;
+	}
+	.receips_1_block_footer{
+	    background: none;
+    	background-color: #05365f;
+	    padding-right: 39px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 20px;
+	}
+	.receips_1_block_open{
+		font-size: 14px;
+		width: 120px;
+	    line-height: 34px;
+        background-size: 19px;
+        background-position: left 16px center;
+        transition:background-position 0.5s;
+	}
+	.receips_1_block_open:hover{
+		background-position: left 13px center;
+	}
+	.receips_1_cat{
+	    padding-bottom: 0;
+	    padding-top: 0;
+	    padding-left: 0px;
+	    line-height: 41px;
+	    width: auto;
+        min-width: 108px;
+        padding-right: 40px;
+	}
+	.receips_1_block{
+		margin-bottom: 24px;
+	}
+	.receips_1_pagination{
+	    margin-left: 15px;
+    	margin-right: 15px;
+	}
+	.pagination_group button{
+	    width: 36px;
+    	height: 36px;
+    	line-height: 36px;
+    	font-size: 15px;
+	}
+	.receips_1_next,.receips_1_prev {
+	    background-repeat: no-repeat;
+	    background-position: right 25px center;
+	    width: 109px;
+	    height: 39px;
+	    border-radius: 18px;
+	    font-size: 15px;
+	}
+	.receips_1_block img{
+		float: left;
+	}
+	.category_menu li a{
+	    background-position: top 17px right 31px;
+	}
+}
 /*receips_1_inner*/
 .receips_1_inner{
 	padding-bottom: 0;
@@ -1446,7 +1552,6 @@ button{
 	}
 	table{
 		width: 100%;
-		max-width: 730px;
 		tr{
 		    background-image: url(../img/backgrounds/for_blue_block_tr.png);
 		    line-height: 50px;
@@ -1496,6 +1601,86 @@ button{
 }
 .for_blue_block_btn:hover span{
 	left: 43px;
+}
+.receips_2_inner{
+	.for_blue_block{
+	    max-width: 100%;
+	}
+	.articles_share{
+	    width: 47px;
+    	height: 47px;
+    	bottom: -23px;
+	}
+	.receips_1_inner_h3{
+		font-size: 24px;
+	}
+	.receips_1_inner_p{
+		font-size: 16px;
+		font-family: 'FBADRENALIN-LIGHT';
+	}
+	strong{
+		font-size: 21px;
+	}
+	.receips_1_inner_desc {
+	    background-color: #f5f5f5;
+	    padding-top: 30px;
+	    padding-right: 30px;
+	    padding-bottom: 11px;
+	    padding-left: 100px;
+	}
+	.receips_lists_left h4, .receips_lists_right h4{
+		font-size: 21px;
+		background-size: 26px;
+	}
+	.receips_lists_left li:before{
+		width: 30px;
+	    height: 30px;
+	    line-height: 30px;
+        font-size: 14px;
+	}
+	.receips_lists_right li{
+		font-size: 16px;
+		font-family: 'FBADRENALIN-LIGHT';
+	}
+	.receips_lists_left li{
+		    padding-left: 30px;
+	}
+	.receips_lists_left{
+	    width: 56%;
+	}
+	.receips_lists_right{
+		width: 44%;
+	    padding-right: 30px;
+	}
+	.for_blue_block h2{
+		font-size: 24px;
+	}
+	.for_blue_block h3{
+		font-size: 60px;
+	}
+	.for_blue_block table td{
+		font-size: 18px;
+	}
+	.for_blue_block_btn{
+		font-size: 18px;
+	}
+	.for_blue_block_btn{
+		width: 225px;
+    	height: 51px;
+	    margin-top: 84px;
+	}
+	.for_blue_block_btn span{
+		background-size: contain;
+		width: 23px;
+		left: 30px;
+	}
+	.for_blue_block_btn:hover span{
+		left: 27px;
+	}
+	h2:before,
+	h2:after{
+		width: 34%;
+	}
 }
 /*=================End receips_1=================*/
 /*=================articles=================*/
@@ -2994,7 +3179,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
     margin-bottom: 150px;
 	.category_menu{
 		right: 0;
-		top: 140px;
+		top: 91px;
 		position: absolute;
 	}
 	.input-form {
@@ -3159,6 +3344,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 }
 
 .pa_submit{
+    display: block;
 	color: #4489b1;
 	font-size: 18px;
 	width: 224px;
@@ -3495,15 +3681,16 @@ input:-ms-input-placeholder      {color:$omni_form;}
 .pa_3_block:hover{
 	background-color: #dde9f1;
 }
-*/
+
 .pa_3_block:hover:after,
 .pa_3_block:hover:before{
 	display: none;
-} 
+}
+*/ 
 .pa_3_block:before{
 	content: "";
     position: absolute;
-    right: -9px;
+    right: -16px;
     top: 6px;
     width: 1px;
     height: calc(100% - 20px);
@@ -3569,7 +3756,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 
 /*=================product_block=================*/
 .product_block{
-	
+     padding-bottom: 50px;
 	.modal-dialog{
 		width: 100%;
 	    max-width: 997px;
@@ -3704,8 +3891,8 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 	.pa_3_nth .pa_3_block:after{
 		background-color:#458ab2;
-		bottom: -6px;
-		left: 11px;
+		bottom: -12px;
+		left: 17px;
 		width: 93.2%;
 	}
 	.pa_3_nth .pa_3_block:before{
@@ -3861,6 +4048,11 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	font-size: 15px;
 	color:#05365f;
 	margin-left: 10px;
+	p{
+		display: inline;
+		position: relative;
+		top: -1px;
+	}
 	span{
 		font-family: 'EXO2.0-REGULAR_0';
 		color: #5b97bc;
