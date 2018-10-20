@@ -434,6 +434,7 @@ $('.navbar-nav__left_link').on('click', function(){
 $('.sub_menu').on('click', function(){
     $('.extra_menu').removeClass('open_product');
     $('.navbar-nav__right>li').css('visibility', 'visible');
+    $('.navbar-nav__left_link').css('display', 'block');
 });
 
 var countReverses = true;

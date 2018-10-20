@@ -2,27 +2,21 @@
     
 }/*end min-width: 1400px*/
 @media only screen and (min-width: 1500px){
+	.partners_elements .container{
+	    width: 970px;
+	}
     .slider .container{
         width: 100%;
-    	max-width: 1260px;
+    	max-width: 1030px;
     }
     .footer .container{
         width: 1330px;
-    }
-    .device .container{
-		width: 1570px;
     }
     .omnipod_block .container{
 		width: 1238px;
     }
     .product_slider .container{
 		width: 1190px;
-    }
-    .testimonials .container{
-		width: 1230px;
-    }
-    .testimonials .vacancy .container{
-		width: 1170px;
     }
 }/*end min-width: 1500px*/	
 
@@ -49,35 +43,14 @@
 	.pa .category_menu{
 		width: 100%;
 	}
-	.category_menu li a{
-	    padding-right: 105px;
-	}
 	.video__panel{
 		border-width:1px;
-	}
-	.videos .video__name{
-	    top: 30%;
-	}
-	.videos .video__user_name{
-		top: 40%;
 	}
 	.videos .video__poster{
 	    height: auto;
 	}
-	.how_low h3{
-		font-size: 32px;
-	}
 	.banner_omnipod{
 		top: 102px;
-	}
-	.banner__h1{
-	    top: 230px;
-	}
-	.banner_blue{
-	    top: 417px;
-	}
-	.banner_transparent{
-	    top: 460px;
 	}
 
 	h2:after{
@@ -124,13 +97,6 @@
 	}
 }/*end max-width: 1650px*/
 @media only screen and (max-width: 1600px){
-	.product_quick_btn{
-		margin-left: 3vw;
-	    width: 123px;
-    	margin-top: 11px;
-    	line-height: 39px;
-    	font-size: 18px;
-	}
 	.product_quick_like{
 		margin-right: 3vw;
 	}
@@ -144,39 +110,17 @@
 	    padding-left: 30px;
     	padding-right: 30px;
 	}
-	.category_menu{
-	    width: 350px;
-	}
-	.category_menu li a{
-	    padding-right: 115px;
-	}
-	.video_posts p{
-	    background-size: 30px;
-    	background-position: top 44px right 0px;
-    	padding-right: 50px;
-    	font-size: 17px;
-	}
-	.video_posts a{
-		padding-right: 50px;
-	}
-	.device .container {
-	    width: 100%;
-	}
-	.how_low h3{
-	    font-size: 28px;
-	}
 	.banner_omnipod{
 		top: 52px;
 	}
 	.banner__h1{
-	    top: 180px;
-	    font-size: 48px;
+	    top: 150px;
 	}
 	.banner_blue{
 	    top: 367px;
 	}
 	.banner_transparent{
-	    top: 380px;
+	    top: 270px;
 	}
 
 
@@ -247,50 +191,25 @@
 	#wrap .partners_elements .owl-nav .owl-prev{
     	left: -60px;
 	}
-	.slide_content{
-		height: auto;
-		min-height: 250px;
-	    padding-bottom: 30px;
-    	padding-top: 30px;
-	}
 	.slider img{
 	    max-height: 290px;
-	}
-	.slide_content h3{
-		font-size: 23px;
-	}
-	.slide_content p{
-	    font-size: 20px;
-	    margin-top: 5px;
-    	line-height: 30px;
 	}
 	.video_posts p{
 		padding-left: 20px;
 	    padding-top: 30px;
 
 	}
-	.videos .video__name:after{
-		display: none;
-	}
-	.videos .video__name{
-		font-size: 28px;
-		padding-left: 20px;
-	}
-	.videos .video__user_name{
-		font-size: 18px;
-	    padding-left: 20px;
-	}
-	.category_desc{
-		font-size: 22px;
-	    padding-left: 10px;
-    	padding-right: 10px;
-	}
-	.category_desc{
-	    height: 84px;
-	}
 	.receips_2_inner .for_blue_block {
 	    max-width: 100%;
 	    margin-left: 0;
+	}
+	.banner__h1 {
+	    top: 140px;
+	    font-size: 36px;
+	    line-height: 44px;
+	}
+	.banner_transparent {
+	    top: 250px;
 	}
 }/*end max-width: 1500px*/
 
@@ -306,32 +225,21 @@
 	.article_block_h3_inner {
 	    font-size: 32px;
 	}
-	.category_menu {
-	    width: 300px;
-	}
 	.device h2:before,
 	.device h2:after{
 		display:none;
 	}
-	.how_low h3{
-	    font-size: 26px;
-        line-height: 36px;
-	}
 	.banner__h1 {
-	    top: 150px;
+	    top: 112px;
+	    font-size: 34px;
+	    line-height: 42px;
 	}
-	.banner_blue {
-	    top: 317px;
+	.banner_omnipod {
+	    top: 32px;
 	}
 	.banner_transparent {
-	    top: 340px;
+	    top: 220px;
 	}
-
-	.category_menu li a{
-	    font-size: 20px;
-	    padding-right: 100px;
-	}
-
 	.category_menu li{
 	    background-size: contain;
 	}
@@ -392,9 +300,6 @@
 	    padding-top: 40px;
 	    padding-bottom: 37px;
 	}
-	.category_desc{
-	    padding-top: 10px;
-	}
 	.sub_product{
 	    padding-right: 0;
     	min-width: 100%;
@@ -405,37 +310,22 @@
 	.device .for_img{
 	    padding-left: 0;
 	}
-
-	.videos .video__name {
-	    font-size: 18px;
-	    top: 20%;
-	}
-	.videos .video__user_name {
-		font-size: 16px;
-	    top: 30%;
-	}
 	.panel_item_all_time{
 		padding-left: 20px;
 	}
-	.how_low h3 {
-	    font-size: 24px;
-	    line-height: 34px;
-	}
-	.banner__h1{
-		top: 140px;
-	    font-size: 50px;
-    	line-height: 57px;
-	}
-	
-	.banner_blue{
-		top: 277px;
-		width: 186px;
-    	height: 44px;
+	.banner__h1 {
+	    top: 95px;
+	    font-size: 30px;
+	    line-height: 40px;
+	    max-width: 400px;
 	}
 	.banner_transparent {
-	    top: 280px;
-	    width: 186px;
-    	height: 44px;
+	    top: 203px;
+	    width: 138px;
+	    height: 38px;
+	}
+	.banner_omnipod {
+	    width: 160px;
 	}
 
 	h2:after{
@@ -458,9 +348,19 @@
 	    padding-left: 60px;
     	padding-right: 60px;
 	}
+	#wrap .slider .owl-nav .owl-next{
+		right: -50px;
+	}
+	#wrap .slider .owl-nav .owl-prev{
+		left: -50px;
+	}
 }/*end max-width: 1300px*/
 
 @media only screen and (max-width: 1199px){
+	.slide_content{
+	    padding-left: 30px;
+    	padding-right: 30px;
+	}
 	.receips_2 .pagination_group button{
 	    margin: 0;
 	}
@@ -477,7 +377,6 @@
 	.pagination_group button{
 		width: 32px;
 		height: 32px;
-		font-size: 16px;
 		line-height: 32px;
 		margin-left: 2px;
 		margin-right: 2px;
@@ -497,9 +396,6 @@
 	}
 	.product_slider .carousel-control.right {
 	    right: 0px;
-	}
-	.sub_product .price{
-		font-size: 37px;
 	}
 	.omni_form .omni_form_bg_right,
 	.omni_form .omni_form_bg_left{
@@ -532,40 +428,10 @@
 	.tab_5 p{
 		padding-left: 0;
 	}
-	.video_posts p{
-	    padding-top: 25px;
-	    font-size: 15px;
-	    line-height: 20px;
-	    background-position: top 26px right 0px;
-	}
-	.category_menu li a {
-	    font-size: 18px;
-	    padding-right: 80px;
-	    background-position: top 17px right 28px;
-	    line-height: 61px;
-	}
-	.video_list{
-	    background-image: url(../img/backgrounds/video_cover.png);
-    	background-size: cover;
-	}
 	.video_posts{
 	    margin-left: 0;
 	}
-
-	.how_low h3{
-	    max-width: 100%;
-	    width: 100%;
-	    padding-left: 5px;
-	    padding-right: 5px;
-	}
-	.banner__h1 {
-	    top: 140px;
-	    font-size: 40px;
-	    padding-left: 5px;
-	    padding-right: 5px;
-	    line-height: 40px;
-	}
-
+	
 	.next_block h2{
 		background-image: none;
 	}
@@ -582,46 +448,12 @@
 	}
 	.banner__img{
 	    width: auto;
-    	max-height: 450px;
+    	max-height: 330px;
     	opacity: 0.7;
-	}
-	.how_low{
-		background-position: center;
-        text-align: center;
-	}
-	.how_low h3{
-		padding: 0;
-		text-align: center;
-	    font-size: 28px;
-	}
-	.how_low h3:after{
-		display: none;
-	}
-	.how_low button{
-		margin-right: 0;
 	}
 
 	.device h2{
 		display: none;	
-	}
-	.product{
-		padding: 0;
-		border: 0;
-		border-bottom: 1px solid #458ab2;
-		width: 510px;
-		margin: 0 auto;
-		margin-bottom: 60px;
-	    padding-bottom: 5px;
-	}
-	.description{
-	    margin-top: 32px;
-        margin-right: 26px;
-	}
-	.price{
-	    margin-top: 139px;
-	}
-	.desc{
-	    font-size: 21px;
 	}
 	.btn1,
 	.btn2{
@@ -630,9 +462,6 @@
 	}
 	.sub_product_btn{
 		clear: both;
-	}
-	.sub_product{
-	    padding-right: 27px;
 	}
 	.pa .category_menu li a {
 		font-size: 16px;
@@ -662,12 +491,26 @@
 	.product_block_inner .product_inner_quantity > button{
 	    max-width: 138px;
 	}
+	.receips_2_inner .for_blue_block h3{
+	    font-size: 50px;
+	}
+	.receips_2 .category_menu li a{
+		padding-right: 70px;
+		background-position: top 17px right 22px;
+	    font-size: 15px;
+	}
 }/*end max-width: 1199px*/
 
 @media only screen and (max-width: 1100px){
-	.for_blue_block{
-		background-position: left top -170px;
-		height: auto;
+	.slide_content {
+	    padding:15px;
+        height: auto;
+	}
+	.slide_content h3{
+		font-size: 16px;
+	}
+	.slide_content p{
+		line-height: 19px;
 	}
 	.receips_lists_right {
 	    padding-right: 25px;
@@ -715,10 +558,35 @@
     #pa_3 .product_close:hover{
     	transform:scale(1.2);
     }
+    .for_blue_block table tr{
+    	background: none;
+	    border-bottom: 1px solid #5192b8;
+    }
+    .for_blue_block table tr:last-child{
+    	border:0;
+    }
 
 }/*end max-width: 1100px*/
 
 @media only screen and (max-width: 991px){
+	.category_block img{
+		max-height: initial;
+	}
+	.device .for_img {
+	    text-align: center;
+	}
+	.product{
+		padding: 0;
+		border: 0;
+		border-bottom: 1px solid #458ab2;
+		width: 510px;
+		margin: 0 auto;
+		margin-bottom: 60px;
+	    padding-bottom: 5px;
+	}
+	.for_blue_block{
+		padding-left: 20px;
+	}
 	.receips_2 .category_menu{
 		max-width: 100%;
 	}
@@ -781,10 +649,6 @@
 	}
 	.for_blue_block table .w300 {
 	    width: auto;
-	}
-	.for_blue_block{
-		height: auto;
-	    background-position: center -170px;
 	}
 	.product_slider .device_h3:after{
 		display: none;
@@ -861,18 +725,11 @@
 	.next_block p{
 		padding-left: 0;
 	}
-	.video_posts p{
-	    padding-right: 89px;
-	}
 	.sub_video_list {
 	    padding-right: 15px;
 	}
 	.category_block{
 	    margin-bottom: 20px;
-	}
-	.category_menu li a{
-	    line-height: 55px;
-        font-size: 20px;
 	}
 	#wrap .slider .owl-nav .owl-prev{
 	    left: -42px;
@@ -884,31 +741,12 @@
 	    width: 40px;
     	height: 45px;
 	}
-	.videos .video__name:after{
-		display: none;
-	}
 	.video_posts {
 	    margin-right: 0;
 	}
-	.video_posts a{
-	    margin-bottom: 51px;
-	}
-	.video_posts p{
-	    font-size: 20px;
-     	padding-top: 60px;
- 	    background-position: top 47px right 30px;
-	}
-	.video_list{
-	    background-image: url(../img/backgrounds/video_cover.png);
-        background-size: cover;
-        max-width: 100%;
-	}
 	.video_posts hr{
-	    background-position: right;
-    	background-repeat: no-repeat;
-	}
-	#wrap h2{
-		font-size: 48px;
+	    background:none;
+        background-color: #4881a1;
 	}
 	.device h2 span{
 		font-size: 58px;
@@ -992,6 +830,9 @@
 }/*end max-width: 991px*/
 
 @media only screen and (max-width: 767px){
+	.category_block{
+	    max-width: 260px;
+	}
 	.receips_2 .pagination_group {
 	    width: 230px;
 	}
@@ -1112,10 +953,6 @@
 	    margin-left: 50px;
 	    margin-right: 50px;
 	}
-	#wrap h2{
-		font-size: 38px;
-		margin-bottom: 30px;
-	}
 	.device h2 span{
 		font-size: 48px;
 	}
@@ -1153,6 +990,9 @@
 		top: 40%;
 	    margin-left: 0;
 	    margin-right: 0;
+	}
+	.category_desc{
+	    padding-top: 17px;
 	}
 }/*end max-width: 767px*/
 @media only screen and (max-width: 650px){
@@ -1319,9 +1159,6 @@
 	.how_low p{
 		font-size: 22px;
 	}
-	.how_low h3 {
-	    font-size: 24px;
-	}
 	.category h2 {
 	    margin-bottom: 19px;
 	}
@@ -1333,10 +1170,6 @@
 	}
 	.category_blocks{
 		padding-bottom: 26px;
-	}
-	#wrap .partners h2{
-		font-size: 28px;
-		line-height: 71px;
 	}
 	.partners_elements img{
 		width: 100%;
@@ -1479,12 +1312,6 @@
 	    height: 36px;
 	    color: transparent;
 	}
-	.banner__h1{
-	    font-size: 32px;
-	    line-height: 38px;
-	    padding-left: 5px;
-	    padding-right: 5px;
-	}
 	.how_low {
 	    background-position: top right -25px;
 	    text-align: right;
@@ -1500,21 +1327,6 @@
 	    padding-left: 10px;
     	padding-right: 10px;
 	}
-	.how_low h3 {
-	    font-size: 25px;
-	    text-align: right;
-	    padding-right: 64px;
-	    margin-top: 17px;
-	}
-	.how_low h3:after{
-		display: block;
-	    width: 43px;
-        right: 5px;
-	}
-	.how_low button {
-	    margin-right: 55px;
-	    margin-top: 24px;
-	}
 	.img1 {
 	    display: none;
 	}
@@ -1525,8 +1337,6 @@
 	    height: auto;
 	}
 	.videos .video__name{
-	    font-size: 20px;
-		top: 48%;
 	    padding-left: 30px;
 	}
 	.videos .video__user_name{
@@ -1557,14 +1367,27 @@
 		margin-left: 0;
     	margin-right: 0;
 	}
-	#wrap .next_block h2{
-	    font-size: 34px;
-	}
 	.receips_2 .receips_1_next,
 	 .receips_2 .receips_1_prev{
 	    width: 34px;
 	    height: 36px;
 	    background-position: right 14px center;
+	}
+	.how_low h3{
+		padding: 0;
+		text-align: center;
+	}
+	.how_low h3:after{
+		display: none;
+	}
+	.how_low p{
+		margin-right: 0;
+		text-align: center;
+	}
+	.how_low button{
+	    margin: 0 auto;
+	    margin-top: 20px;
+	    display: block;
 	}
 }/*end max-width: 550px*/
 
@@ -1611,6 +1434,8 @@
 	}
 	.product{
 		width: auto;
+	    padding-left: 15px;
+    	padding-right: 15px;
 	}
 	.cart_list_products_block {
 	    width: 410px;
@@ -1785,14 +1610,11 @@
 	.sub_product {
 	    padding-right: 10px;
 	}
-	.sub_product .price{
-	    font-size: 38px;
-	}
-	.device .for_img {
-	    padding-left: 10px;
-	}
 }/*end max-width: 414px*/
 @media only screen and (max-width: 375px){
+	.video__name:after{
+		display: none;
+	}
 	.pa2_number_block_inner {
 	    width: 290px;
 	}

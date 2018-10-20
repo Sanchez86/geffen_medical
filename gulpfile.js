@@ -19,7 +19,6 @@ gulp.task('sass', function(){
 
 gulp.task('scripts', function(){
 	return gulp.src([
-		'app/libs/jquery.min.js',
 		'app/libs/bootstrap.min.js',
 		'app/libs/wow.min.js',
 		'app/libs/owl.carousel.min.js'
