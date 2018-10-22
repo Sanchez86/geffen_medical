@@ -674,7 +674,7 @@
     position: absolute;
     z-index: 100;
     text-align: right;
-    width: 200px;
+    width: 150px;
     padding-top: 13px;
     padding-bottom: 7px;
     margin-top: 3px;
@@ -695,14 +695,14 @@ content: '';
 .drop a{
 	background-position: right;
 	background-repeat: no-repeat;
-	padding-right: 65px;
-	padding-left: 25px;
+	padding-right: 45px;
 	font-family: 'FBADRENALIN-REGULAR';
 	color: #05365f;
-	font-size: 18px;
-	line-height: 38px;
+	font-size: 14px;
+    line-height: 28px;
     display: block;
-    background-position: center right 24px;
+    background-position: center right 15px;
+    background-size: 16px;
 }
 .drop a:hover{
 	background-color: #ebf1f5;
@@ -728,7 +728,6 @@ content: '';
 }
 .drop_4{
 	background-image: url(../img/icons/drop_4.png);
-	font-family: 'EXO2.0-REGULAR_0' !important;
 }
 .drop_4:hover{
 	background-image: url(../img/icons/drop_4_active.png);

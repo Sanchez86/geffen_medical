@@ -55,7 +55,7 @@ h2:after{
     background-image: url(../img/elements/blue_line_left.png);
     height: 1px;
     position: absolute;
-    top: 20px;
+    top: 50%;
     left: 0px;
 	width: 36%;
 	background-position: left;
@@ -65,7 +65,7 @@ h2:before{
     background-image: url(../img/elements/blue_line_right.png);
     height: 1px;
     position: absolute;
-    top: 20px;
+    top: 50%;
     right: 0px;
 	width: 36%;
 	background-position: right;
@@ -367,11 +367,33 @@ button{
     background-color: rgba(75, 140, 182, 0.74);
     padding-top: 32px;
     padding-bottom: 30px;
+    text-align: center;
+
 }
 .for_product_quick.active .product_quick{
 	display: block;
 	animation: product_quick  0.5s ease-in-out;
 	animation-fill-mode:forwards;
+}
+
+.for_product_quick{
+	position: relative;
+	.sale_icon{
+	    width: 51px;
+	    height: 51px;
+	    position: absolute;
+	    top: 40px;
+	    left: 20px;
+	    z-index: 1;
+	    border-radius: 50%;
+	    font-family: 'FBADRENALIN-REGULAR';
+	    color: #e85721;
+	    border: 1px solid #e85721;
+	    line-height: 51px;
+	    font-size: 14px;
+	    text-align: center;
+	    direction: rtl;
+	}
 }
 @keyframes product_quick{
 	0%{
@@ -391,17 +413,17 @@ button{
     text-align: center;
     border-radius: 50px;
     font-family: 'EXO2.0-MEDIUM_0';
-    float: left;
-    margin-left: 2vw;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 .product_quick_like{
-	float: right;
 	background-image: url(../img/icons/product_quick_like.png);
 	background-size: contain;
 	width: 32px;
 	height: 31px;
     background-color: initial;
-    margin-right: 2vw;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 .product:nth-child(3) {
 	border:0; 
@@ -744,7 +766,7 @@ button{
     border: 1px solid #093a63;
 }
 .oblique_btn_mod{
-	margin-top: 21px;
+	margin-top: 0;
 }
 
 #wrap{
@@ -2232,7 +2254,7 @@ button{
 	position: relative;
 	.carousel-indicators{
 		width: 100%;
-	    bottom: -150px;
+	    bottom: -109px;
 	    left: auto;
 	    margin: 0;
 	    right: 0;
@@ -2242,8 +2264,8 @@ button{
 		li{
 			display: inline-block;
 		    width: 24%;
-    		max-width: 140px;
-			height: 134px;
+    		max-width: 84.9px;
+			height: 100px;
 		    border-radius: 2px;
 		    border:1px solid #ebebeb;
 		    margin:0;
@@ -2279,7 +2301,7 @@ button{
 		}
 	}
 	.carousel-inner{
-		height: 634px;
+		height: 450px;
 		border:1px solid #ebebeb;
 		img{
 			margin: 0 auto;
@@ -2288,11 +2310,11 @@ button{
 	.carousel-control{
 		background-image: url(../img/backgrounds/carousel-control.png);
 		background-color: transparent;
-		height: 134px;
-		width: 48px;
+	    height: 100px;
+	    width: 25px;
 	    opacity: 1;
         top: auto;
-        bottom: -147px;
+        bottom: -106px;
         z-index: 10;
         span{
 		    display: block;
@@ -3006,7 +3028,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 	.nav-tabs{
 	    margin-top: 31px;
-	    margin-bottom: 64px;
+	    margin-bottom: 44px;
 	    border-bottom: 1px solid #5192b8;
 	    padding-right: 50px;
 		li{
@@ -3149,40 +3171,50 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	float: right;
 }
 .testimonials_inner .video {
-    max-width: 1136px;
+    max-width: 900px;
     background-image: url(../img/backgrounds/testimonials_video2.png);
     background-size: cover;
-    padding: 58px;
+    padding: 0px;
+    background: none;
 }
 .testi_video_desc_block{
-	max-width: 1010px;
+	max-width: 900px;
 	margin: 0 auto;
-    margin-top: 56px;
-    margin-bottom: 92px;
+    margin-top: 45px;
+    margin-bottom: 25px;
 	p{
 		font-size: 16px;
-		line-height: 30px;
+		line-height: 21px;
 	}
 }
-.hr{
-	background-image: url(../img/backgrounds/receips_1_bg.png);
-	height: 50px;
-    background-repeat: repeat;
-    margin-top: 32px;
-    margin-bottom: 50px;
+.testimonials_inner {
+	.hr{
+		background-image: url(../img/backgrounds/receips_1_bg.png);
+		height: 50px;
+	    background-repeat: repeat;
+	    margin-top: 15px;
+	    margin-bottom: 55px;
+	}
+	h2:after{
+    	left: 130px;
+	}
+	h2:before{
+    	right: 130px;
+	}
 }
 .testi_text_btn{
 	background-color: #002d59;
 	color: #fff;
-	font-size: 18px;
-	line-height: 42px;
-	width: 189px;
+    font-size: 16px;
+    line-height: 38px;
+    width: 160px;
 	border-radius:20px;
 	background-image: url(../img/icons/receips_1_arrow.png);
-    background-position: left 25px center;
+    background-position: left 16px center;
+    background-size: 19px;
     text-align: right;
     padding-right: 28px;
-    margin-right: 110px;
+    margin-right: 130px;
 }
 .testi_video_desc_block button {
     color: #ffffff;
@@ -3785,7 +3817,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
      padding-bottom: 50px;
 	.modal-dialog{
 		width: 100%;
-	    max-width: 997px;
+	    max-width: 867px;
 	    padding: 0;
 	    .omnipod_slider{
     	    max-width: 352px;
@@ -3818,8 +3850,8 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		    float: left;
 		    opacity: 1;
 		    background-image: url(../img/icons/product_close.png);
-		    width: 25px;
-		    height: 25px;
+		    width: 20px;
+		    height: 20px;
 		    background-size: contain;
 		}
 		.modal-title{
@@ -3835,23 +3867,26 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		}
 		.modal-body{
 		    padding-top: 35px;
-		    padding-right: 80px;
+		    padding-right: 50px;
 		    padding-left: 50px;
 		    padding-bottom: 52px;
 		}
 		.product_inner_h3{
 		    font-size: 30px;
 		    font-family: 'EXO2.0-SEMIBOLD_0';
-		    line-height: 33px;
-		    background-size: cover;
-		    padding-top: 16px;
+		    line-height: 63px;
+		    padding-bottom: 0;
 		    padding-right: 40px;
+	        padding: 0;
+		    width: 100%;
+		    max-width: 300px;
 		}
 		.product_inner_price_club_card{
-			font-size: 52px;
+			font-size: 36px;
+		    margin-top: 34px;
 		}
 		.product_inner_price_club_card p {
-		    font-size: 21px;
+		    font-size: 14px;
 		}
 		.product_inner_price {
 		    font-size: 28px;
@@ -3861,7 +3896,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		.product_inner_types button{
 		    max-width: 91px;
     		height: 26px;
-    		font-size: 16px;
+    		font-size: 14px;
 		}
 		hr{
 		    margin-top: 14px;
@@ -3869,8 +3904,10 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		}
 		.product_inner_quantity > button{
 			max-width: 138px;
+			line-height: 41px;
 			height: 41px;
-			font-size: 17px;
+			font-size: 16px;
+			float: left;
 		}
 		.product_inner_types span {
 		    color: #093a63;
@@ -3889,7 +3926,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		    height: 41px;
 		    line-height: 41px;
 	        margin-right: 0;
-            margin-left: 45px;
+            margin-left: 0;
 		}
 		.omnipod_like, .omnipod_repost{
 			background-size: 15px;
@@ -3897,13 +3934,12 @@ input:-ms-input-placeholder      {color:$omni_form;}
 			height: 34px;
 		}
 		.oblique_btn_mod4 {
-			font-size: 15px;
-			width: 208px;
-			height: 43px;
-			line-height: 43px;
-			padding-right: 32px;
-			padding-left: 0;
-		    margin-left: 46px;
+		    font-size: 15px;
+		    width: 161px;
+		    height: 37px;
+		    line-height: 37px;
+		    padding-right: 0;
+		    padding-left: 0;
 		}
 	}
 
@@ -3918,7 +3954,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	.pa_3_nth .pa_3_block:after{
 		background-color:#458ab2;
 		bottom: -12px;
-		left: 17px;
+		left: 11px;
 		width: 93.2%;
 	}
 	.pa_3_nth .pa_3_block:before{
@@ -3946,6 +3982,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	margin: 0 auto;
     width: 100%;
     max-width: 270px;
+    margin-top: 10px;
 	h3 {
 	    cursor: pointer;
 	    color: #7abbe6;
@@ -3992,6 +4029,8 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		a:hover{
 			border: 1px solid #05365f;
 			background-image: url(../img/backgrounds/product_block_menu_a.png);
+			background-repeat: repeat-y;
+			background-position: center right -3px;
 		}
 	}
 	
@@ -4059,7 +4098,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	span{
 		font-family: 'EXO2.0-REGULAR_0';
 		color: #5b97bc;
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 .product_header_hr{
@@ -4075,6 +4114,9 @@ input:-ms-input-placeholder      {color:$omni_form;}
 /*=================product_block_inner=================*/
 
 .product_block_inner{
+	.omnipod_slider{
+		max-width: 470px;
+	}
 	.product_slider .device_h3:after{
 		display: none;
 	}
@@ -4086,29 +4128,33 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 	.product_inner_h4{
 		color: #093a63;
-		font-size: 36px;
-		margin-top: 8px;
+		font-size: 30px;
+		margin-top: 27px;
 	}
 	.product_inner_p{
 		color: #093a63;
 		font-size: 18px;
 		line-height: 24px;
-	    margin-top: 18px;
+	    margin-top: 26px;
 		max-width: 360px;
-		float: right;
 	}
 	.omnipod_description {
 	    max-width: 100%;
 	    float: none;
 	}
 	.product_inner_club{
-		color: #093a63;
-		font-size: 14px;
 		margin-top: 108px;
+	    line-height: 41px;
+	    height: 41px;
+	    font-size: 16px;
+        border-radius: 30px;
+    	background-color: #093a63;
+    	color: #fff;
+    	text-align: center;
 	}
 	.product_inner_price_club_card{
 		color: #093a63;
-		font-size: 59px;
+		font-size: 36px;
 		margin-top: 47px;
 		p{
 			font-size: 23px;
@@ -4120,7 +4166,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		margin-top: 21px;
 	    margin-bottom: 19px;
 		p{
-			font-size: 18px;
+			font-size: 14px;
 		}
 	}
 	.product_inner_types{

@@ -5,15 +5,9 @@
 	.partners_elements .container{
 	    width: 970px;
 	}
-    .slider .container{
+    .slider .container-sl{
         width: 100%;
     	max-width: 1030px;
-    }
-    .footer .container{
-        width: 1330px;
-    }
-    .omnipod_block .container{
-		width: 1238px;
     }
     .product_slider .container{
 		width: 1190px;
@@ -21,6 +15,7 @@
 }/*end min-width: 1500px*/	
 
 @media only screen and (max-width: 1850px){
+	/*
 	h2:after{
 		width: 36%;
 		background-position: right;
@@ -29,12 +24,11 @@
 		width: 36%;
 		background-position: left;
 	}
+	*/
 }/*end max-width: 1850px*/
 
 @media only screen and (max-width: 1900px){
-	.product_block .sub_product .price{
-	    font-size: 50px;
-	}
+
 }/*end max-width: 1900px*/
 @media only screen and (max-width: 1800px){
 	.product_block .pa_3_block{
@@ -58,7 +52,7 @@
 	}
 	h2:before{
 		width: 35%;
-	}
+	}/*
 	.slider{
 		h2:after{
 			display: none;
@@ -66,12 +60,11 @@
 		h2:before{
 			display: none;
 		}
-	}
+	}*/
 }/*end max-width: 1800px*/
 
 @media only screen and (max-width: 1700px){
 	.pa_3_block .product_logo {
-	    margin-top: 50px;
 	    width: 100%;
 	}
 	h2:after{
@@ -97,9 +90,7 @@
 	}
 }/*end max-width: 1650px*/
 @media only screen and (max-width: 1600px){
-	.product_quick_like{
-		margin-right: 3vw;
-	}
+
 	.for_blue_block h3{
 	    left: -13px;
 	}
@@ -141,9 +132,6 @@
 @media only screen and (max-width: 1500px){
 	.product_block_menu h3{
 		font-size: 18px;
-	}
-	.product_block .sub_product .price {
-	    font-size: 42px;
 	}
 	.for_blue_block h3{
 		font-size: 81px;
@@ -276,6 +264,12 @@
 	.pa .category_menu li a {
 	    font-size: 18px;
 	    padding-right: 60px;
+	}
+	.testimonials_inner h2:after {
+	    left: 100px;
+	}
+	.testimonials_inner h2:before {
+	    right: 100px;
 	}
 }/*end max-width: 1400px*/
 
@@ -827,6 +821,16 @@
 	.for_blue_block table{
 		margin-bottom: 20px;
 	}
+	.pa_3_block .product{
+		margin-bottom: 0;
+	}
+	.product_block .pa_3_block {
+	    padding-bottom: 0;
+	}
+	.product_block_inner .product_inner_club{
+	    max-width: 230px;
+        font-size: 14px;
+	}
 }/*end max-width: 991px*/
 
 @media only screen and (max-width: 767px){
@@ -993,6 +997,9 @@
 	}
 	.category_desc{
 	    padding-top: 17px;
+	}
+	.product_block_inner .product_inner_p{
+		float: right;
 	}
 }/*end max-width: 767px*/
 @media only screen and (max-width: 650px){
@@ -1237,16 +1244,6 @@
 	    padding-right: 15px;
     	padding-left: 15px;
 	}
-	.testimonials .nav-tabs li a{
-		font-size: 26px;
-	    background-size: 28px;
-	}
-	.testimonials .nav-tabs li:first-child a{
-	    background-position: right 13px center;
-	}
-	.testimonials .nav-tabs li:last-child a {
-	    background-position: left 115px center;
-	}
 	.tab_3 .nav-tabs > li{
 		float: none;
     	width: 100%;
@@ -1392,6 +1389,9 @@
 }/*end max-width: 550px*/
 
 @media only screen and (max-width: 500px){
+	.pa_3_block .product{
+	    	padding-right: 0;
+	}
 	.product_block_inner{
 		.modal-dialog{
 			    max-width: 320px;
@@ -1403,7 +1403,6 @@
 			}
 			.product_inner_h3{
 				font-size: 25px;
-				padding-top: 16px;
     			padding-right: 21px;
 			}
 			.omnipod_description{
@@ -1418,8 +1417,8 @@
     			line-height: 22px;
 			}
 			.product_inner_price_club_card{
-			    margin-top: 7px;
-		        font-size: 48px;
+				font-size: 32px;
+    			margin-top: 24px;
 			}
 			.omnipod_slider {
 		        padding-left: 5px;
@@ -1427,6 +1426,11 @@
 			}
 			.omnipod_slider .carousel-inner {
 			    height: 300px;
+			}
+			.product_inner_club {
+			    max-width: 230px;
+			    font-size: 13px;
+		        margin-top: 89px;
 			}
 		}
 		
@@ -1476,6 +1480,12 @@
     		top: 25px;
 		}
 	}
+	.testimonials .nav-tabs{
+	    padding-right: 0;
+	}
+	.testimonials .nav-tabs li a{
+	    width: 139px;
+	}
 }/*end max-width: 550px*/
 
 @media only screen and (max-width: 414px){
@@ -1488,10 +1498,7 @@
 	.pa2_list_product_img {
 	    width: 50px;
 	}
-	.pa_3_block .device_h3{
-		min-width: auto;
-	    padding-left: 25px;
-	}
+
 	.cart_list_products_block{
 		width: 320px;
 		.cart_list_products_del span {
