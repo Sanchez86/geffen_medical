@@ -462,18 +462,7 @@
 		padding-right: 50px;
 		background-position: center right 14px;
 	}
-	.product_block_inner .product_inner_price_club_card{
-	    font-size: 43px;
-	}
-	.product_block_inner .product_inner_price_club_card p {
-	    font-size: 18px;
-	}
-	.product_block_inner .product_inner_price{
-	    font-size: 30px;
-	}
-	.product_block_inner .product_inner_price p {
-	    font-size: 16px;
-	}
+	
 	.product_block_inner .product_inner_types button{
 		margin-right: 0;
 	    max-width: 88px;
@@ -492,6 +481,13 @@
 		padding-right: 70px;
 		background-position: top 17px right 22px;
 	    font-size: 15px;
+	}
+	.product_block_inner2 .carousel-indicators{
+	    padding-right: 30px;
+    	padding-left: 30px;
+    	li{
+		    max-width: 100%;
+    	}
 	}
 }/*end max-width: 1199px*/
 
@@ -831,6 +827,12 @@
 	    max-width: 230px;
         font-size: 14px;
 	}
+	.product_block_inner2 .omnipod_slider{
+	    margin: 0 auto;
+	}
+	.product_block_inner2 .for_nav_tabs .nav a {
+	    font-size: 16px;
+	}
 }/*end max-width: 991px*/
 
 @media only screen and (max-width: 767px){
@@ -847,7 +849,7 @@
 		height: auto;
 	}
 	.product_block_inner .for_nav_tabs .nav a {
-	    line-height: 65px;
+	    line-height: 45px;
 	    height: auto;
 	}
 	.cart_list_products_block{
@@ -1191,6 +1193,10 @@
 	.receips_2_inner .receips_lists_left,
 	 .receips_2_inner .receips_lists_right{
 		width: 100%;
+	}
+	.product_block_inner2 .omnipod_slider .carousel-indicators li {
+	    width: 25%;
+	    float: left;
 	}
 }/*end max-width: 650px*/
 @media only screen and (max-width: 550px){
@@ -1617,8 +1623,18 @@
 	.sub_product {
 	    padding-right: 10px;
 	}
+	.for_product_quick .sale_icon{
+	    width: 80px;
+        top: 42px;
+        left: 10px;
+	}
 }/*end max-width: 414px*/
 @media only screen and (max-width: 375px){
+	.for_product_quick .sale_icon {
+	    width: 70px;
+	    top: 42px;
+	    left: 8px;
+	}
 	.video__name:after{
 		display: none;
 	}
