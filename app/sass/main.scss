@@ -44,31 +44,33 @@ body.contrast .inv_ubctract {
 }
 
 h2 {
-    position: relative;
-    color: #093a63;
+	color: #093a63;
+    text-align: center;
+    overflow: hidden;
     font-size: 30px;
     line-height: 1;
-    text-align: center;
 }
 h2:after{
-    content: "";
-    background-image: url(../img/elements/blue_line_left.png);
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 0px;
-	width: 36%;
-	background-position: left;
+    margin-right: -100%;
+    background-position: top left 10px;
+    background-image: url(../img/elements/blue_line_right.png);
+   
 }
 h2:before{
-    content: "";
-    background-image: url(../img/elements/blue_line_right.png);
+	margin-left: -100%;
+    background-position: top right 10px;
+    background-image: url(../img/elements/blue_line_left.png);
+}
+h2:after,
+h2:before{
+	content: "";
     height: 1px;
+    width: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 44%;
     position: absolute;
     top: 50%;
-    right: 0px;
-	width: 36%;
-	background-position: right;
 }
 
 .clear{
@@ -426,10 +428,12 @@ button{
     font-family: 'EXO2.0-MEDIUM_0';
     margin-right: 10px;
     vertical-align: middle;
+    border: 1px solid transparent;
 }
 .product_quick_btn:hover{
-	background-color: #4b8cb6;
+	background-color: transparent;
     color: #fff;
+    border-color: #fff;
 }
 .product_quick_like{
 	background-image: url(../img/icons/product_quick_like.png);
@@ -802,12 +806,6 @@ button{
 		h2{
 			margin-bottom: 35px;
 		}
-		h2:after{
-			width: 32%!important;
-		}
-		h2:before{
-			width: 32%!important;
-		}
 		img{
 	    	width:100%;
 	    	max-height: 393px;
@@ -1135,7 +1133,7 @@ button{
 	    background-image: url(../img/elements/next_block_blue_line_left.png);
 	    width: 100%;
 	    background-repeat: no-repeat;
-	    background-position: center right 150px;
+	    background-position: center right 200px;
 	}
 	h2:after{
 		display: none;
@@ -1355,12 +1353,6 @@ button{
 .receips_2{
 	h2{
 	    font-size: 30px;
-	}
-	h2:after{
-		background-position: left;
-	}
-	h2:before{
-		background-position: right;
 	}
 	.category_menu{
 	    background: none;
@@ -1693,12 +1685,6 @@ button{
 	left: 43px;
 }
 .receips_2_inner{
-	h2:after{
-		left: -30px;
-	}
-	h2:before{
-		right: -30px;
-	}
 	.for_blue_block{
 	    max-width: 100%;
 	}
@@ -1783,10 +1769,7 @@ button{
 	.for_blue_block_btn:hover span{
 		left: 27px;
 	}
-	h2:before,
-	h2:after{
-		width: 34%;
-	}
+
 }
 /*=================End receips_1=================*/
 /*=================articles=================*/
@@ -2686,14 +2669,6 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	    margin-bottom: 38px;
 	    margin-top: 44px;
 	}
-	h2:before{
-		background-position: right;
-	    right: -23px;
-	}
-	h2:after{
-		background-position: left;
-	    left: -23px;
-	}
 	
 	h3{
 		text-transform: uppercase;
@@ -3248,12 +3223,6 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	    margin-top: 15px;
 	    margin-bottom: 55px;
 	}
-	h2:after{
-    	left: 130px;
-	}
-	h2:before{
-    	right: 130px;
-	}
 }
 .testi_text_btn{
 	background-color: #002d59;
@@ -3507,6 +3476,10 @@ input:-ms-input-placeholder      {color:$omni_form;}
     margin-top: 31px;
     background-color: transparent;
     text-align: center;
+}
+.pa_submit:hover{
+	color: #fff;
+	background-color: #4489b1;
 }
 .pa_h4{
 	background-image: url(../img/backgrounds/pa_h4.png);
@@ -3849,14 +3822,6 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	display: none;
 }
 
-#pa_1,#pa_2,#pa_3{
-	h2:before{
-		right: -50px;
-	}
-	h2:after{
-		left: -50px;
-	}
-}
 #pa_3{
 	.for_product_quick.active .product_quick{
 	    text-align: center;

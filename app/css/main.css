@@ -1471,31 +1471,33 @@ body.contrast .inv_ubctract {
   background-image: url(../img/icons/inv_subctract_hover.png); }
 
 h2 {
-  position: relative;
   color: #093a63;
+  text-align: center;
+  overflow: hidden;
   font-size: 30px;
-  line-height: 1;
-  text-align: center; }
+  line-height: 1; }
 
 h2:after {
-  content: "";
-  background-image: url(../img/elements/blue_line_left.png);
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  width: 36%;
-  background-position: left; }
+  margin-right: -100%;
+  background-position: top left 10px;
+  background-image: url(../img/elements/blue_line_right.png); }
 
 h2:before {
+  margin-left: -100%;
+  background-position: top right 10px;
+  background-image: url(../img/elements/blue_line_left.png); }
+
+h2:after,
+h2:before {
   content: "";
-  background-image: url(../img/elements/blue_line_right.png);
   height: 1px;
+  width: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  -webkit-background-size: 44% 44%;
+          background-size: 44%;
   position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 36%;
-  background-position: right; }
+  top: 50%; }
 
 .clear {
   clear: both; }
@@ -1858,11 +1860,13 @@ button {
           border-radius: 50px;
   font-family: 'EXO2.0-MEDIUM_0';
   margin-right: 10px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  border: 1px solid transparent; }
 
 .product_quick_btn:hover {
-  background-color: #4b8cb6;
-  color: #fff; }
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff; }
 
 .product_quick_like {
   background-image: url(../img/icons/product_quick_like.png);
@@ -2228,10 +2232,6 @@ h2 {
   padding-top: 33px; }
   #wrap .slider h2 {
     margin-bottom: 35px; }
-  #wrap .slider h2:after {
-    width: 32% !important; }
-  #wrap .slider h2:before {
-    width: 32% !important; }
   #wrap .slider img {
     width: 100%;
     max-height: 393px; }
@@ -2535,7 +2535,7 @@ h2 {
     background-image: url(../img/elements/next_block_blue_line_left.png);
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center right 150px; }
+    background-position: center right 200px; }
   .next_block h2:after {
     display: none; }
   .next_block p {
@@ -2747,12 +2747,6 @@ h2 {
 
 .receips_2 h2 {
   font-size: 30px; }
-
-.receips_2 h2:after {
-  background-position: left; }
-
-.receips_2 h2:before {
-  background-position: right; }
 
 .receips_2 .category_menu {
   background: none;
@@ -3072,12 +3066,6 @@ h2 {
 .for_blue_block_btn:hover span {
   left: 43px; }
 
-.receips_2_inner h2:after {
-  left: -30px; }
-
-.receips_2_inner h2:before {
-  right: -30px; }
-
 .receips_2_inner .for_blue_block {
   max-width: 100%; }
 
@@ -3163,10 +3151,6 @@ h2 {
 
 .receips_2_inner .for_blue_block_btn:hover span {
   left: 27px; }
-
-.receips_2_inner h2:before,
-.receips_2_inner h2:after {
-  width: 34%; }
 
 /*=================End receips_1=================*/
 /*=================articles=================*/
@@ -4029,12 +4013,6 @@ h2 {
   .product_slider h2 {
     margin-bottom: 38px;
     margin-top: 44px; }
-  .product_slider h2:before {
-    background-position: right;
-    right: -23px; }
-  .product_slider h2:after {
-    background-position: left;
-    left: -23px; }
   .product_slider h3 {
     text-transform: uppercase;
     position: relative; }
@@ -4517,12 +4495,6 @@ h2 {
   margin-top: 15px;
   margin-bottom: 55px; }
 
-.testimonials_inner h2:after {
-  left: 130px; }
-
-.testimonials_inner h2:before {
-  right: 130px; }
-
 .testi_text_btn {
   background-color: #002d59;
   color: #fff;
@@ -4764,6 +4736,10 @@ h2 {
   margin-top: 31px;
   background-color: transparent;
   text-align: center; }
+
+.pa_submit:hover {
+  color: #fff;
+  background-color: #4489b1; }
 
 .pa_h4 {
   background-image: url(../img/backgrounds/pa_h4.png);
@@ -5082,12 +5058,6 @@ h2 {
 
 #pa_3 .pa_3_nth:nth-last-child(2) .pa_3_block::after {
   display: none; }
-
-#pa_1 h2:before, #pa_2 h2:before, #pa_3 h2:before {
-  right: -50px; }
-
-#pa_1 h2:after, #pa_2 h2:after, #pa_3 h2:after {
-  left: -50px; }
 
 #pa_3 .for_product_quick.active .product_quick {
   text-align: center; }
