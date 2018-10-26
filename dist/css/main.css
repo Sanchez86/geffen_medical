@@ -445,11 +445,14 @@
     -webkit-background-size: 25px 25px;
             background-size: 25px; }
   .topMenu_left_new_size .all_refresh {
-    font-size: 18px;
+    font-size: 16px;
     -webkit-background-size: 29px 29px;
             background-size: 29px;
+    line-height: 47px;
+    max-width: 258px;
+    margin: 0 auto;
     margin-top: 10px;
-    line-height: 47px; }
+    display: block; }
   .topMenu_left_new_size .tml_nav_icon {
     -webkit-background-size: 26px 26px;
             background-size: 26px; }
@@ -938,8 +941,11 @@
   width: 450px;
   background-color: #fff;
   z-index: 100;
-  display: none; }
+  display: none;
+  -webkit-box-shadow: 14px 14px 17px 0px rgba(0, 0, 0, 0.0705882);
+          box-shadow: 14px 14px 17px 0px rgba(0, 0, 0, 0.0705882); }
   .cart_list_products_block .cart_list_products_block_border {
+    border-top: 4px solid #7abbe6;
     padding: 5px; }
   .cart_list_products_block table {
     width: 100%; }
@@ -1020,7 +1026,7 @@
     text-align: center;
     width: 10%; }
     .cart_list_products_block .cart_list_products_img img {
-      max-width: 35px; }
+      max-width: 25px; }
   .cart_list_products_block .cart_list_products_btn {
     width: 144px;
     line-height: 38px;
@@ -1036,20 +1042,25 @@
     text-align: center;
     padding-left: 24px;
     float: left;
-    margin-top: 13px;
+    margin-top: 7px;
     margin-left: 13px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     -webkit-transition: background 0.5s;
     -o-transition: background 0.5s;
-    transition: background 0.5s; }
+    transition: background 0.5s;
+    border: 1px solid transparent; }
   .cart_list_products_block .cart_list_products_btn:hover {
-    background-position: left 17px center; }
+    background-position: left 17px center;
+    background-image: url(../img/icons/read_story_btn.png);
+    background-color: #fff;
+    color: #00305b;
+    border-color: #00305b; }
   .cart_list_products_block .cart_list_products_total {
     float: right;
     color: #00305b;
     font-size: 24px;
     line-height: 24px;
-    margin-top: 21px;
+    margin-top: 16px;
     margin-right: 29px; }
     .cart_list_products_block .cart_list_products_total span {
       color: #458ab2;
@@ -1057,8 +1068,8 @@
       font-size: 19px;
       line-height: 19px; }
   .cart_list_products_block .cart_list_products_footer {
-    background-image: url(../img/backgrounds/bg_lines.png);
-    background-repeat: repeat; }
+    background-image: url(../img/backgrounds/bg_lines2.png);
+    background-position: top 1px right 5px; }
 
 .cart_list_products_block.active {
   display: block; }
@@ -1745,7 +1756,8 @@ button {
 
 .product_img {
   max-width: 177px;
-  margin-left: 30px; }
+  margin-left: 47px;
+  margin-top: 30px; }
 
 .product_logo {
   max-width: 157px;
@@ -1848,6 +1860,10 @@ button {
   margin-right: 10px;
   vertical-align: middle; }
 
+.product_quick_btn:hover {
+  background-color: #4b8cb6;
+  color: #fff; }
+
 .product_quick_like {
   background-image: url(../img/icons/product_quick_like.png);
   -webkit-background-size: contain;
@@ -1857,6 +1873,16 @@ button {
   background-color: initial;
   margin-left: 10px;
   vertical-align: middle; }
+
+.product_quick_like.active,
+.product_quick_like:hover {
+  background-image: url(../img/icons/omnipod_like.png);
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-background-size: 16px 16px;
+          background-size: 16px;
+  background-position: center; }
 
 .product:nth-child(3) {
   border: 0; }
@@ -2191,6 +2217,10 @@ h2 {
           border-radius: 30px;
   border: 1px solid #093a63; }
 
+.oblique_btn:hover {
+  color: #fff;
+  background-color: #093a63; }
+
 .oblique_btn_mod {
   margin-top: 0; }
 
@@ -2349,6 +2379,7 @@ h2 {
     position: relative;
     right: -15px;
     */
+  margin-top: 15px;
   background-color: #05365f; }
   .category_menu li {
     background-image: url(../img/elements/cat_line.png);
@@ -2648,6 +2679,10 @@ h2 {
   height: 40px;
   font-family: 'FBADRENALIN-REGULAR'; }
 
+.pagination_btn:hover {
+  background-color: #05365f;
+  color: #e7edf4; }
+
 .receips_1_prev {
   float: left;
   background-repeat: no-repeat;
@@ -2758,6 +2793,9 @@ h2 {
   margin-top: 6px;
   direction: rtl; }
 
+.receips_2 .share:hover {
+  background-image: url(../img/icons/share_active.png); }
+
 .receips_2 .receips_1_block_footer {
   background: none;
   background-color: #05365f;
@@ -2778,7 +2816,10 @@ h2 {
   transition: background-position 0.5s; }
 
 .receips_2 .receips_1_block_open:hover {
-  background-position: left 13px center; }
+  background-position: left 13px center;
+  background-image: url(../img/icons/receips_1_arrow_aactive.png);
+  background-color: #fff;
+  color: #05365f; }
 
 .receips_2 .receips_1_cat {
   padding-bottom: 0;
@@ -3561,25 +3602,27 @@ h2 {
 .omnipod_logo {
   margin-top: 11px; }
 
+.product_logo3 {
+  max-width: 258px; }
+
 .omnipod_p {
   color: #093a63;
   font-family: 'FBADRENALIN-REGULAR';
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   margin-top: 20px;
   margin-bottom: 41px; }
   .omnipod_p span {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     font-family: 'EXO2.0-REGULAR_0'; }
 
 .omnipod_p_blue {
   color: #4386ad;
   font-family: 'FBADRENALIN-REGULAR';
-  font-size: 18px;
-  line-height: 30px;
-  margin-top: 31px;
-  margin-bottom: 31px;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 20px;
   padding-left: 86px; }
 
 .omnipod_like,
@@ -3615,6 +3658,10 @@ h2 {
 .omnipod_like:hover,
 .omnipod_repost:hover {
   border-color: transparent; }
+
+.omnipod_like.active {
+  background-image: url(../img/icons/omnipod_like_active.png);
+  background-color: #4386ad; }
 
 .omnipod_slider {
   padding-bottom: 150px;
@@ -3670,7 +3717,9 @@ h2 {
     height: 406px;
     border: 1px solid #ebebeb; }
     .omnipod_slider .carousel-inner img {
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 404px; }
   .omnipod_slider .carousel-control {
     background-image: url(../img/backgrounds/carousel-control.png);
     background-color: transparent;
@@ -3698,14 +3747,13 @@ h2 {
 
 .tabs_block {
   background-color: #f6f6f6;
-  background-image: url(../img/backgrounds/tabs_block.png);
+  background-image: url(../img/backgrounds/bg_lines.png);
   background-position: bottom;
   background-repeat: repeat-x;
-  padding-bottom: 56px;
-  margin-top: 65px; }
+  padding-bottom: 36px; }
 
 .for_nav_tabs {
-  height: 83px;
+  height: 45px;
   background-color: #458ab2; }
   .for_nav_tabs .nav-tabs {
     border: 1px;
@@ -3715,16 +3763,15 @@ h2 {
       float: none; }
   .for_nav_tabs .nav a {
     color: #ffffff;
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'FBADRENALIN-REGULAR';
     padding: 0;
     border: 0 !important;
     margin: 0;
-    line-height: 78px;
+    line-height: 45px;
     text-align: center;
     padding-left: 38px;
     padding-right: 38px;
-    height: 74px;
     -webkit-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -3745,22 +3792,24 @@ h2 {
 #accordion_omni h3 {
   cursor: pointer;
   color: #4386ad;
-  font-size: 21px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 21px;
   text-transform: uppercase;
   font-family: 'FBADRENALIN-REGULAR';
   background-image: url(../img/icons/accordion_plus.png);
   background-repeat: no-repeat;
   background-position: left 21px center;
   padding-left: 40px;
-  padding-top: 18px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 11px;
   border: 1px solid #4386ad;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   padding-right: 30px;
-  margin-top: 7px;
-  margin-bottom: 22px; }
+  margin-top: 6px;
+  margin-bottom: 5px;
+  -webkit-background-size: 15px 15px;
+          background-size: 15px; }
 
 #accordion_omni h3.active {
   background-image: url(../img/icons/accordion_minus.png); }
@@ -3776,7 +3825,7 @@ h2 {
   margin-left: 56px;
   margin-right: 30px;
   margin-bottom: 15px;
-  line-height: 24px;
+  line-height: 21px;
   font-family: 'FBADRENALIN-REGULAR';
   font-size: 16px;
   color: #05365f; }
@@ -3794,10 +3843,7 @@ h2 {
 .omni_form {
   max-width: 1190px;
   margin: auto;
-  padding-left: 90px;
-  padding-right: 90px;
-  padding-bottom: 77px;
-  padding-top: 67px;
+  padding: 50px;
   position: relative;
   margin-top: 40px;
   /* Firefox 19+ */
@@ -3840,8 +3886,8 @@ h2 {
     bottom: 0; }
   .omni_form h3 {
     color: #05365f;
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 27px;
+    line-height: 28px;
     text-align: center;
     max-width: 600px;
     margin: auto;
@@ -3857,11 +3903,11 @@ h2 {
   .omni_form input {
     border: 0;
     color: #05365f;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 21px;
-    font-family: 'FBADRENALIN-REGULAR';
     text-transform: uppercase;
-    text-align: right; }
+    text-align: right;
+    font-family: 'EXO2.0-REGULAR_0'; }
   .omni_form input::-webkit-input-placeholder {
     color: #05365f; }
   .omni_form input::-moz-placeholder {
@@ -3875,7 +3921,7 @@ h2 {
 .omni_form_right {
   float: left;
   border: 1px solid #bababa;
-  width: 50%;
+  width: 33.3%;
   padding-top: 11px;
   padding-left: 29px;
   padding-right: 29px;
@@ -3891,18 +3937,22 @@ h2 {
     font-family: 'EXO2.0-REGULAR_0'; }
 
 .omni_form_center {
-  border-bottom: 1px solid #bababa; }
+  width: 33.3%;
+  float: left;
+  border: 1px solid #bababa;
+  border-left: 0; }
   .omni_form_center input {
-    line-height: 71px;
+    line-height: 72px;
     padding-left: 25px;
-    padding-right: 25px; }
+    padding-right: 25px;
+    font-family: 'FBADRENALIN-REGULAR'; }
 
 .omni_form_cont {
   padding-top: 27px;
   position: relative; }
   .omni_form_cont p {
     color: #05365f;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     max-width: 815px;
     float: right; }
@@ -3940,17 +3990,16 @@ h2 {
   .omni_form_block_submit .omni_form__submit {
     float: left;
     color: #ffffff;
-    font-size: 33px;
+    font-size: 18px;
     font-family: 'FBADRENALIN-REGULAR';
     text-align: center;
     background-color: #05365f;
     display: block;
-    width: 186px;
-    height: 72px;
+    width: 120px;
+    height: 42px;
     -webkit-border-radius: 40px;
             border-radius: 40px;
     padding: 0;
-    padding-left: 19px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
@@ -3966,8 +4015,8 @@ h2 {
 
 .omni_form_footer p {
   color: #05365f;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 21px;
   font-family: 'FBADRENALIN-REGULAR';
   padding: 0 30px; }
 
@@ -3997,13 +4046,11 @@ h2 {
     margin-top: 0; }
   .product_slider .for_img {
     padding-left: 0px; }
-  .product_slider .product_img {
-    margin-left: 13px; }
   .product_slider .device_h3:after {
     content: "";
     position: absolute;
     top: 9px;
-    right: -14px;
+    right: -15px;
     width: 1px;
     height: 363px;
     background-color: #dddddd; }
@@ -4011,11 +4058,11 @@ h2 {
     display: none; }
   .product_slider .description {
     min-height: 57px;
-    margin-top: 20px; }
+    margin-top: 30px; }
   .product_slider .carousel-control {
     width: auto;
     opacity: 1;
-    top: 169px; }
+    top: 50%; }
   .product_slider .carousel-control.right {
     right: -12px; }
   .product_slider .carousel-control.left {
@@ -4107,7 +4154,7 @@ h2 {
     text-transform: uppercase; }
 
 .for_tabs .video-player {
-  width: 207px;
+  width: 202px;
   float: left;
   margin-left: 13px;
   margin-right: 13px;
@@ -4138,6 +4185,7 @@ h2 {
     border-bottom: 0; }
 
 .tab_3 .nav-tabs {
+  margin-top: 10px;
   border-bottom: 1px solid #4386ad; }
 
 .tab_3 .nav-tabs > li.active a,
@@ -4154,23 +4202,25 @@ h2 {
 
 .tab_1_img {
   float: right;
-  margin-left: 65px; }
+  margin-left: 0; }
+  .tab_1_img img {
+    max-width: 70%; }
 
 .tab_1 {
   color: #05365f; }
   .tab_1 h4 {
-    font-size: 36px;
-    line-height: 30px;
-    margin-top: 91px;
+    font-size: 21px;
+    line-height: 21px;
+    margin-top: 50px;
     margin-bottom: 4px; }
   .tab_1 p {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 21px;
     max-width: 530px;
     float: right;
     margin-bottom: 30px; }
     .tab_1 p span {
-      font-size: 30px; }
+      font-size: 23px; }
 
 .for_tabs hr {
   border-color: #4386ad;
@@ -4187,14 +4237,14 @@ h2 {
   padding-right: 10px; }
   .tab_2_zip_block h4 {
     color: #093a63;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 21px;
     margin-bottom: 6px; }
     .tab_2_zip_block h4 span {
       font-family: 'EXO2.0-REGULAR_0'; }
   .tab_2_zip_block p {
     color: #3a7496;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px; }
   .tab_2_zip_block .tab_zip {
     display: inline-block;
@@ -4225,7 +4275,12 @@ h2 {
   -webkit-border-radius: 20px;
           border-radius: 20px;
   width: 101px;
-  line-height: 37px; }
+  line-height: 37px;
+  border: 1px solid transparent; }
+
+.tab_download:hover {
+  background-color: transparent;
+  border-color: #05365f; }
 
 .tab_2_pdf_block {
   float: left;
@@ -4236,7 +4291,7 @@ h2 {
   position: relative; }
   .tab_2_pdf_block h4 {
     color: #093a63;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     min-height: 57px; }
 
@@ -4300,7 +4355,7 @@ h2 {
     max-width: 585px;
     margin: 0 auto;
     padding: 15px;
-    background-image: url(../img/backgrounds/testimonials_video.png); }
+    /*background-image: url(../img/backgrounds/testimonials_video.png);*/ }
   .testimonials .video__wrap {
     margin: 0; }
   .testimonials .nav-tabs {
@@ -4361,7 +4416,7 @@ h2 {
     font-size: 21px;
     line-height: 33px;
     font-family: 'EXO2.0-REGULAR_0';
-    margin-bottom: 32px; }
+    margin-bottom: 25px; }
 
 .testi_date_author {
   color: #458ab2;
@@ -4370,7 +4425,7 @@ h2 {
   font-family: 'EXO2.0-REGULAR_0'; }
 
 .testi_text_block {
-  background-image: url(../img/backgrounds/testimonials_video.png);
+  /*background-image: url(../img/backgrounds/testimonials_video.png);*/
   padding: 10px;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -4387,7 +4442,7 @@ h2 {
     line-height: 21px;
     font-family: 'FBADRENALIN-LIGHT';
     margin-bottom: 10px;
-    min-height: 100px;
+    height: 100px;
     overflow: hidden; }
   .testi_text_block p.active {
     height: auto; }
@@ -4443,10 +4498,17 @@ h2 {
   max-width: 900px;
   margin: 0 auto;
   margin-top: 45px;
-  margin-bottom: 25px; }
+  margin-bottom: 22px; }
   .testi_video_desc_block p {
     font-size: 16px;
     line-height: 21px; }
+
+.testi_video_desc_block_div {
+  height: 254px;
+  overflow: hidden; }
+
+.testi_video_desc_block_div.active {
+  height: auto; }
 
 .testimonials_inner .hr {
   background-image: url(../img/backgrounds/receips_1_bg.png);
@@ -4525,13 +4587,9 @@ h2 {
 
 .pa {
   position: relative;
-  padding-top: 54px;
+  padding-top: 0;
   min-height: 522px;
   margin-bottom: 150px; }
-  .pa .category_menu {
-    right: 0;
-    top: 91px;
-    position: absolute; }
   .pa .input-form {
     position: relative; }
     .pa .input-form .error-msg {
@@ -4650,7 +4708,7 @@ h2 {
   margin: 0 auto;
   border: 1px solid #e1e1e1;
   border-top: 0;
-  padding-bottom: 50px; }
+  padding-bottom: 28px; }
 
 #pa_1 table {
   width: 100%; }
@@ -4683,12 +4741,16 @@ h2 {
 #pa_1 .pa_form2.active {
   display: block; }
 
+.pa_submit_wrap {
+  text-align: right; }
+
 .pa_submit {
-  display: block;
+  display: inline-block;
   color: #4489b1;
-  font-size: 18px;
-  width: 224px;
-  height: 52px;
+  font-size: 14px;
+  padding-left: 23px;
+  padding-right: 23px;
+  height: 41px;
   /*
 	background-image: url(../img/backgrounds/pa_submit.png);
 	padding-bottom: 12px;
@@ -4731,9 +4793,9 @@ h2 {
 
 .pa_submit2 {
   width: 134px;
-  height: 51px;
+  height: 41px;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 18px;
   border: 0;
   background-color: #05365f;
   -webkit-border-radius: 30px;
@@ -4868,7 +4930,9 @@ h2 {
     color: #458ab2;
     font-size: 18px;
     text-align: right;
-    margin: 0; }
+    margin: 0;
+    line-height: 36px;
+    margin-top: 6px; }
   .pa2_number_block_inner h2:before,
   .pa2_number_block_inner h2:after {
     display: none; }
@@ -4890,7 +4954,7 @@ h2 {
 .pa2_list_product table {
   width: 100%; }
   .pa2_list_product table tr {
-    height: 72px; }
+    height: 69px; }
   .pa2_list_product table td:first-child {
     width: 110px; }
   .pa2_list_product table td {
@@ -5245,6 +5309,12 @@ h2 {
   .product_header_dropdown span {
     font-family: 'EXO2.0-REGULAR_0'; }
 
+.product_header_dropdown:hover {
+  background-color: #05365f;
+  background-image: url(../img/icons/product_block_down_active.png); }
+  .product_header_dropdown:hover a {
+    color: #fff; }
+
 .product_header_dropdown > ul :after {
   content: '';
   position: absolute;
@@ -5328,14 +5398,15 @@ h2 {
 
 .product_block_inner .product_inner_club {
   margin-top: 80px;
-  line-height: 31px;
-  height: 31px;
-  font-size: 13px;
+  line-height: 41px;
+  height: 41px;
+  font-size: 16x;
   -webkit-border-radius: 30px;
           border-radius: 30px;
   background-color: #458ab2;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  direction: rtl; }
 
 .product_block_inner .product_inner_price_club_card {
   color: #093a63;
@@ -5503,7 +5574,8 @@ h2 {
 
 .product_block_inner2 .oblique_btn_mod4 {
   font-size: 16px;
-  max-width: 151px; }
+  max-width: 151px;
+  direction: ltr; }
 
 .product_block_inner2 .for_nav_tabs .nav a {
   font-size: 18px; }
@@ -5985,7 +6057,10 @@ h2 {
     padding-right: 30px;
     padding-left: 30px; }
     .product_block_inner2 .carousel-indicators li {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .omnipod_slider .carousel-indicators {
+    padding-right: 50px;
+    padding-left: 50px; } }
 
 /*end max-width: 1199px*/
 @media only screen and (max-width: 1100px) {
@@ -6234,7 +6309,9 @@ h2 {
   .product_block_inner2 .omnipod_slider {
     margin: 0 auto; }
   .product_block_inner2 .for_nav_tabs .nav a {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .product_block_inner .omnipod_slider {
+    margin: 0 auto; } }
 
 /*end max-width: 991px*/
 @media only screen and (max-width: 767px) {

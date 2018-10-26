@@ -3,6 +3,13 @@ $(document).ready(function () {
 
 /*products inner*/
 
+$('.omnipod_like').on('click', function(){
+    $(this).toggleClass('active');
+})
+$('.product_quick_like').on('click', function(){
+    $(this).toggleClass('active');
+})
+
 var product_inner_minus = document.getElementById('product_inner_minus');
 var product_inner_plus = document.getElementById('product_inner_plus');
 var product_inner_result = document.getElementById('product_inner_result');
@@ -111,6 +118,23 @@ $('.testi_text_block button').on('click', function(){
         testi_text_block_btn = true;
     }
 });
+
+
+var testi_video_desc_block = true;
+$('.testi_video_desc_block button').on('click', function(){
+    $(this).siblings('.testi_video_desc_block_div').toggleClass('active');
+    
+    $(this).toggleClass('active');
+    
+    if(testi_video_desc_block){
+        testi_video_desc_block = false;
+        $(this).html(' פחות ');
+    }else{
+        $(this).html('  רתוי  ');
+        testi_video_desc_block = true;
+    }
+    
+});
 /*end testimonials*/
 /*omnipod*/
 
@@ -158,7 +182,7 @@ function middle(){
 };
 setTimeout(middle, 2500);
 $('.carouselOmni').carousel({
-    interval:3000
+    interval:false
 });
 
 

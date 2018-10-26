@@ -327,7 +327,8 @@ button{
 	}
 	.product_img{
         max-width: 177px;
-        margin-left: 30px;
+        margin-left: 47px;
+        margin-top: 30px;
 	}
 	.product_logo{
 	    max-width: 157px;
@@ -426,6 +427,10 @@ button{
     margin-right: 10px;
     vertical-align: middle;
 }
+.product_quick_btn:hover{
+	background-color: #4b8cb6;
+    color: #fff;
+}
 .product_quick_like{
 	background-image: url(../img/icons/product_quick_like.png);
 	background-size: contain;
@@ -434,6 +439,14 @@ button{
     background-color: initial;
     margin-left: 10px;
     vertical-align: middle;
+}
+.product_quick_like.active,
+.product_quick_like:hover{
+	background-image: url(../img/icons/omnipod_like.png);
+	background-color: #fff;
+    border-radius: 50%;
+    background-size: 16px;
+    background-position: center;
 }
 .product:nth-child(3) {
 	border:0; 
@@ -775,6 +788,10 @@ button{
     border-radius: 30px;
     border: 1px solid #093a63;
 }
+.oblique_btn:hover{
+	color: #fff;
+	background-color: #093a63;
+}
 .oblique_btn_mod{
 	margin-top: 0;
 }
@@ -947,6 +964,7 @@ button{
     position: relative;
     right: -15px;
     */
+    margin-top: 15px;
     background-color: #05365f;
 	li{
 		background-image: url(../img/elements/cat_line.png);
@@ -1269,6 +1287,10 @@ button{
     height: 40px;
 	font-family: 'FBADRENALIN-REGULAR';
 }
+.pagination_btn:hover{
+	background-color: #05365f;
+	color: #e7edf4;
+}
 .receips_1_prev{
 	float: left;
 	background-repeat: no-repeat;
@@ -1381,6 +1403,9 @@ button{
 	    margin-top: 6px;
 	    direction: rtl;
 	}
+	.share:hover{
+		background-image: url(../img/icons/share_active.png);
+	}
 	.receips_1_block_footer{
 	    background: none;
     	background-color: #05365f;
@@ -1399,6 +1424,9 @@ button{
 	}
 	.receips_1_block_open:hover{
 		background-position: left 13px center;
+		background-image: url(../img/icons/receips_1_arrow_aactive.png);
+		background-color: #fff;
+		color: #05365f;
 	}
 	.receips_1_cat{
 	    padding-bottom: 0;
@@ -2207,15 +2235,18 @@ button{
 .omnipod_logo{
     margin-top: 11px;
 }
+.product_logo3{
+	max-width: 258px;
+}
 .omnipod_p{
 	color: #093a63;
 	font-family: 'FBADRENALIN-REGULAR';
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 30px;
 	margin-top: 20px;
 	margin-bottom: 41px;
 	span{
-		font-size: 18px;
+		font-size: 16px;
 		text-transform: uppercase;
 		font-family: 'EXO2.0-REGULAR_0';
 	}
@@ -2223,10 +2254,9 @@ button{
 .omnipod_p_blue{
 	color:#4386ad;
 	font-family: 'FBADRENALIN-REGULAR';
-	font-size: 18px;
-	line-height: 30px;
-	margin-top: 31px;
-    margin-bottom: 31px;
+	font-size: 16px;
+	line-height: 21px;
+    margin-bottom: 20px;
     padding-left: 86px;
 }
 .omnipod_like,
@@ -2260,6 +2290,10 @@ button{
 .omnipod_like:hover,
 .omnipod_repost:hover{
 	border-color:transparent;
+}
+.omnipod_like.active{
+	background-image: url(../img/icons/omnipod_like_active.png);
+	background-color: #4386ad;
 }
 .omnipod_slider{
 	padding-bottom: 150px;
@@ -2317,6 +2351,8 @@ button{
 		border:1px solid #ebebeb;
 		img{
 			margin: 0 auto;
+		    max-width: 100%;
+    		max-height: 404px;
 		}
 	}
 	.carousel-control{
@@ -2348,14 +2384,13 @@ button{
 }
 .tabs_block{
 	background-color: #f6f6f6;
-	background-image: url(../img/backgrounds/tabs_block.png);
+	background-image: url(../img/backgrounds/bg_lines.png);
     background-position: bottom;
     background-repeat: repeat-x;
-    padding-bottom: 56px;
-    margin-top: 65px;
+    padding-bottom: 36px;
 }
 .for_nav_tabs{
-	height: 83px;
+	height: 45px;
 	background-color: #458ab2;
 	.nav-tabs{
 		border:1px;
@@ -2368,16 +2403,15 @@ button{
 	.nav{
 		a{
 			color: #ffffff;
-			font-size: 21px;
+			font-size: 18px;
 			font-family: 'FBADRENALIN-REGULAR';
 		    padding: 0;
 		    border: 0 !important;
 		    margin: 0;
-		    line-height: 78px;
+		    line-height: 45px;
 	        text-align: center;
 		    padding-left: 38px;
 		    padding-right: 38px;
-		    height: 74px;
 		    transition:background-color 0.3s;
 		    border-radius: 0;
 		    display: inline-block;
@@ -2399,21 +2433,22 @@ button{
 #accordion_omni h3 {
     cursor: pointer;
     color: #4386ad;
-    font-size: 21px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 21px;
     text-transform: uppercase;
     font-family: 'FBADRENALIN-REGULAR';
     background-image: url(../img/icons/accordion_plus.png);
     background-repeat: no-repeat;
     background-position: left 21px center;
     padding-left: 40px;
-    padding-top: 18px;
-    padding-bottom: 13px;
+	padding-top: 13px;
+    padding-bottom: 11px;
     border:1px solid #4386ad;
     border-radius: 3px;
     padding-right: 30px;
-    margin-top: 7px;
-    margin-bottom: 22px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    background-size: 15px;
 }
 #accordion_omni h3.active {
     background-image: url(../img/icons/accordion_minus.png);
@@ -2429,7 +2464,7 @@ button{
     margin-left: 56px;
     margin-right: 30px;
     margin-bottom: 15px;
-    line-height: 24px;
+    line-height: 21px;
     font-family: 'FBADRENALIN-REGULAR';
     font-size: 16px;
     color: #05365f;
@@ -2449,10 +2484,7 @@ $omni_form: #05365f;
 .omni_form{
 	max-width: 1190px;
     margin: auto;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 77px;
-    padding-top: 67px;
+    padding:50px;
 	position: relative;
 	margin-top: 40px;
 	.omni_form_bg_top{
@@ -2498,8 +2530,8 @@ $omni_form: #05365f;
 	
 	h3{
 		color:$omni_form;
-		font-size: 36px;
-		line-height: 48px;
+		font-size: 27px;
+		line-height: 28px;
 		text-align: center;
 	    max-width: 600px;
     	margin: auto;
@@ -2517,11 +2549,11 @@ $omni_form: #05365f;
 	input{
 		border:0;
 		color:$omni_form;
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 21px;
-		font-family: 'FBADRENALIN-REGULAR';
 		text-transform: uppercase;
 	    text-align: right;
+	    font-family: 'EXO2.0-REGULAR_0';
 	}
 input::-webkit-input-placeholder {color:$omni_form;}
 input::-moz-placeholder          {color:$omni_form;}/* Firefox 19+ */
@@ -2533,7 +2565,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 .omni_form_right{
 	float: left;
 	border: 1px solid #bababa;
-	width: 50%;
+	width: 33.3%;
     padding-top: 11px;
     padding-left: 29px;
     padding-right: 29px;
@@ -2550,11 +2582,15 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 }
 .omni_form_center{
-	border-bottom: 1px solid #bababa;
+	width: 33.3%;
+    float: left;
+    border: 1px solid #bababa;
+    border-left: 0;
     input{
-    	line-height: 71px;
+    	line-height: 72px;
 	    padding-left: 25px;
 	    padding-right: 25px;
+	    font-family: 'FBADRENALIN-REGULAR';
     }
 }
 .omni_form_cont{
@@ -2562,7 +2598,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
     position: relative;
 	p{
 		color: $omni_form;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 30px;
 	    max-width: 815px;
 	    float: right;
@@ -2609,16 +2645,15 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	.omni_form__submit{
 		float: left;
 		color: #ffffff;
-		font-size: 33px;
+		font-size: 18px;
 		font-family: 'FBADRENALIN-REGULAR';
 		text-align: center;
 		background-color: #05365f;
 		display: block;
-		width: 186px;
-		height: 72px;
+		width: 120px;
+    	height: 42px;
 		border-radius: 40px;
 		padding:0;
-	    padding-left: 19px;
 	    transition:0.5s;
 	}
 	.omni_form__submit:hover{
@@ -2635,8 +2670,8 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 	p{
 		color: $omni_form;
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 14px;
+		line-height: 21px;
 		font-family: 'FBADRENALIN-REGULAR';
 		padding: 0 30px;
 	}
@@ -2676,14 +2711,12 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	.for_img{
 	    padding-left: 0px;
 	}
-	.product_img{
-		margin-left: 13px;
-	}
+	
 	.device_h3:after{
 		content: "";
 		position: absolute;
 	    top: 9px;
-	    right: -14px;
+	    right: -15px;
 	    width: 1px;
 	    height: 363px;
 		background-color: #dddddd;
@@ -2693,12 +2726,12 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 	.description{
 		min-height: 57px;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 	.carousel-control{
 		width: auto;
 		opacity: 1;
-		top: 169px;
+		top: 50%;
 	}
 	.carousel-control.right{
 		right: -12px;
@@ -2810,7 +2843,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 }
 .for_tabs{
 	.video-player{
-	    width: 207px;
+	    width: 202px;
 	    float: left;
 	    margin-left: 13px;
 	    margin-right: 13px;
@@ -2843,6 +2876,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 }
 .tab_3 .nav-tabs {
+	margin-top: 10px;
     border-bottom: 1px solid #4386ad;
 }
 .tab_3 .nav-tabs>li.active a,
@@ -2859,24 +2893,27 @@ input:-ms-input-placeholder      {color:$omni_form;}
 }
 .tab_1_img{
 	float: right;
-	margin-left: 65px;
+	margin-left: 0;
+	img{
+	    max-width: 70%;
+	}
 }
 .tab_1{
 	color:$omni_form;
 	h4{
-		font-size: 36px;
-		line-height: 30px;
-	    margin-top: 91px;
+		font-size: 21px;
+		line-height: 21px;
+	    margin-top: 50px;
 	    margin-bottom:4px;
 	}
 	p{
-		font-size: 18px;
-		line-height: 30px;
+		font-size: 16px;
+		line-height: 21px;
 	    max-width: 530px;
     	float: right;
 	    margin-bottom: 30px;
 	    span{
-	    	font-size: 30px;
+	    	font-size: 23px;
 	    }
 	}
 }
@@ -2897,8 +2934,8 @@ input:-ms-input-placeholder      {color:$omni_form;}
     padding-right: 10px;
 	h4{
 		color:#093a63;
-		font-size: 18px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 21px;
 	    margin-bottom: 6px;
 		span{
 			font-family: 'EXO2.0-REGULAR_0';
@@ -2906,7 +2943,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 	p{
 		color:#3a7496;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 18px;
 	}
 	.tab_zip{
@@ -2940,7 +2977,12 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		border-radius:20px;
 		width: 101px;
 		line-height: 37px;
+		border:1px solid transparent;
 	}
+.tab_download:hover{
+	background-color: transparent;
+	border-color:#05365f;	
+}
 .tab_2_pdf_block{
 	float: left;
 	width: 25%;
@@ -2950,7 +2992,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
     position: relative;
 	h4{
 		color:#093a63;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 24px;
 		min-height: 57px;
 	}
@@ -3025,7 +3067,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	   	max-width: 585px;
     	margin: 0 auto;
     	padding: 15px;
-    	background-image: url(../img/backgrounds/testimonials_video.png);
+    	/*background-image: url(../img/backgrounds/testimonials_video.png);*/
 	}
 	.video__wrap{
 		margin: 0;
@@ -3102,7 +3144,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		font-size: 21px;
 		line-height: 33px;
 		font-family: 'EXO2.0-REGULAR_0';
-	    margin-bottom: 32px;
+	    margin-bottom: 25px;
 	}
 }
 .testi_date_author{
@@ -3112,7 +3154,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	font-family: 'EXO2.0-REGULAR_0';
 }
 .testi_text_block{
-	background-image: url(../img/backgrounds/testimonials_video.png);
+	/*background-image: url(../img/backgrounds/testimonials_video.png);*/
 	padding: 10px;
     background-size: 100% 100%;
     margin-bottom: 38px;
@@ -3129,7 +3171,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		line-height: 21px;
 		font-family: 'FBADRENALIN-LIGHT';
         margin-bottom: 10px;
-        min-height: 100px;
+        height: 100px;
         overflow: hidden;
 	}
 	p.active{
@@ -3185,11 +3227,18 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	max-width: 900px;
 	margin: 0 auto;
     margin-top: 45px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 	p{
 		font-size: 16px;
 		line-height: 21px;
 	}
+}
+.testi_video_desc_block_div{
+    height: 254px;
+    overflow: hidden;
+}
+.testi_video_desc_block_div.active{
+	height: auto;
 }
 .testimonials_inner {
 	.hr{
@@ -3270,13 +3319,11 @@ input:-ms-input-placeholder      {color:$omni_form;}
 }
 .pa{
 	position: relative;
-    padding-top: 54px;
+    padding-top: 0;
     min-height: 522px;
     margin-bottom: 150px;
 	.category_menu{
-		right: 0;
-		top: 91px;
-		position: absolute;
+
 	}
 	.input-form {
           position: relative;
@@ -3395,7 +3442,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
     margin: 0 auto;
     border: 1px solid #e1e1e1;
     border-top:0; 
-    padding-bottom: 50px;
+    padding-bottom: 28px;
 }
 #pa_1{
 	table{
@@ -3438,13 +3485,16 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		display: block;
 	}
 }
-
+.pa_submit_wrap{
+	text-align: right;
+}
 .pa_submit{
-    display: block;
+    display: inline-block;
 	color: #4489b1;
-	font-size: 18px;
-	width: 224px;
-	height: 52px;
+	font-size: 14px;
+    padding-left: 23px;
+    padding-right: 23px;
+    height: 41px;
 	/*
 	background-image: url(../img/backgrounds/pa_submit.png);
 	padding-bottom: 12px;
@@ -3486,9 +3536,9 @@ input:-ms-input-placeholder      {color:$omni_form;}
 }
 .pa_submit2{
 	width: 134px;
-	height: 51px;
+	height: 41px;
 	color: #ffffff;
-	font-size: 24px;
+	font-size: 18px;
 	border: 0;
 	background-color: #05365f;
 	border-radius: 30px;
@@ -3629,6 +3679,8 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		font-size: 18px;
 		text-align: right;
 	    margin: 0;
+        line-height: 36px;
+    	margin-top: 6px;
 	}
 	h2:before,
 	h2:after{
@@ -3655,7 +3707,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	table{
 		width: 100%;
 		tr{
-		    height: 72px;
+		    height: 69px;
 		}
 		td:first-child{
 			width: 110px;
@@ -4066,7 +4118,13 @@ input:-ms-input-placeholder      {color:$omni_form;}
 		font-family: 'EXO2.0-REGULAR_0';
 	}
 }
-
+.product_header_dropdown:hover{
+	background-color: #05365f;
+	background-image: url(../img/icons/product_block_down_active.png);
+	a{
+		color:#fff;
+	}
+}
 .product_header_dropdown > ul :after {
     content: '';
     position: absolute;
@@ -4157,13 +4215,14 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	}
 	.product_inner_club{
 		margin-top: 80px;
-	    line-height: 31px;
-	    height: 31px;
-	    font-size: 13px;
+	    line-height: 41px;
+	    height: 41px;
+	    font-size: 16x;
         border-radius: 30px;
     	background-color: #458ab2;
     	color: #fff;
     	text-align: center;
+    	direction: rtl;
 	}
 	.product_inner_price_club_card{
 		color: #093a63;
@@ -4347,6 +4406,7 @@ input:-ms-input-placeholder      {color:$omni_form;}
 	.oblique_btn_mod4{
 	    font-size: 16px;
 	    max-width: 151px;
+	    direction: ltr;
 	}
 	.for_nav_tabs .nav a{
 		font-size: 18px;
