@@ -1777,12 +1777,19 @@ button{
 .articles{
     padding-top: 3px;
     padding-bottom: 55px;
+    .category_menu li a{
+    	padding-right: 46px;
+    }
+    .category_menu li h4{
+	    padding-right: 46px;
+	    font-size: 18px;
+	    color: #fff;
+	    line-height: 50px;
+	    background-image: url(../img/backgrounds/category_menu_h4.png);
+    }
 }
 .articles h2 {
-    position: relative;
-    color: #093a63;
-    font-size: 48px;
-    text-align: center;
+
     margin-bottom: 30px;
 }
 
@@ -1794,22 +1801,24 @@ button{
 }
 .article_block_h3{
 	color:#002e59;
-	font-size: 24px;
+	font-size: 21px;
 	line-height: 24px;
 	background-image: url(../img/backgrounds/article_block_h3.png);
 	background-size: cover;
-    padding-top: 29px;
-	padding-bottom: 28px;
+	padding-top: 14px;
+    padding-bottom: 14px;
     padding-right: 33px;
+    padding-left: 90px;
 }
 .article_block_p{
-    color: #002e59;
-    font-size: 18px;
+	color: #002e59;
+    font-size: 16px;
     line-height: 24px;
-    margin-top: 26px;
+    margin-top: 14px;
     padding-right: 31px;
-    margin-bottom: 39px;
+    margin-bottom: 12px;
     padding-left: 60px;
+    font-family: 'FBADRENALIN-LIGHT';
 }
 .article_block_border{
 	border:1px solid #e8e8e8;	
@@ -1817,43 +1826,45 @@ button{
 .read_story_block{
 	border:1px solid #d0d0d0;
 	border-top: 0;
-    padding-top: 20px;
-    padding-right: 36px;
-    padding-bottom: 21px;
+    padding-top: 11px;
+    padding-right: 30px;
+    padding-bottom: 11px;
 }
 .read_story_btn{
 	color:#002e59;
-	font-size: 18px;
-	line-height: 26px;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-family: 'FBADRENALIN-REGULAR';
 	background-color: inherit;
 	border:1px solid #002e59;
 	border-radius: 50px;
-	width: 179px;
-	height: 42px;
 	display: inline-block;
-    font-weight: bold;
     text-align: right;
-    padding-right: 22px;
+    padding-right: 20px;
     background-image: url(../img/icons/read_story_btn.png);
     background-repeat: no-repeat;
     background-position: left 19px center;
-    transition:background 0.5s;
+    transition:color 0.3s, background-color 0.3s, background-position 0.3s;
+    padding-left: 50px;
+    line-height: 36px;
 }
-.read_story_btn:hover{
-	background-position: left 14px center;	
+.read_story_btn:hover{	
+	background-color: #002e59;
+	color:#fff;
+	background-image: url(../img/icons/receips_1_arrow.png);
+	background-position: left 16px center;
+    background-size: 20px;
 }
 .articles_relative{
 	position: relative;
 }
 .articles_share{
 	position: absolute;
-	bottom: -30px;
-    left: 31px;
+    bottom: -16px;
+    left: 20px;
 	display: block;
-	width: 65px;
-	height: 65px;
+	width: 42px;
+	height: 42px;
 	background-color: inherit;
 	background-image: url(../img/icons/articles_share_active.png);
 	background-size: contain;
@@ -1867,9 +1878,9 @@ button{
     position: absolute;
     z-index: 100;
     text-align: center;
-    width: 148px;
-    bottom: -62px;
-    left: -19px;
+    width: 108px;
+    bottom: -45px;
+    left: -27px;
     li{
     	display: inline-block;
 	    vertical-align: bottom;
@@ -1880,13 +1891,13 @@ button{
 	    text-transform: uppercase;
 	    color: #05365f;
 	    font-size: 14px;
-	    height: 40px;
 	    display: block;
-	    padding-right: 43px;
+	    padding-right: 30px;
 	    background-position: center;
-        height: 44px;
+        height: 35px;
         border-bottom: 2px solid transparent;
         transition:border 0.5s;
+        background-size: 18px;
     }
     a:hover{
 	    border-color: #002e59;
@@ -1964,28 +1975,33 @@ button{
 .cat_article:hover{
 	color:#fff;
 }
-.padding_r{
-	padding-right: 0;
-}
 .article_block_h3_inner{
-	font-size: 36px;
-    padding-right: 59px;
+    font-size: 30px;
+    padding-right: 23px;
+    background: none;
+    margin-bottom: 4px;
 }
 .article_block_p_inner{
 	font-size: 21px;
 	line-height: 26px;
 }
+.article_block_p_inner_mod{
+    padding-top: 14px;
+    padding-bottom: 31px;
+}
 .block_notice_wrap{
 	background-image: url(../img/icons/block_notice_wrap.png);
 	background-repeat: no-repeat;
-    background-position: right 50px top 41px;
+    background-position: right 41px top 32px;
 	background-color: #f3f6f8;
-    padding-top: 55px;
-    padding-right: 121px;
-    padding-bottom: 51px;
+    padding-top: 40px;
+    padding-right: 111px;
+    padding-bottom: 36px;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 70px;
+    background-size: 38px;
+    margin-top: 25px;
 }
 .block_notice{
 	border-right:1px solid #4281a9;
@@ -1997,15 +2013,13 @@ button{
 }
 .block_notice_wrap_blue{
 	background-image: url(../img/icons/block_notice_wrap_blue.png);
-	background-color: #4689b4;
-	position: relative;
+    background-color: #4689b4;
     padding-right: 105px;
     background-position: right 34px top 40px;
-    max-width: 925px;
-    float: right;
-    position: relative;
-    margin-right: 48px;
-    margin-left: 48px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 15px;
 }
 
 .block_notice_blue{
@@ -2046,10 +2060,13 @@ button{
 }
 .back_block_btn:hover{
 	background-position: left 17px center;
+	color: #002e59;
+	background-color: #fff;
+	background-image: url(../img/icons/banner_transparent.png);
 }
 .similar_block{
 	background-color: #dde9f1;
-	padding-bottom: 37px;
+	padding-bottom: 27px;
     padding-top: 34px;
     margin-top: 31px;
 }
@@ -2058,17 +2075,17 @@ button{
 	font-size: 36px;
 	text-transform: uppercase;
 	text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 12px;
 }
 .similar_h4{
 	color:#4689b4;
-	font-size: 21px;
-	line-height: 24px;
+    font-size: 14px;
+    line-height: 1;
 }
 .similar_p{
 	color:#002e59;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 12px;
+	line-height: 13px;
 	margin-top: 12px;
 }
 .similar_img{
@@ -2083,37 +2100,41 @@ button{
     position: relative;
 }
 .read_story_wrap{
-	background-image: url(../img/backgrounds/read_story_wrap.jpg);
+    background-color: #4689b3;
 	padding: 12px 20px;
 }
 .read_story_btn2{
 	background-color: transparent;
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 12px;
 	font-family: 'FBADRENALIN-REGULAR';
 	border:1px solid #ffffff;
 	border-radius: 20px;
-	width: 132px;
-	height: 33px;
 	text-transform: uppercase;
 	background-image: url(../img/icons/read_story_btn2.png);
 	background-repeat: no-repeat;
 	background-position: left 13px center;
-    padding-left: 20px;
+    padding-left: 28px;
+    padding-right: 12px;
     transition:background 0.5s;
-    line-height: 33px;
+    line-height: 22px;
+    background-size: 10px;
 }
 .read_story_btn2:hover{
 	background-position: left 10px center;
+	background-color: #fff;
+	color: #4689b3;
+	background-image: url(../img/icons/read_story_btn.png);
+	
 }
 .fon{
-    padding: 27px 31px;
+    padding:15px;
 }
 .articles_share_sm{
-    background-color: transparent;
-    width: 48px;
-    height: 48px;
-    bottom: -19px;
+	background-color: transparent;
+    width: 35px;
+    height: 35px;
+    bottom: -12px;
 }
 .articles_inner{
 	.article_block {
@@ -2122,15 +2143,16 @@ button{
 	    margin-right: 25px;
 	}
 	.article_block_p{
-	    font-size: 18px;
-	    line-height: 24px;
-	    padding-right: 59px;
-        margin-top: 34px;
-        padding-left: 110px;
+	    font-size: 16px;
+	    line-height: 21px;
+	    padding-right: 44px;
+	    margin-top: 25px;
+	    padding-left: 110px;
+	    margin-bottom: 10px;
 	}
 	.block_notice{
-		font-size: 21px;
-	    line-height: 26px;
+		font-size: 18px;
+	    line-height: 24px;
 	}
 
 }
@@ -4398,6 +4420,22 @@ input:-ms-input-placeholder      {color:$omni_form;}
 }
 /*=================End product_block_inner=================*/
 
+/*=================management=================*/
+
+.management{
+	.management_block{
+	    position: relative;
+	    margin-top: 45px;
+	    padding: 20px;
+	    background-image: url(../img/backgrounds/bg_lines.png);
+	    background-repeat: repeat;
+	}
+	.management_block_inner{
+		background-color:#fff;
+	}
+}
+
+/*=================management=================*/
 
 
 @import "_footer";
